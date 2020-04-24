@@ -2,12 +2,12 @@ title: Alec Glisman # your name (or website title) here
 logo: "/images/me.jpeg?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
   <b> Links: </b> <br \>
-  <&emsp> <a href="https://www.che.caltech.edu/groups/jfb/index.html">Brady Group</a>  <br />
-  <&emsp> <a href="https://github.com/alec-glisman">GitHub</a>  <br />
-  <&emsp> <a href="https://scholar.google.com/citations?user=wGifpRQAAAAJ&hl=en">Google Scholar</a>  <br />
-  <&emsp> <a href="https://www.researchgate.net/profile/Alec_Glisman">Research Gate</a>  <br />
-  <&emsp> <a href="https://arxiv.org/search/cond-mat?searchtype=author&query=Glisman%2C+A">ArXiv</a>  <br />
-  <&emsp> <a href="https://orcid.org/0000-0001-9677-1958">ORCID</a>   <br />
+  <emsp> <a href="https://www.che.caltech.edu/groups/jfb/index.html">Brady Group</a>  <br />
+  <emsp> <a href="https://github.com/alec-glisman">GitHub</a>  <br />
+  <emsp> <a href="https://scholar.google.com/citations?user=wGifpRQAAAAJ&hl=en">Google Scholar</a>  <br />
+  <emsp> <a href="https://www.researchgate.net/profile/Alec_Glisman">Research Gate</a>  <br />
+  <emsp> <a href="https://arxiv.org/search/cond-mat?searchtype=author&query=Glisman%2C+A">ArXiv</a>  <br />
+  <emsp> <a href="https://orcid.org/0000-0001-9677-1958">ORCID</a>   <br />
   
 theme: jekyll-theme-minimal
 google_analytics: G-44Y2BY3P2N
