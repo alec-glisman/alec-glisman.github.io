@@ -19,18 +19,18 @@ $header-font-family           : $sans-serif !default;
 $caption-font-family          : $serif !default;
 
 /* type scale */
-$type-size-1                  : 2.441em !default;  // ~39.056px
-$type-size-2                  : 1.953em !default;  // ~31.248px
-$type-size-3                  : 1.563em !default;  // ~25.008px
-$type-size-4                  : 1.25em !default;   // ~20px
-$type-size-5                  : 1em !default;      // ~16px
-$type-size-6                  : 0.75em !default;   // ~12px
-$type-size-7                  : 0.6875em !default; // ~11px
-$type-size-8                  : 0.625em !default;  // ~10px
+$type-size-1                  : 48px !default;  
+$type-size-2                  : 40px !default; 
+$type-size-3                  : 32px !default;
+$type-size-4                  : 26px !default;
+$type-size-5                  : 20px !default;
+$type-size-6                  : 18px !default
+$type-size-7                  : 14px !default;
+$type-size-8                  : 10px !default;
 
-$font-size-base:          13px !default; 
-$font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px 
-$font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px 
+$font-size-base:          18px !default; 
+$font-size-large:         ceil(($font-size-base * 1.25)) !default;
+$font-size-small:         ceil(($font-size-base * 0.85)) !default;
  
 $font-size-h1:            56px !default; 
 $font-size-h2:            45px !default; 
