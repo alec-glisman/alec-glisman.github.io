@@ -1,3 +1,6 @@
 [submodule ".FlutterMinimal"]
 	path = .FlutterMinimal
 	url = https://github.com/Codelessly/FlutterMinimalWebsite.git
+[submodule ".quick-portfolio"]
+	path = .quick-portfolio
+	url = https://github.com/evanca/quick-portfolio.git
