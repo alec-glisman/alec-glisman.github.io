@@ -3,11 +3,11 @@ logo: "/images/me.png?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
   <b> Links: </b> <br \>
   <b> &emsp; </b> <a href="https://www.che.caltech.edu/groups/jfb/index.html">Brady Group</a>  <br />
-  <a href="https://github.com/alec-glisman"> &emsp   GitHub</a>  <br />
-  <a href="https://scholar.google.com/citations?user=wGifpRQAAAAJ&hl=en"> &emsp   Google Scholar</a>  <br />
-  <a href="https://www.researchgate.net/profile/Alec_Glisman"> &emsp   Research Gate</a>  <br />
-  <a href="https://arxiv.org/search/cond-mat?searchtype=author&query=Glisman%2C+A"> &emsp   ArXiv</a>  <br />
-  <a href="https://orcid.org/0000-0001-9677-1958"> &emsp   ORCID</a>   <br />
+  <b> &emsp; </b> <a href="https://github.com/alec-glisman">GitHub</a>  <br />
+  <b> &emsp; </b> <a href="https://scholar.google.com/citations?user=wGifpRQAAAAJ&hl=en">Google Scholar</a>  <br />
+  <b> &emsp; </b> <a href="https://www.researchgate.net/profile/Alec_Glisman">Research Gate</a>  <br />
+  <b> &emsp; </b> <a href="https://arxiv.org/search/cond-mat?searchtype=author&query=Glisman%2C+A">arXiv</a>  <br />
+  <b> &emsp; </b> <a href="https://orcid.org/0000-0001-9677-1958">ORCID</a>   <br />
   
 theme: jekyll-theme-minimal
 google_analytics: G-44Y2BY3P2N
