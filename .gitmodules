@@ -1,6 +1,0 @@
-[submodule "ResponsiveFramework"]
-	path = ResponsiveFramework
-	url = https://github.com/Codelessly/ResponsiveFramework.git
-[submodule "FlutterMinimalWebsite"]
-	path = FlutterMinimalWebsite
-	url = https://github.com/Codelessly/FlutterMinimalWebsite.git
