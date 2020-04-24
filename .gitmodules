@@ -1,0 +1,6 @@
+[submodule "ResponsiveFramework"]
+	path = ResponsiveFramework
+	url = git@github.com:Codelessly/ResponsiveFramework.git
+[submodule "FlutterMinimalWebsite"]
+	path = FlutterMinimalWebsite
+	url = git@github.com:Codelessly/FlutterMinimalWebsite.git
