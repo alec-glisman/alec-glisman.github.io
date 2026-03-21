@@ -44,7 +44,7 @@ Polyelectrolytes are widely used to chelate multi-valent ions for water softenin
 
 <span class="research-badge research-badge--physics">Physics</span><span class="research-badge research-badge--sim">Fluid Dynamics</span>
 
-Active matter systems — fish schools, bacterial colonies, swimming microorganisms — display striking collective behaviors, and I set out to understand how much of this emerges from fluid mechanics alone, without any phenomenological interaction rules. I derived a framework for self-propulsion in potential flow and found that a deformable body can achieve net displacement without performing net work on the fluid — a result that was surprising, since viscous dissipation had previously been considered necessary for propulsion. I also developed C++/CUDA simulations showing that purely hydrodynamic coupling can produce emergent collective ordering.
+Active matter systems, including fish schools, bacterial colonies, and swimming microorganisms, display striking collective behaviors, and I set out to understand how much of this emerges from fluid mechanics alone, without any phenomenological interaction rules. I derived a framework for self-propulsion in potential flow and found that a deformable body can achieve net displacement without performing net work on the fluid, a result that was surprising since viscous dissipation had previously been considered necessary for propulsion. I also developed C++/CUDA simulations showing that purely hydrodynamic coupling can produce emergent collective ordering.
 
 </div>
 
@@ -54,7 +54,7 @@ Active matter systems — fish schools, bacterial colonies, swimming microorgani
 
 <span class="research-badge research-badge--physics">Physics</span><span class="research-badge research-badge--sim">Theory</span>
 
-Lipid membranes are not simply static barriers — they flow in-plane as viscous fluids while bending out-of-plane as elastic shells, making them unusual materials whose dynamics are difficult to analyze. I developed a continuum theory coupling in-plane viscous flow to out-of-plane elastic bending, and in doing so introduced the [Scriven-Love number](/publications/2020-scriven-love-1) — a dimensionless ratio that quantifies when intramembrane viscous stresses matter relative to elastic bending forces. Calculating non-negligible Scriven-Love numbers across physiologically relevant processes showed that in-plane viscosity cannot generally be ignored in membrane dynamics.
+Lipid membranes are not simply static barriers; they flow in-plane as viscous fluids while bending out-of-plane as elastic shells, making them unusual materials whose dynamics are difficult to analyze. I developed a continuum theory coupling in-plane viscous flow to out-of-plane elastic bending, and in doing so introduced the [Scriven-Love number](/publications/2020-scriven-love-1), a dimensionless ratio that quantifies when intramembrane viscous stresses matter relative to elastic bending forces. Calculating non-negligible Scriven-Love numbers across physiologically relevant processes showed that in-plane viscosity cannot generally be ignored in membrane dynamics.
 
 </div>
 
