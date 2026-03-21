@@ -72,6 +72,16 @@ class TestCustomCSSClasses:
             "Skills page missing .skill-group class"
         )
 
+    def test_homepage_has_hero_intro(self, site_dir):
+        """Test that homepage has .hero-intro element for the intro paragraph."""
+        homepage = site_dir / "index.html"
+        if not homepage.exists():
+            pytest.skip("Homepage not found")
+        content = homepage.read_text()
+        assert "hero-intro" in content, (
+            "Homepage missing .hero-intro class on intro paragraph"
+        )
+
 
 class TestDesignColorSystem:
     """Test that the Navy/Teal color system is applied."""
