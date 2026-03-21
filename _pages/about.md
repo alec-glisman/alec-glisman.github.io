@@ -21,6 +21,7 @@ My doctoral work spanned three interconnected themes in soft matter physics and 
 <div class="research-card reveal" style="transition-delay: 0.05s" markdown="1">
 
 ### Generative AI, Molecular Design & QSAR Modeling
+<span class="research-badge research-badge--ai">AI/ML</span><span class="research-badge research-badge--drug">Drug Discovery</span>
 
 Small molecule generative models navigate multi-parameter optimization across potency, ADMET, or PK/PD properties. Synthesizability is enforced as a hard constraint through reaction template filtering and compatibility screening against commercially available building block catalogs, ensuring generated candidates are tractable to synthesize. Ensemble QSAR models combining graph representations with cheminformatics fingerprints achieved 18th place out of 400+ submissions in the [OpenADMET-ExpansionRx Blind Challenge](https://huggingface.co/spaces/openadmet/OpenADMET-ExpansionRx-Challenge).
 
@@ -29,6 +30,7 @@ Small molecule generative models navigate multi-parameter optimization across po
 <div class="research-card reveal" style="transition-delay: 0.1s" markdown="1">
 
 ### Polyelectrolyte Simulations & Ion Binding
+<span class="research-badge research-badge--physics">Physics</span><span class="research-badge research-badge--ai">AI/ML</span>
 
 Molecular dynamics and enhanced sampling simulation of polyelectrolyte complexation, Ca²⁺ adsorption isotherms, and precipitation mechanisms in aqueous solution. Applied unsupervised deep learning to elucidate phase diagrams and discover key structure-property relationships. Industry collaboration with Dow Chemical on water treatment polymer additives.
 
@@ -37,6 +39,7 @@ Molecular dynamics and enhanced sampling simulation of polyelectrolyte complexat
 <div class="research-card reveal" style="transition-delay: 0.15s" markdown="1">
 
 ### Microhydrodynamics & Active Matter
+<span class="research-badge research-badge--physics">Physics</span><span class="research-badge research-badge--sim">Fluid Dynamics</span>
 
 Theoretical and computational study of self-propulsion in potential flow, boundary integral methods for many-body Stokes flow, and emergent collective behaviors in active particle systems.
 
@@ -45,6 +48,7 @@ Theoretical and computational study of self-propulsion in potential flow, bounda
 <div class="research-card reveal" style="transition-delay: 0.2s" markdown="1">
 
 ### Lipid Membrane Mechanics
+<span class="research-badge research-badge--physics">Physics</span><span class="research-badge research-badge--sim">Theory</span>
 
 Continuum mechanics of curved lipid bilayers using differential geometry and balance-law formulations. Introduced the [Scriven-Love number](/publications/2020-scriven-love-1), a dimensionless ratio comparing in-plane viscous forces to elastic bending forces in membrane dynamics.
 

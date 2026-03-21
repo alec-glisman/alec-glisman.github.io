@@ -82,6 +82,16 @@ class TestCustomCSSClasses:
             "Homepage missing .hero-intro class on intro paragraph"
         )
 
+    def test_research_cards_have_badges(self, site_dir):
+        """Test that research cards contain topic badge elements."""
+        for page_path in ["index.html", "research/index.html"]:
+            page_file = site_dir / page_path
+            if page_file.exists():
+                content = page_file.read_text()
+                if "research-badge" in content:
+                    return  # found on at least one page
+        pytest.fail("research-badge class not found on homepage or research page")
+
 
 class TestDesignColorSystem:
     """Test that the Navy/Teal color system is applied."""
