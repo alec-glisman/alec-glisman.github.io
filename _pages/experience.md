@@ -40,7 +40,7 @@ excerpt: "Professional timeline of Alec Glisman — Senior AI/ML Scientist at Me
 
 <div class="experience-entry reveal" style="transition-delay: 0.15s" markdown="1">
 
-**Research Assistant** — UC Berkeley, [Kranthi K. Mandadapu Group](https://mandadapu-group.github.io/)
+**Research Assistant** — UC Berkeley, Kranthi K. Mandadapu Group
 <div class="experience-meta">Aug 2017 – May 2019 · Berkeley, CA</div>
 
 - Invented a dimensionless metric comparing lipid membrane out-of-plane bending with in-plane viscous forces, proving that viscous response can determine membrane stability and dynamics in biological systems.
