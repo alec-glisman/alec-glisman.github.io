@@ -92,6 +92,18 @@ class TestCustomCSSClasses:
                     return  # found on at least one page
         pytest.fail("research-badge class not found on homepage or research page")
 
+    def test_cards_use_translateY_lift(self, site_dir):
+        """Test that cards use translateY lift animation on hover (not translateX)."""
+        css_file = site_dir / "assets" / "css" / "main.css"
+        if not css_file.exists():
+            pytest.skip("CSS file not found")
+        content = css_file.read_text()
+        # research-card hover uses translateY(-3px); project-card also uses translateY(-3px)
+        assert content.count("translateY(-3px)") >= 2, (
+            "Expected at least 2 uses of translateY(-3px) for consistent card hover lift "
+            "(research-card and project-card). Found: " + str(content.count("translateY(-3px)"))
+        )
+
 
 class TestDesignColorSystem:
     """Test that the Navy/Teal color system is applied."""

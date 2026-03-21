@@ -214,8 +214,8 @@ h3 {
   p:last-child { margin-bottom: 0; }
 
   &:hover {
-    transform: translateX(5px);
-    box-shadow: 0 4px 10px rgba(27, 42, 74, 0.08), 0 12px 32px rgba(27, 42, 74, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(27, 42, 74, 0.12), 0 14px 36px rgba(27, 42, 74, 0.1);
     border-left-color: darken(#0EA5C9, 8%);
   }
 }
@@ -368,6 +368,7 @@ h3 {
   padding-left: 1.75em;
   margin-bottom: 2.25em;
   border-left: 2px solid rgba(14, 165, 201, 0.25);
+  transition: transform 0.2s ease;
 
   &::before {
     content: '';
@@ -381,6 +382,10 @@ h3 {
     border-radius: 50%;
     box-shadow: 0 0 0 3px rgba(14, 165, 201, 0.12);
     transition: box-shadow 0.25s ease, border-color 0.25s ease;
+  }
+
+  &:hover {
+    transform: translateX(3px);
   }
 
   &:hover::before {
