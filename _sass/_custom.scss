@@ -550,6 +550,27 @@ a {
   &:visited { color: mix(#0369A1, #6B7280, 60%); }
 }
 
+/* --- ANCHOR LINKS (hover permalink on headings) --- */
+.anchor-link {
+  opacity: 0;
+  margin-left: 0.35em;
+  font-size: 0.72em;
+  font-weight: 400;
+  color: #0EA5C9;
+  text-decoration: none;
+  transition: opacity 0.2s ease, color 0.15s ease;
+  user-select: none;
+  vertical-align: middle;
+
+  &:visited { color: #0EA5C9; }
+  &:hover { color: darken(#0EA5C9, 12%); }
+}
+
+h2:hover .anchor-link,
+h3:hover .anchor-link {
+  opacity: 1;
+}
+
 /* --- TABLE (about page education) --- */
 table {
   width: 100%;

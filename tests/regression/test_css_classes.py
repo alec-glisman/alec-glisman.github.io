@@ -114,6 +114,16 @@ class TestCustomCSSClasses:
             "Experience timeline missing border-image gradient for fade effect"
         )
 
+    def test_anchor_link_css_present(self, site_dir):
+        """Test that anchor-link CSS class is present for hover header links."""
+        css_file = site_dir / "assets" / "css" / "main.css"
+        if not css_file.exists():
+            pytest.skip("CSS file not found")
+        content = css_file.read_text()
+        assert "anchor-link" in content, (
+            "anchor-link CSS class not found — hover anchor links not implemented"
+        )
+
 
 class TestDesignColorSystem:
     """Test that the Navy/Teal color system is applied."""

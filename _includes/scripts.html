@@ -12,5 +12,19 @@
 })();
 </script>
 
+<script>
+(function(){
+  document.querySelectorAll('.page__content h2[id], .page__content h3[id]').forEach(function(h){
+    var a = document.createElement('a');
+    a.href = '#' + h.id;
+    a.className = 'anchor-link';
+    a.setAttribute('aria-hidden', 'true');
+    a.setAttribute('tabindex', '-1');
+    a.textContent = '#';
+    h.appendChild(a);
+  });
+})();
+</script>
+
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
