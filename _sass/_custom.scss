@@ -366,8 +366,9 @@ h3 {
 .experience-entry {
   position: relative;
   padding-left: 1.75em;
-  margin-bottom: 2.25em;
-  border-left: 2px solid rgba(14, 165, 201, 0.25);
+  margin-bottom: 0;
+  padding-bottom: 2.25em;
+  border-left: 2px solid rgba(14, 165, 201, 0.40);
   transition: transform 0.2s ease;
 
   &::before {
@@ -392,6 +393,16 @@ h3 {
     border-color: darken(#0EA5C9, 8%);
     box-shadow: 0 0 0 5px rgba(14, 165, 201, 0.18);
   }
+
+  /* Taper the spine on the last entry */
+  &:last-child {
+    padding-bottom: 0;
+    border-image: linear-gradient(to bottom, rgba(14, 165, 201, 0.40) 0%, transparent 100%) 1;
+  }
+
+  /* Bullet list styling for experience bullet points */
+  ul { font-size: 0.88em; line-height: 1.65; color: #374151; margin-bottom: 0; padding-left: 1.2em; }
+  li { margin-bottom: 0.3em; }
 
   /* Job title line: first <p> contains the <strong> role name */
   > p:first-of-type {

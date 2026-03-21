@@ -104,6 +104,16 @@ class TestCustomCSSClasses:
             "(research-card and project-card). Found: " + str(content.count("translateY(-3px)"))
         )
 
+    def test_experience_timeline_has_continuous_border(self, site_dir):
+        """Test that experience entries use padding-bottom for continuous timeline."""
+        css_file = site_dir / "assets" / "css" / "main.css"
+        if not css_file.exists():
+            pytest.skip("CSS file not found")
+        content = css_file.read_text()
+        assert "border-image" in content, (
+            "Experience timeline missing border-image gradient for fade effect"
+        )
+
 
 class TestDesignColorSystem:
     """Test that the Navy/Teal color system is applied."""
