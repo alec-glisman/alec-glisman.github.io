@@ -110,7 +110,7 @@ class TestCustomCSSClasses:
         if not css_file.exists():
             pytest.skip("CSS file not found")
         content = css_file.read_text()
-        assert "border-image" in content, (
+        assert "border-image" in content and "linear-gradient" in content, (
             "Experience timeline missing border-image gradient for fade effect"
         )
 
