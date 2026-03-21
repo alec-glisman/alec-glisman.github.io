@@ -1,7 +1,7 @@
 # ──────────────────────────────────────────────
 # Stage 1: base — Ruby gems shared by all stages
 # ──────────────────────────────────────────────
-FROM ruby:3.3-slim AS base
+FROM ruby:3.1-slim AS base
 
 # System deps needed to compile native gems (nokogiri, etc.)
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -11,8 +11,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 WORKDIR /site
 
-COPY Gemfile Gemfile.lock ./
-RUN bundle install --jobs 4 --retry 3
+COPY Gemfile* ./
+RUN bundle install --jobs 4 --retry 3 \
+    # Jekyll 3.10.0 bug: @mime_types_charset can be nil for some MIME types.
+    # Add safe-navigation (&.) so the servlet doesn't crash on every GET request.
+    # Upstream fix: https://github.com/jekyll/jekyll/issues/9526
+    && SERVLET=$(bundle show jekyll)/lib/jekyll/commands/serve/servlet.rb \
+    && sed -i 's/return unless @mime_types_charset\.key?/return unless @mime_types_charset\&.key?/' "$SERVLET"
 
 # ──────────────────────────────────────────────
 # Stage 2: dev — local development with live reload
@@ -69,8 +74,10 @@ RUN gem install bundler --no-document
 WORKDIR /site
 
 # Install Ruby gems
-COPY Gemfile Gemfile.lock ./
-RUN bundle install --jobs 4 --retry 3
+COPY Gemfile* ./
+RUN bundle install --jobs 4 --retry 3 \
+    && SERVLET=$(bundle show jekyll)/lib/jekyll/commands/serve/servlet.rb \
+    && sed -i 's/return unless @mime_types_charset\.key?/return unless @mime_types_charset\&.key?/' "$SERVLET"
 
 # Install Python dependencies and Playwright browser
 COPY tests/requirements.txt tests/requirements.txt

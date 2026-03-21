@@ -18,6 +18,9 @@ gem "github-pages", group: :jekyll_plugins
 
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
+# WEBrick 1.9.x breaks Jekyll 3.x's servlet charset injection; pin to 1.8.x
+gem "webrick", "~> 1.8.0"
+
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   # gem "jekyll-archives"

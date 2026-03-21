@@ -6,8 +6,7 @@ My professional website built with Jekyll on the Academic Pages template. Hosted
 
 ### Prerequisites
 
-- **Docker Desktop** (recommended — no Ruby/Python setup required)
-- *Alternative*: Ruby 3.0+, Python 3.9+, Bundler
+- **Docker Desktop**
 
 ### Run Locally
 
@@ -16,13 +15,6 @@ My professional website built with Jekyll on the Academic Pages template. Hosted
 docker compose up dev
 
 # Visit http://localhost:4000
-```
-
-Without Docker (requires Ruby 3.0+ and Bundler):
-
-```bash
-bundle install
-bundle exec jekyll liveserve
 ```
 
 ## Repository Structure
@@ -100,7 +92,7 @@ bundle exec jekyll liveserve
 │   └── e2e/                   # Browser automation
 │
 ├── Gemfile                      # Ruby dependencies
-├── .ruby-version               # Ruby version (3.0+)
+├── .ruby-version               # Ruby version (3.1)
 ├── package.json                # Node.js (minimal)
 ├── Dockerfile                   # Multi-stage Docker build (dev/build/test)
 ├── docker-compose.yml           # Docker Compose services
@@ -119,31 +111,11 @@ bundle exec jekyll liveserve
 
 ### Build & Commands
 
-#### Docker (recommended)
-
 ```bash
 docker compose up dev                        # Dev server → http://localhost:4000
 docker compose run test                      # Full test suite
 docker compose run test make test-unit       # Fast unit tests only
 ```
-
-#### Native
-
-```bash
-# Install dependencies
-bundle install
-
-# Local development with live reload
-bundle exec jekyll liveserve
-
-# Build static site
-bundle exec jekyll build
-
-# Minify JavaScript
-npm run build:js
-```
-
-**Development server:** <http://localhost:4000>
 
 **Development config:** Use `_config.dev.yml` for local overrides (expanded SCSS, no analytics)
 
@@ -163,8 +135,6 @@ A comprehensive Python-based test suite with 18 test files across 5 categories.
 
 ### Quick Reference
 
-#### Docker (recommended)
-
 ```bash
 docker compose run test                          # All tests
 docker compose run test make test-unit           # ~5-10s — Source validation
@@ -173,23 +143,6 @@ docker compose run test make test-regression     # ~10-15s — Change detection
 docker compose run test make test-acceptance     # ~30-40s — HTTP & accessibility
 docker compose run test make test-e2e            # ~60-90s — Browser automation
 docker compose run test make clean               # Clean cache
-```
-
-#### Native
-
-```bash
-source venv/bin/activate
-cd tests && make test
-
-# By category
-make test-unit           # ~5-10s
-make test-integration    # ~10-15s
-make test-regression     # ~10-15s
-make test-acceptance     # ~30-40s
-make test-e2e            # ~60-90s
-
-# Update regression snapshots
-pytest regression/ --update-snapshots
 ```
 
 ### Test Categories
@@ -221,32 +174,12 @@ See [`tests/README.md`](./tests/README.md) for detailed test documentation.
 
 ## Environment Setup
 
-### Option A: Docker (Recommended)
-
 ```bash
 docker compose up dev    # Dev server
 docker compose run test  # Tests
 ```
 
-No Ruby or Python installation needed.
-
-### Option B: rbenv (macOS/Linux)
-
-```bash
-rbenv install 3.3.10
-echo "3.3.10" > .ruby-version
-bundle install
-```
-
-### Option C: Homebrew (macOS)
-
-```bash
-brew install ruby
-export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
-gem install bundler && bundle install
-```
-
-See [`SETUP.md`](./SETUP.md) for detailed setup instructions.
+No Ruby or Python installation needed. See [`SETUP.md`](./SETUP.md) for details.
 
 ## Deployment
 
@@ -290,8 +223,6 @@ For creating and maintaining content, see the [Scientific Writer Guidelines](./C
 
 ## Troubleshooting
 
-### Docker
-
 **Port 4000 already in use**
 
 ```bash
@@ -304,40 +235,7 @@ lsof -i :4000 && kill -9 <PID>
 docker compose down -v && docker compose build
 ```
 
-### Native — Ruby/Bundler
-
-**"Ruby version >= 3.0 required"**
-
-```bash
-rbenv install 3.3.10 && echo "3.3.10" > .ruby-version
-```
-
-**"Could not find bundler"**
-
-```bash
-rm Gemfile.lock && bundle install
-```
-
-### Native — Python/Tests
-
-**"playwright: browser not installed"**
-
-```bash
-python -m playwright install chromium
-```
-
-**"pytest: command not found"**
-
-```bash
-source venv/bin/activate
-pip install -r tests/requirements.txt
-```
-
-See [`SETUP.md`](./SETUP.md) for additional troubleshooting.
-
 ## Development Workflow
-
-### Docker
 
 ```bash
 # 1. Start development server
@@ -353,24 +251,6 @@ docker compose run test                   # Full suite
 git add .
 git commit -m "Your message"
 git push origin main
-```
-
-### Native
-
-```bash
-# 1. Install dependencies (one-time)
-bundle install
-python3 -m venv venv && source venv/bin/activate
-pip install -r tests/requirements.txt
-
-# 2. Start development server
-bundle exec jekyll liveserve
-
-# 3. Edit content in _pages/, _publications/, etc.
-
-# 4. Run tests before committing
-cd tests && make test-unit    # Fast
-cd tests && make test         # Full suite
 ```
 
 ## Performance

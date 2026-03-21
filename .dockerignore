@@ -1,0 +1,11 @@
+# Python virtual environment — contains host-specific symlinks that break Jekyll
+venv/
+
+# Jekyll build output
+_site/
+
+# Git history (not needed in image)
+.git/
+
+# Node modules
+node_modules/
