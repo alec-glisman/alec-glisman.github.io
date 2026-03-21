@@ -2,7 +2,7 @@
 title: "Swimming in potential flow"
 collection: publications
 permalink: /publication/2022-potential-flow-2
-excerpt: 'The in-plane viscosity and out-of-plane elasticity of lipid membranes leads to a new dimensionless number found to be critical to relaxation dynamics'
+excerpt: 'A deformable body self-propels in potential flow through time-varying configuration changes that alter added mass. Derives the analytic framework showing swimming mechanics are identical between Stokes and potential flow regimes.'
 date: 2022-12-01
 venue: 'JFM Rapids'
 paperurl: 'https://doi.org/10.1017/jfm.2022.946'

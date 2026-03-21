@@ -1,2 +1,41 @@
 _site/
 
+# Cache files
+.cache/
+__pycache__/
+
+# Jekyll build files
+.sass-cache/
+.jekyll-cache/
+
+# OS generated files
+.DS_Store
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Node modules
+node_modules/
+
+# Python virtual environment
+venv/
+.venv/
+
+# Pytest cache and reports
+tests/.pytest_cache/
+tests/__pycache__/
+tests/**/__pycache__/
+tests/report.html
+tests/.coverage
+
+# Test snapshots (regression tests)
+tests/regression/snapshots/
+
+# Playwright cache
+tests/fixtures/
+.playwright/
+
