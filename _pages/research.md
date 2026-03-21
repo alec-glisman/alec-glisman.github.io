@@ -3,10 +3,10 @@ layout: archive
 title: "Research"
 permalink: /research/
 author_profile: true
-excerpt: "Research by Alec Glisman combining physics-based simulation, machine learning, and theoretical mechanics — generative AI for drug discovery, polyelectrolyte complexation, microhydrodynamics, and lipid membrane mechanics."
+excerpt: "Research by Alec Glisman combining physics-based simulation, machine learning, and theoretical mechanics: generative AI for drug discovery, polyelectrolyte complexation, microhydrodynamics, and lipid membrane mechanics."
 ---
 
-Research combining physics-based simulation, machine learning, and theoretical mechanics to understand soft matter systems at molecular and mesoscopic scales, and applying AI/ML to accelerate drug discovery.
+Research applying generative AI and machine learning to drug discovery, spanning molecular design, multi-parameter optimization, and ADMET property prediction. This work is grounded in physics-based simulation, enhanced sampling methods, and theoretical mechanics for soft matter systems at molecular and mesoscopic scales.
 
 ---
 
@@ -14,7 +14,7 @@ Research combining physics-based simulation, machine learning, and theoretical m
 
 ### Generative AI & Molecular Design
 
-Application of generative AI techniques to inverse design of novel small molecules with targeted properties for drug discovery. Transformer and recurrent neural network (RNN) architectures with reinforcement learning (RL) guide the design of synthesizable molecules for structure-based and ligand-based drug design (SBDD/LBDD). Complemented by graph neural network (GNN) and conformer ensemble-based ADMET models with uncertainty quantification to accelerate design-make-test-analyze (DMTA) cycles.
+Identifying drug candidates requires jointly satisfying competing objectives across potency, selectivity, ADMET properties, PK/PD profiles, and synthetic feasibility. Generative models are trained to navigate this multi-parameter optimization (MPO) landscape through two modes suited to different campaign stages: de novo generation samples broad chemical space to identify novel scaffolds, and chemical series-constrained generation performs scaffold-anchored R-group expansion within established medicinal chemistry series to build on accumulated SAR knowledge during lead optimization. Synthesizability is enforced as a hard constraint through reaction template filtering and compatibility screening against commercially available building block catalogs, ensuring generated candidates are tractable to synthesize and shortening design-make-test-analyze (DMTA) cycle times.
 
 </div>
 
@@ -22,7 +22,9 @@ Application of generative AI techniques to inverse design of novel small molecul
 
 ### QSAR Modeling & ADMET Property Prediction
 
-Application of deep learning to predict molecular properties across a broad range of ADMET (absorption, distribution, metabolism, excretion, and toxicity) endpoints. Developed ensemble machine learning models for the OpenADMET blind challenge, using cheminformatics features and graph-based representations to predict drug candidate properties. This work bridges physics-based understanding of molecular structure with data-driven predictive modeling for drug discovery.
+Stacked ensemble models combining graph-based molecular representations with cheminformatics feature sets (extended-connectivity fingerprints, physicochemical descriptors) were developed to predict ADMET endpoints. Curriculum learning was used to incorporate external public datasets, progressively transferring representation quality to the target distribution. Hyperparameter optimization via Optuna and repeated cross-validation with both chemical similarity and temporal splits were applied to produce estimates of generalization performance that are robust to distribution shift. Evaluated in the [OpenADMET-ExpansionRx Blind Challenge](https://huggingface.co/spaces/openadmet/OpenADMET-ExpansionRx-Challenge), the approach was assessed on fully held-out compound libraries spanning structurally diverse chemical space, achieving 18th place out of over 400 submissions across 9 ADMET endpoints.
+
+**Leaderboard:** [OpenADMET-ExpansionRx Challenge](https://huggingface.co/spaces/openadmet/OpenADMET-ExpansionRx-Challenge) · **Code:** [OpenADMET-ExpansionRx-Blind-Challenge](https://github.com/alec-glisman/OpenADMET-ExpansionRx-Blind-Challenge)
 
 </div>
 
@@ -42,13 +44,15 @@ Calculated adsorption isotherms and free-energy landscapes for Ca²⁺ binding o
 
 Applied deep learning and unsupervised learning methods to determine structure-property relationships in aqueous polyelectrolyte systems. Developed workflows combining enhanced sampling molecular dynamics with unsupervised clustering and dimensionality reduction to identify dominant polymer conformations and their thermodynamic stability. Used denoising diffusion probabilistic models (DDPMs) to generate polymer conformational ensembles consistent with Boltzmann distributions, providing a generative complement to physics-based simulation for polymer design.
 
+**Code:** [DDPM-Enhanced-Sampling](https://github.com/alec-glisman/DDPM-Enhanced-Sampling)
+
 </div>
 
 <div class="research-card reveal" style="transition-delay: 0.2s" markdown="1">
 
 ### Microhydrodynamics & Active Matter
 
-Derived an analytical framework for self-propulsion in potential flow, demonstrating that at high Reynolds number a deformable body can achieve net displacement over a deformation cycle by exploiting the dependence of added mass on instantaneous body configuration — without doing net work on the fluid. Developed C++/CUDA multi-threaded boundary integral simulations for many-particle hydrodynamic interactions in Stokes flow. Demonstrated how purely mechanical coupling drives collective emergent structures in active particle systems.
+Derived an analytical framework for self-propulsion in potential flow, showing that at high Reynolds number a deformable body achieves net displacement over a deformation cycle by exploiting the body-configuration dependence of added mass, without requiring net work on the fluid. Developed C++/CUDA multi-threaded boundary integral simulations for many-particle hydrodynamic interactions in Stokes flow. Showed that purely mechanical hydrodynamic coupling produces collective ordering in active particle suspensions.
 
 **Key paper:** [J. Fluid Mechanics 2022](/publications/2022-potential-flow-2)
 
@@ -58,7 +62,7 @@ Derived an analytical framework for self-propulsion in potential flow, demonstra
 
 ### Lipid Membrane Mechanics
 
-Introduced the Scriven-Love number — a dimensionless ratio quantifying when intramembrane viscous stresses significantly affect membrane relaxation dynamics relative to elastic bending forces. Developed continuum theory coupling in-plane viscous flow to out-of-plane elastic bending using differential geometry and linear irreversible thermodynamics. Demonstrated that the Scriven-Love number takes non-negligible values across physiologically relevant biological processes, showing that in-plane viscous forces cannot generally be neglected in lipid membrane analysis.
+Introduced the Scriven-Love number, a dimensionless ratio quantifying when intramembrane viscous stresses affect membrane relaxation dynamics relative to elastic bending forces. Developed continuum theory coupling in-plane viscous flow to out-of-plane elastic bending using differential geometry and linear irreversible thermodynamics. Established that the Scriven-Love number takes non-negligible values across physiologically relevant biological processes, indicating that in-plane viscous forces are a necessary consideration in lipid membrane analysis.
 
 **Key paper:** [Physical Review E 2020](/publications/2020-scriven-love-1)
 
