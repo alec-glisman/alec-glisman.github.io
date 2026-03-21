@@ -90,7 +90,7 @@ class TestAuthorsData:
             data = yaml.safe_load(f)
 
         author = data["Me"]
-        required_fields = ["name", "uri", "bio", "email"]
+        required_fields = ["name", "uri", "bio"]  # email intentionally removed for privacy
         for field in required_fields:
             assert field in author, f"Author 'Me' missing field: {field}"
             assert author[field], f"Author 'Me' has empty {field}"
