@@ -6,28 +6,23 @@ My professional website built with Jekyll on the Academic Pages template. Hosted
 
 ### Prerequisites
 
-- **Ruby 3.0+** (required for `github-pages` gem)
-- **Bundler** (Ruby gem manager)
-- **Python 3.9+** (for test suite)
+- **Docker Desktop** (recommended — no Ruby/Python setup required)
+- *Alternative*: Ruby 3.0+, Python 3.9+, Bundler
 
 ### Run Locally
 
 ```bash
-# Install Ruby dependencies
-bundle install
-
-# Create Python virtual environment
-python3 -m venv venv
-source venv/bin/activate
-
-# Install test dependencies
-pip install -r tests/requirements.txt
-playwright install chromium
-
 # Start development server with live reload
-bundle exec jekyll liveserve
+docker compose up dev
 
 # Visit http://localhost:4000
+```
+
+Without Docker (requires Ruby 3.0+ and Bundler):
+
+```bash
+bundle install
+bundle exec jekyll liveserve
 ```
 
 ## Repository Structure
@@ -107,6 +102,8 @@ bundle exec jekyll liveserve
 ├── Gemfile                      # Ruby dependencies
 ├── .ruby-version               # Ruby version (3.0+)
 ├── package.json                # Node.js (minimal)
+├── Dockerfile                   # Multi-stage Docker build (dev/build/test)
+├── docker-compose.yml           # Docker Compose services
 │
 └── CLAUDE.md                    # Project guidance
 ```
@@ -122,11 +119,21 @@ bundle exec jekyll liveserve
 
 ### Build & Commands
 
+#### Docker (recommended)
+
+```bash
+docker compose up dev                        # Dev server → http://localhost:4000
+docker compose run test                      # Full test suite
+docker compose run test make test-unit       # Fast unit tests only
+```
+
+#### Native
+
 ```bash
 # Install dependencies
 bundle install
 
-# Local development with live reload (recommended)
+# Local development with live reload
 bundle exec jekyll liveserve
 
 # Build static site
@@ -134,9 +141,6 @@ bundle exec jekyll build
 
 # Minify JavaScript
 npm run build:js
-
-# Watch JS for changes
-npm run watch:js
 ```
 
 **Development server:** <http://localhost:4000>
@@ -159,28 +163,33 @@ A comprehensive Python-based test suite with 18 test files across 5 categories.
 
 ### Quick Reference
 
-```bash
-# Activate virtual environment
-source venv/bin/activate
+#### Docker (recommended)
 
-# Run all tests
+```bash
+docker compose run test                          # All tests
+docker compose run test make test-unit           # ~5-10s — Source validation
+docker compose run test make test-integration    # ~10-15s — HTML parsing
+docker compose run test make test-regression     # ~10-15s — Change detection
+docker compose run test make test-acceptance     # ~30-40s — HTTP & accessibility
+docker compose run test make test-e2e            # ~60-90s — Browser automation
+docker compose run test make clean               # Clean cache
+```
+
+#### Native
+
+```bash
+source venv/bin/activate
 cd tests && make test
 
-# Run by category (fast to slow)
-make test-unit           # ~5-10s — Source validation only
-make test-integration    # ~10-15s — HTML parsing
-make test-regression     # ~10-15s — Change detection
-make test-acceptance     # ~30-40s — HTTP & accessibility
-make test-e2e           # ~60-90s — Browser automation
-
-# Run specific test
-pytest unit/test_build.py -v
+# By category
+make test-unit           # ~5-10s
+make test-integration    # ~10-15s
+make test-regression     # ~10-15s
+make test-acceptance     # ~30-40s
+make test-e2e            # ~60-90s
 
 # Update regression snapshots
 pytest regression/ --update-snapshots
-
-# Clean cache
-make clean
 ```
 
 ### Test Categories
@@ -212,43 +221,29 @@ See [`tests/README.md`](./tests/README.md) for detailed test documentation.
 
 ## Environment Setup
 
-### Option A: Using rbenv (Recommended)
+### Option A: Docker (Recommended)
 
 ```bash
-# Install Ruby 3.3.10
+docker compose up dev    # Dev server
+docker compose run test  # Tests
+```
+
+No Ruby or Python installation needed.
+
+### Option B: rbenv (macOS/Linux)
+
+```bash
 rbenv install 3.3.10
-
-# Set local Ruby version
 echo "3.3.10" > .ruby-version
-
-# Install Bundler and gems
 bundle install
 ```
 
-### Option B: Using Homebrew
+### Option C: Homebrew (macOS)
 
 ```bash
-# Install Ruby
 brew install ruby
-
-# Update PATH (add to ~/.zshrc or ~/.bash_profile)
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
-
-# Install Bundler
-gem install bundler
-
-# Install gems
-bundle install
-```
-
-### Option C: Using Docker
-
-```bash
-# Build and run
-docker build -t site .
-docker run -it -p 4000:4000 -v $(pwd):/site site
-
-# Visit http://localhost:4000
+gem install bundler && bundle install
 ```
 
 See [`SETUP.md`](./SETUP.md) for detailed setup instructions.
@@ -295,7 +290,21 @@ For creating and maintaining content, see the [Scientific Writer Guidelines](./C
 
 ## Troubleshooting
 
-### Ruby/Bundler
+### Docker
+
+**Port 4000 already in use**
+
+```bash
+lsof -i :4000 && kill -9 <PID>
+```
+
+**Gems stale after Gemfile change**
+
+```bash
+docker compose down -v && docker compose build
+```
+
+### Native — Ruby/Bundler
 
 **"Ruby version >= 3.0 required"**
 
@@ -309,7 +318,7 @@ rbenv install 3.3.10 && echo "3.3.10" > .ruby-version
 rm Gemfile.lock && bundle install
 ```
 
-### Python/Tests
+### Native — Python/Tests
 
 **"playwright: browser not installed"**
 
@@ -320,7 +329,7 @@ python -m playwright install chromium
 **"pytest: command not found"**
 
 ```bash
-source venv/bin/activate  # Ensure venv is activated
+source venv/bin/activate
 pip install -r tests/requirements.txt
 ```
 
@@ -328,11 +337,30 @@ See [`SETUP.md`](./SETUP.md) for additional troubleshooting.
 
 ## Development Workflow
 
+### Docker
+
+```bash
+# 1. Start development server
+docker compose up dev
+
+# 2. Edit content in _pages/, _publications/, etc.
+
+# 3. Run tests before committing
+docker compose run test make test-unit    # Fast
+docker compose run test                   # Full suite
+
+# 4. Commit and push to main
+git add .
+git commit -m "Your message"
+git push origin main
+```
+
+### Native
+
 ```bash
 # 1. Install dependencies (one-time)
 bundle install
-python3 -m venv venv
-source venv/bin/activate
+python3 -m venv venv && source venv/bin/activate
 pip install -r tests/requirements.txt
 
 # 2. Start development server
@@ -343,11 +371,6 @@ bundle exec jekyll liveserve
 # 4. Run tests before committing
 cd tests && make test-unit    # Fast
 cd tests && make test         # Full suite
-
-# 5. Commit and push to main
-git add .
-git commit -m "Your message"
-git push origin main
 ```
 
 ## Performance

@@ -39,3 +39,6 @@ tests/regression/snapshots/
 tests/fixtures/
 .playwright/
 
+# Docker
+.docker/
+

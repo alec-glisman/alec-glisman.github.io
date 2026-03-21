@@ -10,19 +10,24 @@ Academic personal website for Alec Glisman, built with Jekyll on the Academic Pa
 
 ### Requirements
 
-- **Ruby 3.0+** (system Ruby 2.6 is too old for `github-pages` gem)
-- **Python 3.9+** (for test suite)
-- **Bundler** (Ruby gem manager)
+- **Docker Desktop** (recommended — no Ruby/Python setup required)
+- *Alternative*: Ruby 3.0+, Python 3.9+, Bundler (see `SETUP.md`)
 
 ### Installation
 
-See [`SETUP.md`](./SETUP.md) for detailed setup instructions including:
-- Installing Ruby via rbenv (recommended) or Homebrew
-- Setting up virtual environment
-- Installing test dependencies
-- Building the site
+See [`SETUP.md`](./SETUP.md) for detailed setup instructions.
 
-Quick start (assumes Ruby 3.0+ and Bundler already installed):
+Quick start with Docker (recommended):
+
+```bash
+# Start development server (http://localhost:4000)
+docker compose up dev
+
+# Run test suite
+docker compose run test
+```
+
+Quick start without Docker (requires Ruby 3.0+ and Bundler):
 
 ```bash
 # Install Ruby dependencies
@@ -38,6 +43,21 @@ playwright install chromium
 ```
 
 ## Build & Development Commands
+
+### Docker (recommended)
+
+```bash
+# Start dev server with live reload
+docker compose up dev
+
+# Run all tests
+docker compose run test
+
+# Run fast unit tests only
+docker compose run test make test-unit
+```
+
+### Native
 
 ```bash
 # Install dependencies
@@ -165,39 +185,41 @@ A comprehensive Python test suite with 18 test files covering 5 categories:
 
 ### Running Tests
 
+#### Docker (recommended)
+
 ```bash
-# Activate virtual environment first
+docker compose run test                          # All tests
+docker compose run test make test-unit           # Fast unit tests only
+docker compose run test make test-integration    # HTML parsing
+docker compose run test make test-acceptance     # HTTP server + accessibility
+docker compose run test make test-regression     # Snapshots and CSS
+docker compose run test make test-e2e            # Browser automation
+docker compose run test make clean               # Clean cache
+```
+
+#### Native
+
+```bash
 source venv/bin/activate
 cd tests
 
-# All tests
-make test
-
-# By category
+make test                    # All tests
 make test-unit               # Fast unit tests only
 make test-integration        # HTML parsing
 make test-acceptance         # HTTP server + accessibility
 make test-regression         # Snapshots and CSS
 make test-e2e                # Browser automation
 
-# Specific tests
 pytest unit/test_build.py -v
 pytest -k "navigation" -v
-
-# Update regression snapshots (first run)
-pytest regression/ --update-snapshots
-
-# Clean cache
+pytest regression/ --update-snapshots  # Update snapshots
 make clean
 ```
 
 ### Test Requirements
 
-- **Python 3.9+** with virtual environment
-- **Playwright** bundles its own Chromium (no Node.js required)
-- **Beautiful Soup** for HTML parsing
-- **pytest** as test framework
-- **Jekyll** must be buildable (requires Ruby 3.0+ and `bundle install`)
+- **Docker** (recommended — all dependencies bundled)
+- *Native*: Python 3.9+, Playwright Chromium, pytest, Jekyll (Ruby 3.0+)
 
 See [`tests/README.md`](./tests/README.md) for full test documentation.
 

@@ -1,245 +1,209 @@
 # Setup Guide: Building and Testing the Site
 
-This guide covers how to set up the development environment for building and testing the Jekyll site.
+This guide covers how to set up the development environment for the Jekyll site.
 
 ## Prerequisites
 
-- **Ruby 3.0+** (system Ruby 2.6 is too old for `github-pages` gem)
-- **Bundler** (gem dependency manager)
-- **Python 3.9+** (for test suite)
-- **Node.js** (optional, only needed for JS minification - currently not in use)
+- **Docker Desktop** (recommended — handles all Ruby/Python dependencies automatically)
+- *Alternative*: Ruby 3.0+, Python 3.9+, Bundler (see native options below)
 
-## Option A: Using rbenv (Recommended)
+---
 
-If you have [rbenv](https://github.com/rbenv/rbenv) installed:
+## Option A: Docker (Recommended)
+
+No Ruby, Python, or system gem configuration required — Docker handles everything.
+
+### 1. Install Docker Desktop
+
+Download from <https://www.docker.com/products/docker-desktop/> and start it.
+
+### 2. Start the development server
 
 ```bash
-# Install Ruby 3.3.10 (or any version >= 3.0)
-rbenv install 3.3.10
+docker compose up dev
+```
 
-# Set local Ruby version for this project
+Visit <http://localhost:4000>. The site auto-reloads when source files change (LiveReload on port 35729).
+
+### 3. Run the test suite
+
+```bash
+# Full test suite
+docker compose run test
+
+# Specific test category
+docker compose run test make test-unit
+docker compose run test make test-integration
+docker compose run test make test-acceptance
+docker compose run test make test-regression
+docker compose run test make test-e2e
+```
+
+### 4. Build the static site only
+
+```bash
+docker compose build build
+```
+
+The compiled site lands in `_site/` inside the container. To extract it:
+
+```bash
+docker compose run --rm build sh -c "bundle exec jekyll build"
+```
+
+### Docker image targets
+
+| Target  | Purpose                                     |
+|---------|---------------------------------------------|
+| `dev`   | Live-reload development server (port 4000)  |
+| `build` | One-shot static site compilation            |
+| `test`  | Full test suite (Python + Playwright)       |
+
+### Rebuilding after Gemfile changes
+
+```bash
+docker compose build
+```
+
+---
+
+## Option B: Native — rbenv (macOS/Linux)
+
+```bash
+# Install Ruby 3.3.10
+rbenv install 3.3.10
 echo "3.3.10" > .ruby-version
 
-# Install Bundler and gems
+# Install gems
 bundle install
 
 # Build the site
 bundle exec jekyll build
 
-# Run with live reload (port 4000)
+# Serve with live reload
 bundle exec jekyll liveserve
 ```
 
-## Option B: Using Homebrew
-
-If you prefer to install Ruby globally via Homebrew:
+### Test suite (native)
 
 ```bash
-# Install latest Ruby
-brew install ruby
-
-# Update PATH to use Homebrew ruby (add to ~/.zshrc or ~/.bash_profile)
-export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
-
-# Verify Ruby version
-ruby --version  # Should be 3.0 or higher
-
-# Install Bundler
-gem install bundler
-
-# Install site dependencies
-bundle install
-
-# Build
-bundle exec jekyll build
-```
-
-## Option C: Using Docker (Advanced)
-
-If you have Docker installed:
-
-```dockerfile
-FROM ruby:3.3-slim
-WORKDIR /site
-COPY Gemfile Gemfile.lock ./
-RUN bundle install
-COPY . .
-RUN bundle exec jekyll build
-EXPOSE 4000
-CMD ["bundle", "exec", "jekyll", "liveserve", "--host", "0.0.0.0"]
-```
-
-Build and run:
-```bash
-docker build -t site .
-docker run -it -p 4000:4000 -v $(pwd):/site site
-# Visit http://localhost:4000
-```
-
-## Setting Up the Test Suite
-
-After installing Ruby and building the site:
-
-```bash
-# 1. Create Python virtual environment
+# Create and activate virtual environment
 python3 -m venv venv
+source venv/bin/activate
 
-# 2. Activate virtual environment
-source venv/bin/activate  # macOS/Linux
-# or
-venv\Scripts\activate     # Windows
-
-# 3. Install test dependencies
+# Install dependencies and Playwright browser
 cd tests
 pip install -r requirements.txt
-
-# 4. Install Playwright browsers
 playwright install chromium
 
-# 5. Run tests
-pytest              # All tests
-pytest unit/        # Unit tests only (fast)
-pytest -v -m unit   # Verbose unit tests
+# Run tests
+make test        # All tests
+make test-unit   # Fast unit tests only
 ```
 
-## Running Tests
+---
 
-### All Tests
+## Option C: Native — Homebrew (macOS)
+
 ```bash
-cd tests
-source ../venv/bin/activate  # Activate venv
-make test           # All tests
+brew install ruby
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+gem install bundler
+bundle install
+bundle exec jekyll liveserve
 ```
 
-### Fast Unit Tests Only (5-10 seconds)
+---
+
+## Verifying Installation
+
 ```bash
-make test-unit
+# Ruby + Jekyll
+ruby --version            # >= 3.0.0
+bundle exec jekyll build  # Creates _site/
+
+# Python test suite (native only)
+source venv/bin/activate
+pytest --version
+pytest unit/test_build.py::TestBuildProcess::test_site_builds_without_errors -v
 ```
 
-### Integration Tests (requires HTTP server, 10-15 seconds)
-```bash
-make test-integration
-```
-
-### Full Test Suite
-```bash
-make test           # All categories (2-3 minutes total)
-```
-
-### Generate Test Report
-```bash
-pytest --html=report.html --self-contained-html
-```
+---
 
 ## Troubleshooting
 
-### "You don't have write permissions for the /Library/Ruby/Gems/"
-
-This means you're trying to use the system Ruby with `sudo gem install`. Don't use `sudo`. Instead, use rbenv or Homebrew Ruby installation.
-
-### "Ruby version >= 3.0 required"
-
-The `github-pages` gem only works with Ruby 3.0 or newer. Install a newer Ruby:
+### Docker: port 4000 already in use
 
 ```bash
-# Using rbenv
-rbenv install 3.3.10
-echo "3.3.10" > .ruby-version
-
-# Using Homebrew
-brew install ruby  # Will install latest
+# Find and stop the conflicting process
+lsof -i :4000
+kill -9 <PID>
 ```
 
-### "Could not find 'bundler' (X.X.X)"
-
-Remove the old Gemfile.lock and regenerate it:
+### Docker: gem/bundle cache stale after Gemfile change
 
 ```bash
-rm Gemfile.lock
-bundle install
+docker compose down -v   # Remove the bundle_cache volume
+docker compose build
 ```
 
-### Playwright Installation Fails
+### Native: "You don't have write permissions for /Library/Ruby/Gems/"
 
-If `playwright install chromium` fails, try:
+Use rbenv or Homebrew Ruby — never `sudo gem install`.
+
+### Native: "Ruby version >= 3.0 required"
+
+```bash
+rbenv install 3.3.10 && echo "3.3.10" > .ruby-version
+# or
+brew install ruby
+```
+
+### Native: "Could not find 'bundler'"
+
+```bash
+rm Gemfile.lock && bundle install
+```
+
+### Native: Playwright install fails
 
 ```bash
 pip install --upgrade playwright
 python -m playwright install chromium
 ```
 
-### Jekyll Build Hangs
-
-If `bundle exec jekyll build` hangs, interrupt it (Ctrl+C) and try with verbose output:
+### Jekyll build hangs
 
 ```bash
 bundle exec jekyll build --verbose
 ```
 
-## Verifying Installation
-
-```bash
-# Check Ruby version
-ruby --version         # Should be >= 3.0.0
-
-# Check Bundle is installed
-bundle --version      # Should be version
-
-# Test site build
-bundle exec jekyll build
-# Should create _site/ directory
-
-# Check Python test suite
-source venv/bin/activate
-pytest --version       # Should show pytest version
-pytest unit/test_build.py::TestBuildProcess::test_site_builds_without_errors -v
-# Should PASS if _site/ exists
-```
+---
 
 ## Development Workflow
 
 ```bash
-# 1. Start with venv activated
+# Docker (recommended)
+docker compose up dev        # Start server
+docker compose run test make test-unit  # Quick tests
+
+# Native
 source venv/bin/activate
-
-# 2. Make changes to site source files
-
-# 3. Rebuild if needed
-bundle exec jekyll build
-
-# 4. Or use live reload
-bundle exec jekyll liveserve
-# Visit http://localhost:4000
-
-# 5. Run tests to verify
-cd tests && make test-unit
+bundle exec jekyll liveserve # http://localhost:4000
+cd tests && make test-unit   # Quick tests
+cd tests && make test        # Full suite before committing
 ```
 
-## Quick Commands
+---
 
-```bash
-# Build site
-bundle exec jekyll build
+## Quick Reference
 
-# Serve with live reload
-bundle exec jekyll liveserve
-
-# Run unit tests only
-source venv/bin/activate && cd tests && make test-unit
-
-# Run all tests
-source venv/bin/activate && cd tests && make test
-
-# Clean test cache
-cd tests && make clean
-```
-
-## Next Steps
-
-1. Install Ruby 3.0+ using rbenv or Homebrew
-2. Run `bundle install` to install gem dependencies
-3. Run `bundle exec jekyll build` to build the site
-4. Follow "Setting Up the Test Suite" above
-5. Run `cd tests && make test-unit` to verify
+| Task                    | Docker                                         | Native                                      |
+|-------------------------|------------------------------------------------|---------------------------------------------|
+| Start dev server        | `docker compose up dev`                        | `bundle exec jekyll liveserve`              |
+| Build static site       | `docker compose run --rm build bundle exec jekyll build` | `bundle exec jekyll build`       |
+| Run all tests           | `docker compose run test`                      | `cd tests && make test`                     |
+| Run unit tests          | `docker compose run test make test-unit`       | `cd tests && make test-unit`                |
+| Clean test cache        | `docker compose run test make clean`           | `cd tests && make clean`                    |
 
 For more details on the test suite, see [`tests/README.md`](tests/README.md).

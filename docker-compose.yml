@@ -1,0 +1,33 @@
+services:
+  # Local development with live reload
+  dev:
+    build:
+      context: .
+      target: dev
+    ports:
+      - "4000:4000"   # Jekyll server
+      - "35729:35729" # LiveReload WebSocket
+    volumes:
+      # Mount source so changes rebuild automatically
+      - .:/site
+      # Keep gems inside the container (don't overwrite with host)
+      - bundle_cache:/usr/local/bundle
+    environment:
+      - JEKYLL_ENV=development
+
+  # Run the full test suite (build + Python/Playwright tests)
+  test:
+    build:
+      context: .
+      target: test
+    volumes:
+      - .:/site
+      - bundle_cache:/usr/local/bundle
+    environment:
+      - JEKYLL_ENV=test
+    # Override to run a specific test category, e.g.:
+    #   docker compose run test make test-unit
+    command: make test
+
+volumes:
+  bundle_cache:
