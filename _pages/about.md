@@ -10,7 +10,7 @@ redirect_from:
 
 <div class="reveal hero-intro" markdown="1">
 
-I am a **Senior AI/ML Scientist at Merck & Co.**, where I develop generative AI tools to help design small molecules that are both therapeutically effective and practically synthesizable, shortening the gap between computational design and the lab bench. I completed my PhD in Chemical Engineering at Caltech in 2024 under [Prof. Zhen-Gang Wang](http://zgwlab.che.caltech.edu/), where my research centered on the molecular physics of polyelectrolyte complexation and its applications to water remediation d. Earlier, I worked in [Prof. John F. Brady's](https://cheme.caltech.edu/groups/jfb/index.html) group studying self-propulsion in active matter systems. I received my B.S. in Chemical Engineering from UC Berkeley in 2019, where I worked with [Prof. Kranthi K. Mandadapu](https://mandadapu-group.github.io/) on the mechanics of lipid membranes.
+I am a **Senior AI/ML Scientist at Merck & Co.**, where I develop generative AI tools to help design small molecules that are both therapeutically effective and practically synthesizable, shortening the gap between computational design and the lab bench. I completed my PhD in Chemical Engineering at Caltech in 2024 under [Prof. Zhen-Gang Wang](http://zgwlab.che.caltech.edu/), where my research centered on the molecular physics of polyelectrolyte complexation and its applications to water remediation. Earlier, I worked in [Prof. John F. Brady's](https://cheme.caltech.edu/groups/jfb/index.html) group studying self-propulsion in active matter systems. I received my B.S. in Chemical Engineering from UC Berkeley in 2019, where I worked with [Prof. Kranthi K. Mandadapu](https://mandadapu-group.github.io/) on the mechanics of lipid membranes.
 
 </div>
 

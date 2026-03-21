@@ -19,7 +19,7 @@ Atomistic simulation of poly(acrylic acid) adsorption on calcite surfaces. Chara
 
 **Authors:** Alec Glisman, Sriteja Mantha, Decai Yu, Eric Wasserman, Scott Backer, Larisa Reyes, Zhen-Gang Wang
 
-[DOI](https://doi.org/10.1021/acs.langmuir.4c03301) · [PDF](/files/langmuir_2025_binding.pdf)
+[DOI](https://doi.org/10.1021/acs.langmuir.4c03301)
 
 </div>
 
@@ -32,7 +32,7 @@ Multiscale simulation reveals how divalent Ca²⁺ ions drive polyelectrolyte ch
 
 **Authors:** Alec Glisman, Sriteja Mantha, Decai Yu, Eric Wasserman, Scott Backer, Zhen-Gang Wang
 
-[DOI](https://doi.org/10.1021/acs.macromol.3c02103) · [PDF](/files/macromolecules_2024.pdf)
+[DOI](https://doi.org/10.1021/acs.macromol.3c02103)
 
 </div>
 
@@ -45,7 +45,7 @@ Quantifies Ca²⁺ adsorption isotherms on poly(acrylic acid) using enhanced-sam
 
 **Authors:** Alec Glisman, Sriteja Mantha, Decai Yu, Eric Wasserman, Scott Backer, Zhen-Gang Wang
 
-[DOI](https://doi.org/10.1021/acs.langmuir.3c03812) · [PDF](/files/langmuir_2024_adsorption.pdf)
+[DOI](https://doi.org/10.1021/acs.langmuir.3c03812)
 
 </div>
 

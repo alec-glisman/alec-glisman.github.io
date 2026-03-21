@@ -42,3 +42,8 @@ tests/fixtures/
 # Docker
 .docker/
 
+# Personal notes and Claude Code tooling
+FIXME.md
+FIXME_2
+docs/
+
