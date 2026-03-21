@@ -20,13 +20,21 @@ My doctoral work spanned three interconnected themes in soft matter physics and 
 
 <div class="research-card reveal" style="transition-delay: 0.05s" markdown="1">
 
+### Generative AI, Molecular Design & QSAR Modeling
+
+Small molecule generative models navigate multi-parameter optimization across potency, ADMET, or PK/PD properties. Synthesizability is enforced as a hard constraint through reaction template filtering and compatibility screening against commercially available building block catalogs, ensuring generated candidates are tractable to synthesize. Ensemble QSAR models combining graph representations with cheminformatics fingerprints achieved 18th place out of 400+ submissions in the [OpenADMET-ExpansionRx Blind Challenge](https://huggingface.co/spaces/openadmet/OpenADMET-ExpansionRx-Challenge).
+
+</div>
+
+<div class="research-card reveal" style="transition-delay: 0.1s" markdown="1">
+
 ### Polyelectrolyte Simulations & Ion Binding
 
 Molecular dynamics and enhanced sampling simulation of polyelectrolyte complexation, Ca²⁺ adsorption isotherms, and precipitation mechanisms in aqueous solution. Applied unsupervised deep learning to elucidate phase diagrams and discover key structure-property relationships. Industry collaboration with Dow Chemical on water treatment polymer additives.
 
 </div>
 
-<div class="research-card reveal" style="transition-delay: 0.1s" markdown="1">
+<div class="research-card reveal" style="transition-delay: 0.15s" markdown="1">
 
 ### Microhydrodynamics & Active Matter
 
@@ -34,21 +42,11 @@ Theoretical and computational study of self-propulsion in potential flow, bounda
 
 </div>
 
-<div class="research-card reveal" style="transition-delay: 0.15s" markdown="1">
+<div class="research-card reveal" style="transition-delay: 0.2s" markdown="1">
 
 ### Lipid Membrane Mechanics
 
 Continuum mechanics of curved lipid bilayers using differential geometry and balance-law formulations. Introduced the [Scriven-Love number](/publications/2020-scriven-love-1), a dimensionless ratio comparing in-plane viscous forces to elastic bending forces in membrane dynamics.
-
-</div>
-
-<div class="research-card reveal" style="transition-delay: 0.2s" markdown="1">
-
-### Generative AI, Molecular Design & QSAR Modeling
-
-**Generative molecular design.** Drug design is formulated as a multi-parameter optimization (MPO) problem over a joint chemical-property space, simultaneously targeting PK/PD profiles, ADMET endpoints, potency, and aqueous solubility. Two generation modes cover distinct campaign stages: de novo generation samples broad chemical space to identify novel scaffolds, and chemical series-constrained generation performs scaffold-anchored R-group elaboration and analog enumeration within established medicinal chemistry series, retaining prior SAR knowledge and supporting lead optimization. SMILES-based recurrent neural network (RNN) and Transformer generative models are iteratively fine-tuned via reinforcement learning (RL) against an ensemble of in silico QSAR scoring functions to produce candidates with high predicted probability of success across all optimization criteria. Graph neural network (GNN) architectures operating on molecular graphs complement SMILES-based generators by capturing non-local structural features that improve sample diversity and property coverage. Synthetic accessibility is enforced through reaction template filtering and compatibility constraints against commercially available building block catalogs, reducing the time between in silico design and practical synthesis within design-make-test-analyze (DMTA) cycles.
-
-**QSAR modeling and property prediction.** In the [OpenADMET-ExpansionRx Blind Challenge](https://huggingface.co/spaces/openadmet/OpenADMET-ExpansionRx-Challenge), stacked ensemble models combining graph-based molecular representations with cheminformatics feature sets (extended-connectivity fingerprints, physicochemical descriptors) were developed to predict ADMET endpoints on fully held-out compound libraries. The approach achieved **[rank X] on the public leaderboard** [*please fill in rank/score*], demonstrating generalization across structurally diverse chemical space.
 
 </div>
 
