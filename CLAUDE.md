@@ -27,7 +27,7 @@ npm run watch:js
 
 Development server runs at `http://localhost:4000`. Use `_config.dev.yml` for local overrides (expanded SCSS, no analytics).
 
-GitHub Pages automatically builds and deploys on push to `master`.
+GitHub Pages automatically builds and deploys on push to `main`.
 
 ## Architecture
 
@@ -48,3 +48,7 @@ GitHub Pages automatically builds and deploys on push to `master`.
 - Plugins: jekyll-paginate, jekyll-sitemap, jekyll-gist, jekyll-feed, jekyll-redirect-from
 - No CI/CD pipelines — relies entirely on GitHub Pages built-in Jekyll compilation
 - VS Code workspace includes cSpell dictionary for academic/research terminology
+
+## Additional Configuration
+
+@CLAUDE.scientific-writer.md
