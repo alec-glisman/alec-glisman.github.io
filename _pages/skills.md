@@ -3,6 +3,7 @@ layout: single
 title: "Skills"
 permalink: /skills/
 author_profile: true
+excerpt: "Technical skills of Alec Glisman — ML/AI, cheminformatics, molecular simulation, programming languages, and DevOps."
 ---
 
 <div class="skill-group reveal">

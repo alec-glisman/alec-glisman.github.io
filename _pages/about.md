@@ -8,39 +8,41 @@ redirect_from:
   - /about.html
 ---
 
-<div class="reveal">
+<div class="reveal" markdown="1">
 
 I am a **Senior ML Scientist at Merck & Co.**, working at the intersection of generative AI and molecular design for drug discovery. I completed my PhD in Chemical Engineering at Caltech in 2024 under [Prof. Zhen-Gang Wang](https://cheme.caltech.edu/people/zhen-gang-wang), and previously worked in [Prof. John F. Brady's](https://cheme.caltech.edu/people/john-f-brady) group. I received my B.S. in Chemical Engineering with Highest Honors from UC Berkeley in 2019.
 
 </div>
 
-<div class="reveal" style="transition-delay: 0.1s">
-
 ## Research Background
 
 My doctoral work spanned three interconnected themes in soft matter physics and computational chemistry:
 
-<div class="research-card">
+<div class="research-card reveal" style="transition-delay: 0.05s" markdown="1">
+
 ### Polyelectrolyte Simulations & Ion Binding
 
 Molecular dynamics and enhanced sampling simulation of polyelectrolyte complexation, Ca²⁺ adsorption isotherms, and precipitation mechanisms in aqueous solution. Industry collaboration with Dow Chemical on water treatment polymer additives.
+
 </div>
 
-<div class="research-card">
+<div class="research-card reveal" style="transition-delay: 0.1s" markdown="1">
+
 ### Microhydrodynamics & Active Matter
 
 Theoretical and computational study of self-propulsion in potential flow, boundary integral methods for many-body Stokes flow, and emergent collective behaviors in active particle systems.
+
 </div>
 
-<div class="research-card">
+<div class="research-card reveal" style="transition-delay: 0.15s" markdown="1">
+
 ### Lipid Membrane Mechanics
 
-Continuum mechanics of curved lipid bilayers using differential geometry and balance-law formulations. Introduced the [Scriven-Love number](/publication/2020-scriven-love-1) — a dimensionless ratio comparing in-plane viscous forces to elastic bending forces in membrane dynamics.
-</div>
+Continuum mechanics of curved lipid bilayers using differential geometry and balance-law formulations. Introduced the [Scriven-Love number](/publications/2020-scriven-love-1) — a dimensionless ratio comparing in-plane viscous forces to elastic bending forces in membrane dynamics.
 
 </div>
 
-<div class="reveal" style="transition-delay: 0.2s">
+<div class="reveal" style="transition-delay: 0.2s" markdown="1">
 
 ## Education
 
@@ -55,7 +57,7 @@ Continuum mechanics of curved lipid bilayers using differential geometry and bal
 
 </div>
 
-<div class="reveal" style="transition-delay: 0.3s">
+<div class="reveal" style="transition-delay: 0.3s" markdown="1">
 
 <a href="/publications/" class="btn--primary-cta">Publications</a>
 <a href="/experience/" class="btn--outline-cta">Experience</a>

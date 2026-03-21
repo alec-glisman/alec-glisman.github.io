@@ -6,12 +6,12 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale: "en-US"
+locale: "en"
 title: "Alec Glisman | ML Scientist & Computational Chemist"
 title_separator: "-"
 name: &name "Alec Glisman"
 description: &description "Senior ML Scientist at Merck & Co. | PhD Chemical Engineering, Caltech 2024"
-url: https://alec-glisman.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url: https://alec-glisman.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: "" # the subpath of your site, e.g. "/blog"
 repository: "alec-glisman/alec-glisman.github.io"
 teaser: # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -144,6 +144,17 @@ exclude:
   - tmp
   - vendor
   - venv
+  - CLAUDE.md
+  - CLAUDE.scientific-writer.md
+  - DESIGN_OVERVIEW.md
+  - IMPLEMENTATION_PLAN.md
+  - IMPLEMENTATION_COMPLETE.md
+  - TEST_SETUP_COMPLETE.md
+  - SETUP.md
+  - CONTRIBUTING.md
+  - Dockerfile
+  - docker-compose.yml
+  - tests
 keep_files:
   - .git
   - .svn

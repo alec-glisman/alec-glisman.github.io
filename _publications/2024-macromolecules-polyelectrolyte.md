@@ -1,7 +1,7 @@
 ---
 title: "Multi-valent Ion Mediated Polyelectrolyte Association and Structure"
 collection: publications
-permalink: /publication/2024-macromolecules-polyelectrolyte
+permalink: /publications/2024-macromolecules-polyelectrolyte/
 excerpt: 'Multiscale simulation reveals how divalent Ca²⁺ ions drive polyelectrolyte chain association through bridging. Produces concentration-dependent phase diagram connecting microscopic ion binding to macroscopic precipitation.'
 date: 2024-02-16
 venue: 'Macromolecules'

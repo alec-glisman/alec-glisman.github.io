@@ -1,7 +1,7 @@
 ---
 title: "Geometry and dynamics of lipid membranes: The Scriven-Love number"
 collection: publications
-permalink: /publication/2020-scriven-love-1
+permalink: /publications/2020-scriven-love-1/
 excerpt: 'The in-plane viscosity and out-of-plane elasticity of lipid membranes leads to a new dimensionless number found to be critical to relaxation dynamics'
 date: 2020-05-04
 venue: 'Physical Review E'

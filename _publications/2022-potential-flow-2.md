@@ -1,7 +1,7 @@
 ---
 title: "Swimming in potential flow"
 collection: publications
-permalink: /publication/2022-potential-flow-2
+permalink: /publications/2022-potential-flow-2/
 excerpt: 'A deformable body self-propels in potential flow through time-varying configuration changes that alter added mass. Derives the analytic framework showing swimming mechanics are identical between Stokes and potential flow regimes.'
 date: 2022-12-01
 venue: 'JFM Rapids'

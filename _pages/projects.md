@@ -3,14 +3,14 @@ layout: single
 title: "Projects"
 permalink: /projects/
 author_profile: true
+excerpt: "Open-source software projects by Alec Glisman — diffusion models for enhanced sampling, molecular property prediction, and computational chemistry tools."
 ---
 
 Selected software projects. Full list on [GitHub](https://github.com/alec-glisman).
 
 ---
 
-<div class="reveal">
-<div class="project-card">
+<div class="project-card reveal" markdown="1">
 
 ### DDPM-Enhanced-Sampling
 
@@ -27,10 +27,8 @@ Diffusion probabilistic models applied to enhanced sampling in molecular dynamic
 </div>
 
 </div>
-</div>
 
-<div class="reveal" style="transition-delay: 0.1s">
-<div class="project-card">
+<div class="project-card reveal" style="transition-delay: 0.1s" markdown="1">
 
 ### OpenADMET-ExpansionRx
 
@@ -47,10 +45,8 @@ ADMET property prediction for drug candidates. Ensemble machine learning models 
 </div>
 
 </div>
-</div>
 
-<div class="reveal" style="transition-delay: 0.2s">
-<div class="project-card">
+<div class="project-card reveal" style="transition-delay: 0.2s" markdown="1">
 
 ### Analysis-Polyelectrolyte-Surface-Adsorption
 
@@ -66,5 +62,4 @@ Data analysis pipeline for polyelectrolyte MD simulation trajectories. Custom mu
   <a href="https://github.com/alec-glisman/Analysis-Polyelectrolyte-Surface-Adsorption"><i class="fab fa-github"></i> GitHub</a>
 </div>
 
-</div>
 </div>

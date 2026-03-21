@@ -1,7 +1,7 @@
 ---
 title: "Adsorption isotherm and mechanism of Ca2+ binding to polyelectrolyte"
 collection: publications
-permalink: /publication/2024-langmuir-adsorption-isotherm
+permalink: /publications/2024-langmuir-adsorption-isotherm/
 excerpt: 'Quantifies Ca²⁺ adsorption isotherms on poly(acrylic acid) using enhanced-sampling MD. Reveals binding modes and thermodynamics governing polyelectrolyte-ion complexation.'
 date: 2024-03-19
 venue: 'Langmuir'
