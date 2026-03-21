@@ -10,7 +10,7 @@ redirect_from:
 
 <div class="reveal hero-intro" markdown="1">
 
-I am a **Senior AI/ML Scientist at Merck & Co.**, where I develop generative AI tools to help design small molecules that are both therapeutically effective and practically synthesizable — shortening the gap between computational design and the lab bench. I completed my PhD in Chemical Engineering at Caltech in 2024 under [Prof. Zhen-Gang Wang](http://zgwlab.che.caltech.edu/), where my research centered on the molecular physics of polyelectrolyte complexation and its applications to water remediation. Earlier, I worked in [Prof. John F. Brady's](https://cheme.caltech.edu/groups/jfb/index.html) group studying self-propulsion in active matter systems. I received my B.S. in Chemical Engineering from UC Berkeley in 2019, where I worked with [Prof. Kranthi K. Mandadapu](https://mandadapu-group.github.io/) on the mechanics of lipid membranes.
+I am a **Senior AI/ML Scientist at Merck & Co.**, where I develop generative AI tools to help design small molecules that are both therapeutically effective and practically synthesizable, shortening the gap between computational design and the lab bench. I completed my PhD in Chemical Engineering at Caltech in 2024 under [Prof. Zhen-Gang Wang](http://zgwlab.che.caltech.edu/), where my research centered on the molecular physics of polyelectrolyte complexation and its applications to water remediation and drug delivery. Earlier, I worked in [Prof. John F. Brady's](https://cheme.caltech.edu/groups/jfb/index.html) group studying self-propulsion in active matter systems. I received my B.S. in Chemical Engineering from UC Berkeley in 2019, where I worked with [Prof. Kranthi K. Mandadapu](https://mandadapu-group.github.io/) on the mechanics of lipid membranes.
 
 </div>
 
@@ -24,7 +24,7 @@ My doctoral work spanned three interconnected themes in soft matter physics and 
 
 <span class="research-badge research-badge--ai">AI/ML</span><span class="research-badge research-badge--drug">Drug Discovery</span>
 
-Designing a drug candidate requires jointly satisfying competing objectives — potency, selectivity, ADMET properties, and synthesizability — none of which can be ignored. I develop generative models that navigate this multi-parameter optimization landscape, enforcing synthesizability as a hard constraint through reaction template filtering and compatibility screening against commercially available building blocks. I also built ensemble QSAR models combining graph-based representations with cheminformatics fingerprints, which placed 18th out of 400+ submissions in the [OpenADMET-ExpansionRx Blind Challenge](https://huggingface.co/spaces/openadmet/OpenADMET-ExpansionRx-Challenge).
+Designing a drug candidate requires jointly satisfying competing objectives (potency, selectivity, ADMET properties, and synthesizability), none of which can be ignored. I develop generative models that navigate this multi-parameter optimization landscape, enforcing synthesizability as a hard constraint through reaction template filtering and compatibility screening against commercially available building blocks. I also built ensemble QSAR models combining graph-based representations with cheminformatics fingerprints, which placed 18th out of 400+ submissions in the [OpenADMET-ExpansionRx Blind Challenge](https://huggingface.co/spaces/openadmet/OpenADMET-ExpansionRx-Challenge).
 
 </div>
 
@@ -34,7 +34,7 @@ Designing a drug candidate requires jointly satisfying competing objectives — 
 
 <span class="research-badge research-badge--physics">Physics</span><span class="research-badge research-badge--ai">AI/ML</span>
 
-Polyelectrolytes are widely used to chelate multi-valent ions for water softening and drug delivery, but the molecular mechanisms driving their complexation — particularly the counterintuitive "like-charge attraction" — remain poorly understood. I used all-atom molecular dynamics and enhanced sampling to probe these mechanisms, and found that ion correlations, rather than direct ion bridges, are the primary driver of chain–chain association. I applied unsupervised deep learning to elucidate phase diagrams and structure-property relationships, and collaborated with Dow Chemical on water treatment applications.
+Polyelectrolytes are widely used to chelate multi-valent ions for water softening and drug delivery, but the molecular mechanisms driving their complexation (including the counterintuitive "like-charge attraction") remain poorly understood. I used all-atom molecular dynamics and enhanced sampling to probe these mechanisms, and found that ion correlations, rather than direct ion bridges, are the primary driver of chain–chain association. I applied unsupervised deep learning to elucidate phase diagrams and structure-property relationships, and collaborated with Dow Chemical on water treatment applications.
 
 </div>
 
