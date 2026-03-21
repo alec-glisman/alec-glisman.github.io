@@ -80,14 +80,14 @@ class TestExperiencePageContent:
     """Test content on the experience page."""
 
     def test_experience_page_contains_current_role(self, site_dir):
-        """Test that experience page mentions Senior ML Scientist at Merck."""
+        """Test that experience page mentions Senior AI/ML Scientist at Merck."""
         exp_page = site_dir / "experience" / "index.html"
         if not exp_page.exists():
             pytest.skip("Experience page not found")
 
         content = exp_page.read_text()
-        assert "Senior ML Scientist" in content, (
-            "Experience page missing 'Senior ML Scientist'"
+        assert "Senior AI/ML Scientist" in content, (
+            "Experience page missing 'Senior AI/ML Scientist'"
         )
         assert "Merck" in content, "Experience page missing Merck"
 

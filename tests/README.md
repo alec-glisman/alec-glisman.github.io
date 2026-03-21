@@ -83,7 +83,7 @@ pytest regression/ --update-snapshots
 - ✅ Expected content is on each page:
   - About page: "Alec Glisman", "Merck", "Caltech"
   - Publications: all 5 titles and venues
-  - Experience: "Senior ML Scientist", past employers
+  - Experience: "Senior AI/ML Scientist", past employers
   - Projects: project names and technologies
   - Skills: major skill categories
   - Research: 3 research themes with publication links
