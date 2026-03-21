@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "Alec Glisman"
-excerpt: "Senior ML Scientist & Computational Chemist"
+excerpt: "Senior AI/ML Scientist"
 author_profile: true
 redirect_from:
   - /about/
@@ -10,19 +10,19 @@ redirect_from:
 
 <div class="reveal" markdown="1">
 
-I am a **Senior ML Scientist at Merck & Co.**, working at the intersection of generative AI and molecular design for drug discovery. I completed my PhD in Chemical Engineering at Caltech in 2024 under [Prof. Zhen-Gang Wang](https://cheme.caltech.edu/people/zhen-gang-wang), and previously worked in [Prof. John F. Brady's](https://cheme.caltech.edu/people/john-f-brady) group. I received my B.S. in Chemical Engineering with Highest Honors from UC Berkeley in 2019.
+I am a **Senior AI/ML Scientist at Merck & Co.**, focusing on the application of generative AI techniques to design small molecules with desired properties that are easily synthesizable, accelerating structure-based and ligand-based drug design. I completed my PhD in Chemical Engineering at Caltech in 2024 under [Prof. Zhen-Gang Wang](http://zgwlab.che.caltech.edu/), and previously worked in [Prof. John F. Brady's](https://cheme.caltech.edu/groups/jfb/index.html) group. I received my B.S. in Chemical Engineering from UC Berkeley in 2019, where I worked with [Prof. Kranthi K. Mandadapu](https://mandadapu-group.github.io/) on the dimensional analysis of lipid bilayers.
 
 </div>
 
 ## Research Background
 
-My doctoral work spanned three interconnected themes in soft matter physics and computational chemistry:
+My doctoral work spanned three interconnected themes in soft matter physics and computational chemistry, applying both AI/ML techniques and physics-based methods to study these systems:
 
 <div class="research-card reveal" style="transition-delay: 0.05s" markdown="1">
 
 ### Polyelectrolyte Simulations & Ion Binding
 
-Molecular dynamics and enhanced sampling simulation of polyelectrolyte complexation, Ca²⁺ adsorption isotherms, and precipitation mechanisms in aqueous solution. Industry collaboration with Dow Chemical on water treatment polymer additives.
+Molecular dynamics and enhanced sampling simulation of polyelectrolyte complexation, Ca²⁺ adsorption isotherms, and precipitation mechanisms in aqueous solution. Applied unsupervised deep learning to elucidate phase diagrams and discover key structure-property relationships. Industry collaboration with Dow Chemical on water treatment polymer additives.
 
 </div>
 
@@ -49,11 +49,7 @@ Continuum mechanics of curved lipid bilayers using differential geometry and bal
 | | |
 |---|---|
 | **PhD, Chemical Engineering** | California Institute of Technology, 2024 |
-| **BS, Chemical Engineering** (Highest Honors) | University of California, Berkeley, 2019 |
-
-**Award:** NSF Graduate Research Fellowship Program — Honorable Mention
-**Honor:** Tau Beta Pi Engineering Honor Society
-**Scholarship:** UC Berkeley Regents' and Chancellor's Scholarship
+| **BS, Chemical Engineering** | University of California, Berkeley, 2019 |
 
 </div>
 
@@ -62,6 +58,6 @@ Continuum mechanics of curved lipid bilayers using differential geometry and bal
 <a href="/publications/" class="btn--primary-cta">Publications</a>
 <a href="/experience/" class="btn--outline-cta">Experience</a>
 <a href="/projects/" class="btn--outline-cta">Projects</a>
-<a href="mailto:alec.glisman@gmail.com" class="btn--outline-cta">Contact</a>
+<a href="https://www.linkedin.com/in/alec-glisman" class="btn--outline-cta">Contact</a>
 
 </div>

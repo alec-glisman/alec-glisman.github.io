@@ -1,6 +1,6 @@
-# Alec Glisman's Academic Website
+# Alec Glisman's Personal Website
 
-My professional website built with Jekyll on the Academic Pages template. Hosted on GitHub Pages at **[alec-glisman.github.io](https://alec-glisman.github.io)**.
+Professional website for Alec Glisman, Senior AI/ML Scientist at Merck & Co. Built with Jekyll on the Academic Pages template. Hosted on GitHub Pages at **[alec-glisman.github.io](https://alec-glisman.github.io)**.
 
 ## Quick Start
 
@@ -37,6 +37,7 @@ docker compose up dev
 │   └── 404.md
 │
 ├── _publications/               # Publication collection (5 entries)
+│   ├── 2020-scriven-love-1.md
 │   ├── 2022-potential-flow-2.md
 │   ├── 2024-langmuir-adsorption-isotherm.md
 │   ├── 2024-macromolecules-polyelectrolyte.md
@@ -277,6 +278,7 @@ git push origin main
 ## Contact
 
 **Website:** <https://alec-glisman.github.io>
+**LinkedIn:** <https://www.linkedin.com/in/alec-glisman>
 
 ---
 
