@@ -395,14 +395,14 @@ h3 {
   }
 
   /* Taper the spine on the last entry */
-  &:last-child {
+  &:last-of-type {
     padding-bottom: 0;
     border-image: linear-gradient(to bottom, rgba(14, 165, 201, 0.40) 0%, transparent 100%) 1;
   }
 
   /* Bullet list styling for experience bullet points */
-  ul { font-size: 0.88em; line-height: 1.65; color: #374151; margin-bottom: 0; padding-left: 1.2em; }
-  li { margin-bottom: 0.3em; }
+  > ul { font-size: 0.88em; line-height: 1.65; color: #374151; margin-bottom: 0; padding-left: 1.2em; }
+  > ul > li { margin-bottom: 0.3em; }
 
   /* Job title line: first <p> contains the <strong> role name */
   > p:first-of-type {
