@@ -12,6 +12,8 @@ Conference talks and seminar presentations.
 
 <div class="research-card reveal" markdown="1">
 
+<img src="/assets/images/aps_march_meeting.png" alt="APS March Meeting logo" class="project-card-img project-card-img--logo">
+
 ### [Divalent Cation-Mediated Polyanion Attraction in Aqueous Solution](https://meetings.aps.org/Meeting/MAR23/Session/B15.1)
 <span class="research-badge research-badge--physics">APS March Meeting · 2023</span>
 
@@ -24,6 +26,8 @@ We clarify the mechanism through which multi-valent ions result in polyelectroly
 </div>
 
 <div class="research-card reveal" style="transition-delay: 0.05s" markdown="1">
+
+<img src="/assets/images/aps_march_meeting.png" alt="APS March Meeting logo" class="project-card-img project-card-img--logo">
 
 ### [Structure of Polyelectrolyte and Multi-Valent Ion Complexes](https://meetings.aps.org/Meeting/MAR23/Session/B15.2)
 <span class="research-badge research-badge--physics">APS March Meeting · 2023</span>
