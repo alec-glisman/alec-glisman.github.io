@@ -563,6 +563,29 @@ h3 {
 }
 
 /* --- PROJECT CARDS --- */
+.project-card-img {
+  display: block;
+  width: calc(100% + 3em); /* bleed past 1.5em left + right padding */
+  margin: -1.4em -1.5em 1.25em -1.5em;
+  height: 185px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 9px 9px 0 0;
+  transition: opacity 0.25s ease;
+}
+
+.project-card:hover .project-card-img {
+  opacity: 0.92;
+}
+
+.project-card-img--logo {
+  object-fit: contain;
+  object-position: center;
+  height: 120px;
+  background: #F0F5FA;
+  padding: 1.25em 2em;
+}
+
 .project-card {
   background: #FFFFFF;
   border: 1px solid #E8EDF5;

@@ -12,6 +12,8 @@ Selected software projects. Full list on [GitHub](https://github.com/alec-glisma
 
 <div class="project-card reveal" markdown="1">
 
+<img src="/assets/images/openadmet.png" alt="OpenADMET logo" class="project-card-img project-card-img--logo">
+
 ### OpenADMET-ExpansionRx
 
 ADMET property prediction for drug candidates. Ensemble machine learning models for absorption, distribution, metabolism, excretion, and toxicity prediction. Blind challenge submission for the OpenADMET benchmark.
@@ -29,6 +31,8 @@ ADMET property prediction for drug candidates. Ensemble machine learning models 
 </div>
 
 <div class="project-card reveal" style="transition-delay: 0.1s" markdown="1">
+
+<img src="https://raw.githubusercontent.com/alec-glisman/DDPM-Enhanced-Sampling/main/images/32PAA_32Ca_32Na_64Cl_NVTeqbm.png" alt="Polyelectrolyte simulation snapshot" class="project-card-img">
 
 ### DDPM-Enhanced-Sampling
 
@@ -48,6 +52,8 @@ Denoising diffusion probabilistic models (DDPMs) used to generate polymer confor
 
 <div class="project-card reveal" style="transition-delay: 0.2s" markdown="1">
 
+<img src="https://raw.githubusercontent.com/alec-glisman/Swimming-in-Potential-Flow/main/docs/images/collinear_swimmer_white_background.png" alt="Collinear swimmer in potential flow" class="project-card-img">
+
 ### Swimming-in-Potential-Flow
 
 Computational and theoretical study of self-propulsion in potential flow, accompanying the Journal of Fluid Mechanics paper. Implements boundary integral methods and analytical swimming theory to study collective hydrodynamic interactions across Reynolds number regimes.
@@ -66,6 +72,8 @@ Computational and theoretical study of self-propulsion in potential flow, accomp
 
 <div class="project-card reveal" style="transition-delay: 0.3s" markdown="1">
 
+<img src="https://raw.githubusercontent.com/alec-glisman/Analysis-Polyelectrolyte-Surface-Adsorption/main/images/32PAA_32Ca_32Na_64Cl_NVTeqbm.png" alt="Polyelectrolyte surface adsorption simulation" class="project-card-img">
+
 ### Analysis-Polyelectrolyte-Surface-Adsorption
 
 Data analysis pipeline for polyelectrolyte MD simulation trajectories. Custom multi-threaded MDAnalysis extensions achieving 100× speedup for biased MD tasks. Automated free-energy surface generation for studying polyelectrolyte adsorption to surfaces.
@@ -83,6 +91,8 @@ Data analysis pipeline for polyelectrolyte MD simulation trajectories. Custom mu
 </div>
 
 <div class="project-card reveal" style="transition-delay: 0.4s" markdown="1">
+
+<img src="/assets/images/gromacs.png" alt="GROMACS logo" class="project-card-img project-card-img--logo">
 
 ### Polyelectrolyte-Surface-Adsorption
 
