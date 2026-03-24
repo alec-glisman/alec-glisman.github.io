@@ -75,6 +75,7 @@ Lipid membranes are not simply static barriers. They flow in-plane as viscous fl
 | | |
 |---|---|
 | **PhD, Chemical Engineering** | California Institute of Technology, 2024 |
+| **MS, Chemical Engineering** | California Institute of Technology, 2022 |
 | **BS, Chemical Engineering** | University of California, Berkeley, 2019 |
 
 </div>
