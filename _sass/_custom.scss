@@ -220,6 +220,59 @@ h3 {
   }
 }
 
+/* --- PUBLICATION CARD WITH FIGURE --- */
+.pub-card-inner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1.4em;
+  align-items: start;
+}
+
+.pub-card-body { min-width: 0; }
+
+.pub-card-figure {
+  flex-shrink: 0;
+  width: 170px;
+
+  img {
+    width: 100%;
+    height: 130px;
+    object-fit: contain;
+    border-radius: 6px;
+    border: 1px solid rgba(14, 165, 201, 0.15);
+    background: #F8FAFC;
+    padding: 6px;
+    display: block;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  figcaption {
+    font-size: 0.68em;
+    color: #6B7280;
+    text-align: center;
+    margin-top: 0.35em;
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.3;
+  }
+
+  &:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(27, 42, 74, 0.12);
+  }
+}
+
+@media (max-width: 600px) {
+  .pub-card-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .pub-card-figure {
+    width: 100%;
+
+    img { height: 180px; }
+  }
+}
+
 /* --- RESEARCH TOPIC BADGES --- */
 .research-badge {
   display: inline-block;

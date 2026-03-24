@@ -49,7 +49,9 @@ Quantifies Ca²⁺ adsorption isotherms on poly(acrylic acid) using enhanced-sam
 
 </div>
 
-<div class="research-card reveal" style="transition-delay: 0.15s" markdown="1">
+<div class="research-card reveal" style="transition-delay: 0.15s">
+<div class="pub-card-inner">
+<div class="pub-card-body" markdown="1">
 
 ### [Swimming in Potential Flow](https://doi.org/10.1017/jfm.2022.946)
 <span class="research-badge research-badge--physics">JFM Rapids · 2022</span>
@@ -61,8 +63,16 @@ A deformable body self-propels in potential flow through time-varying configurat
 [DOI](https://doi.org/10.1017/jfm.2022.946) · [PDF](/assets/files/2022-jfm-swimming-potential-flow.pdf)
 
 </div>
+<figure class="pub-card-figure">
+  <a href="https://doi.org/10.1017/jfm.2022.946"><img src="/assets/images/2022-jfm-swimmer-schematic.svg" alt="Schematic of N connected spherical particles forming a deformable swimmer body"></a>
+  <figcaption>Deformable body model</figcaption>
+</figure>
+</div>
+</div>
 
-<div class="research-card reveal" style="transition-delay: 0.2s" markdown="1">
+<div class="research-card reveal" style="transition-delay: 0.2s">
+<div class="pub-card-inner">
+<div class="pub-card-body" markdown="1">
 
 ### [Geometry and Dynamics of Lipid Membranes: The Scriven-Love Number](https://doi.org/10.1103/PhysRevE.101.052401)
 <span class="research-badge research-badge--physics">Physical Review E · 2020</span>
@@ -73,4 +83,10 @@ Continuum theory of lipid membrane dynamics across planar, spherical, and cylind
 
 [DOI](https://doi.org/10.1103/PhysRevE.101.052401) · [PDF](/assets/files/2020-pre-scriven-love-number.pdf)
 
+</div>
+<figure class="pub-card-figure">
+  <a href="https://doi.org/10.1103/PhysRevE.101.052401"><img src="/assets/images/2020-pre-scriven-love-figure-1.png" alt="Schematic showing surface tension and viscous forces acting on a perturbed lipid membrane"></a>
+  <figcaption>Surface tension vs. viscous forces</figcaption>
+</figure>
+</div>
 </div>
