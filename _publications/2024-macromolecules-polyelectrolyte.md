@@ -13,6 +13,6 @@ citation: 'Alec Glisman, Sriteja Mantha, Decai Yu, Eric Wasserman, Scott Backer,
 
 Multiscale simulation of divalent cation-mediated association of poly(acrylic acid) chains in aqueous solution. Enhanced sampling MD combined with free-energy calculations reveals how Ca²⁺ bridges between carboxylate groups drive chain aggregation, yielding a phase diagram connecting microscopic ion binding to macroscopic precipitation behavior.
 
-[Download paper here](http://alec-glisman.github.io/files/macromolecules_2024.pdf)
+[Download paper here](/assets/files/2024-macromolecules-polyelectrolyte-association.pdf)
 
 Recommended citation: Alec Glisman, Sriteja Mantha, Decai Yu, Eric Wasserman, Scott Backer, and Zhen-Gang Wang. (2024). "Multi-valent Ion Mediated Polyelectrolyte Association and Structure." Macromolecules. 57(5), 1941–1949.

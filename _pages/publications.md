@@ -19,7 +19,7 @@ Atomistic simulation of poly(acrylic acid) adsorption on calcite surfaces. Chara
 
 **Authors:** Alec Glisman, Sriteja Mantha, Decai Yu, Eric Wasserman, Scott Backer, Larisa Reyes, Zhen-Gang Wang
 
-[DOI](https://doi.org/10.1021/acs.langmuir.4c03301)
+[DOI](https://doi.org/10.1021/acs.langmuir.4c03301) · [PDF](/assets/files/2025-langmuir-binding-modes.pdf)
 
 </div>
 
@@ -32,7 +32,7 @@ Multiscale simulation reveals how divalent Ca²⁺ ions drive polyelectrolyte ch
 
 **Authors:** Alec Glisman, Sriteja Mantha, Decai Yu, Eric Wasserman, Scott Backer, Zhen-Gang Wang
 
-[DOI](https://doi.org/10.1021/acs.macromol.3c02103)
+[DOI](https://doi.org/10.1021/acs.macromol.3c02103) · [PDF](/assets/files/2024-macromolecules-polyelectrolyte-association.pdf)
 
 </div>
 
@@ -45,7 +45,7 @@ Quantifies Ca²⁺ adsorption isotherms on poly(acrylic acid) using enhanced-sam
 
 **Authors:** Alec Glisman, Sriteja Mantha, Decai Yu, Eric Wasserman, Scott Backer, Zhen-Gang Wang
 
-[DOI](https://doi.org/10.1021/acs.langmuir.3c03812)
+[DOI](https://doi.org/10.1021/acs.langmuir.3c03812) · [PDF](/assets/files/2024-langmuir-adsorption-isotherm.pdf)
 
 </div>
 
@@ -58,7 +58,7 @@ A deformable body self-propels in potential flow through time-varying configurat
 
 **Authors:** Alec Glisman, John F. Brady
 
-[DOI](https://doi.org/10.1017/jfm.2022.946) · [PDF](/files/JFM.952.R5.pdf)
+[DOI](https://doi.org/10.1017/jfm.2022.946) · [PDF](/assets/files/2022-jfm-swimming-potential-flow.pdf)
 
 </div>
 
@@ -71,6 +71,6 @@ Continuum theory of lipid membrane dynamics across planar, spherical, and cylind
 
 **Authors:** Amaresh Sahu, Alec Glisman, Joël Tchoufag, Kranthi K. Mandadapu
 
-[DOI](https://doi.org/10.1103/PhysRevE.101.052401) · [PDF](/files/PhysRevE.101.052401.pdf)
+[DOI](https://doi.org/10.1103/PhysRevE.101.052401) · [PDF](/assets/files/2020-pre-scriven-love-number.pdf)
 
 </div>

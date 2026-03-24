@@ -13,6 +13,6 @@ citation: 'Alec Glisman, Sriteja Mantha, Decai Yu, Eric Wasserman, Scott Backer,
 
 All-atom molecular dynamics investigation of poly(acrylic acid) adsorption onto neutral CaCO₃ surfaces, characterizing the competition between direct and water-mediated carboxylate-Ca²⁺ binding geometries. Results show that chain flexibility and local Ca²⁺ activity control the predominant binding mode, connecting molecular structure to macroscopic scale inhibition performance.
 
-[Download paper here](http://alec-glisman.github.io/files/langmuir_2025_binding.pdf)
+[Download paper here](/assets/files/2025-langmuir-binding-modes.pdf)
 
 Recommended citation: Alec Glisman, Sriteja Mantha, Decai Yu, Eric Wasserman, Scott Backer, Larisa Reyes, and Zhen-Gang Wang. (2025). "Binding Modes and Water-Mediation of Polyelectrolyte Adsorption to a Neutral CaCO3 Surface." Langmuir. 40(49), 25931–25939.
