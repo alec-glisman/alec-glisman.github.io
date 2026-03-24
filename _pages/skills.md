@@ -7,7 +7,7 @@ excerpt: "Technical skills of Alec Glisman — ML/AI, cheminformatics, molecular
 ---
 
 <div class="skill-group reveal">
-<h3>Machine Learning & AI</h3>
+<h3><i class="fas fa-brain"></i>Machine Learning & AI</h3>
 <span class="skill-tag">PyTorch</span>
 <span class="skill-tag">PyTorch Geometric</span>
 <span class="skill-tag">Graph Neural Networks</span>
@@ -21,7 +21,7 @@ excerpt: "Technical skills of Alec Glisman — ML/AI, cheminformatics, molecular
 </div>
 
 <div class="skill-group reveal" style="transition-delay: 0.1s">
-<h3>Cheminformatics & Molecular Design</h3>
+<h3><i class="fas fa-flask"></i>Cheminformatics & Molecular Design</h3>
 <span class="skill-tag">RDKit</span>
 <span class="skill-tag">Chemprop</span>
 <span class="skill-tag">Schrödinger Suite</span>
@@ -32,7 +32,7 @@ excerpt: "Technical skills of Alec Glisman — ML/AI, cheminformatics, molecular
 </div>
 
 <div class="skill-group reveal" style="transition-delay: 0.2s">
-<h3>Molecular Simulation</h3>
+<h3><i class="fas fa-atom"></i>Molecular Simulation</h3>
 <span class="skill-tag">GROMACS</span>
 <span class="skill-tag">PLUMED</span>
 <span class="skill-tag">Enhanced Sampling MD</span>
@@ -44,7 +44,7 @@ excerpt: "Technical skills of Alec Glisman — ML/AI, cheminformatics, molecular
 </div>
 
 <div class="skill-group reveal" style="transition-delay: 0.3s">
-<h3>Programming & Computing</h3>
+<h3><i class="fas fa-code"></i>Programming & Computing</h3>
 <span class="skill-tag">Python</span>
 <span class="skill-tag">C++</span>
 <span class="skill-tag">CUDA</span>
@@ -56,7 +56,7 @@ excerpt: "Technical skills of Alec Glisman — ML/AI, cheminformatics, molecular
 </div>
 
 <div class="skill-group reveal" style="transition-delay: 0.4s">
-<h3>DevOps & Infrastructure</h3>
+<h3><i class="fas fa-server"></i>DevOps & Infrastructure</h3>
 <span class="skill-tag">Git / GitHub Actions</span>
 <span class="skill-tag">Docker</span>
 <span class="skill-tag">HPC / Slurm</span>

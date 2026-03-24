@@ -190,6 +190,7 @@ h3 {
 
 /* --- RESEARCH THEME CARDS --- */
 .research-card {
+  position: relative;
   background: #FFFFFF;
   border: 1px solid rgba(14, 165, 201, 0.12);
   border-left: 4px solid #0EA5C9;
@@ -271,6 +272,85 @@ h3 {
 
     img { height: 180px; }
   }
+}
+
+/* --- CARD ICON (decorative FA icon, top-right of research/project cards) --- */
+.card-icon {
+  position: absolute;
+  top: 1.1em;
+  right: 1.3em;
+  font-size: 1.6em;
+  color: rgba(14, 165, 201, 0.18);
+  pointer-events: none;
+  transition: color 0.25s ease;
+}
+
+.research-card:hover .card-icon,
+.project-card:hover .card-icon {
+  color: rgba(14, 165, 201, 0.35);
+}
+
+/* --- ORG LOGO (company/institution logo in experience entries) --- */
+.org-logo {
+  float: right;
+  max-height: 34px;
+  max-width: 90px;
+  width: auto;
+  margin: 0.1em 0 0.6em 1.2em;
+  opacity: 0.65;
+  filter: grayscale(25%);
+  object-fit: contain;
+  transition: opacity 0.22s ease, filter 0.22s ease;
+}
+
+.experience-entry:hover .org-logo {
+  opacity: 0.90;
+  filter: grayscale(0%);
+}
+
+/* --- EXPERIENCE TIMELINE COLOUR VARIANTS --- */
+/* Industry roles: navy dot */
+.experience-entry--industry::before {
+  border-color: #1B2A4A;
+  box-shadow: 0 0 0 3px rgba(27, 42, 74, 0.10);
+}
+
+.experience-entry--industry:hover::before {
+  border-color: darken(#1B2A4A, 5%);
+  box-shadow: 0 0 0 5px rgba(27, 42, 74, 0.16);
+}
+
+/* National lab roles: emerald dot */
+.experience-entry--lab::before {
+  border-color: #10B981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.10);
+}
+
+.experience-entry--lab:hover::before {
+  border-color: darken(#10B981, 8%);
+  box-shadow: 0 0 0 5px rgba(16, 185, 129, 0.16);
+}
+
+/* --- ACHIEVEMENT INLINE BADGE --- */
+.achievement {
+  display: inline-block;
+  background: rgba(14, 165, 201, 0.09);
+  color: #0369A1;
+  border: 1px solid rgba(14, 165, 201, 0.28);
+  border-radius: 4px;
+  padding: 0.04em 0.42em;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.88em;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* --- SKILL GROUP ICONS --- */
+.skill-group h3 .fas {
+  color: #0EA5C9;
+  margin-right: 0.45em;
+  font-size: 0.88em;
+  vertical-align: middle;
 }
 
 /* --- RESEARCH TOPIC BADGES --- */

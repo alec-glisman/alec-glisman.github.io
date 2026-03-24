@@ -6,7 +6,8 @@ author_profile: true
 excerpt: "Professional timeline of Alec Glisman — Senior AI/ML Scientist at Merck, PhD research at Caltech, and industry internships in battery technology."
 ---
 
-<div class="experience-entry reveal" markdown="1">
+<div class="experience-entry experience-entry--industry reveal" markdown="1">
+<img src="/assets/images/logo-merck.webp" alt="Merck" class="org-logo">
 
 **Senior AI/ML Scientist** — Merck & Co., Inc.
 <div class="experience-meta">Sep 2024 – Present · South San Francisco, CA</div>
@@ -18,17 +19,19 @@ excerpt: "Professional timeline of Alec Glisman — Senior AI/ML Scientist at Me
 </div>
 
 <div class="experience-entry reveal" style="transition-delay: 0.05s" markdown="1">
+<img src="/assets/images/logo-caltech.png" alt="Caltech" class="org-logo">
 
 **Graduate Researcher** — Caltech, Zhen-Gang Wang Group
 <div class="experience-meta">Jan 2022 – Aug 2024 · Pasadena, CA</div>
 
 - Developed a flexible workflow combining enhanced sampling molecular dynamics with unsupervised deep learning to elucidate phase diagrams for aqueous proteins and polymers; discovered key precipitation mechanisms and calculated quantitative structure-activity relationships.
 - Formulated generative AI diffusion models for polymer design and implemented a high-throughput free energy calculation pipeline to identify promising candidates for interfacial binding affinity.
-- Managed high-performance computing resources using Slurm and Ansible, optimizing resource allocation and increasing computational throughput for the research group by 10×.
+- Managed high-performance computing resources using Slurm and Ansible, optimizing resource allocation and increasing computational throughput for the research group by <span class="achievement">10×</span>.
 
 </div>
 
 <div class="experience-entry reveal" style="transition-delay: 0.1s" markdown="1">
+<img src="/assets/images/logo-caltech.png" alt="Caltech" class="org-logo">
 
 **Graduate Researcher** — Caltech, John F. Brady Group
 <div class="experience-meta">Sep 2019 – Dec 2021 · Pasadena, CA</div>
@@ -39,6 +42,7 @@ excerpt: "Professional timeline of Alec Glisman — Senior AI/ML Scientist at Me
 </div>
 
 <div class="experience-entry reveal" style="transition-delay: 0.15s" markdown="1">
+<img src="/assets/images/logo-uc-berkeley.png" alt="UC Berkeley" class="org-logo">
 
 **Research Assistant** — UC Berkeley, Kranthi K. Mandadapu Group
 <div class="experience-meta">Aug 2017 – May 2019 · Berkeley, CA</div>
@@ -48,27 +52,30 @@ excerpt: "Professional timeline of Alec Glisman — Senior AI/ML Scientist at Me
 
 </div>
 
-<div class="experience-entry reveal" style="transition-delay: 0.2s" markdown="1">
+<div class="experience-entry experience-entry--industry reveal" style="transition-delay: 0.2s" markdown="1">
+<img src="/assets/images/logo-nissan.svg" alt="Nissan" class="org-logo">
 
 **Battery Cell Quality Assurance Intern** — Nissan (Automotive Energy Supply Corporation)
 <div class="experience-meta">May 2018 – Aug 2018 · Smyrna, TN</div>
 
-- Designed and implemented an automated battery quality control system for daily testing of 25,000 cells, focusing on electrochemical stability, resulting in annual savings of $50,000.
-- Diagnosed electrode misalignment issues in manufactured battery electrode layers that contributed to cell failures and proposed tolerance revisions that cut $55,000 in annual material scrap costs.
+- Designed and implemented an automated battery quality control system for daily testing of <span class="achievement">25,000 cells/day</span>, focusing on electrochemical stability, resulting in annual savings of <span class="achievement">$50k</span>.
+- Diagnosed electrode misalignment issues in manufactured battery electrode layers that contributed to cell failures and proposed tolerance revisions that cut <span class="achievement">$55k</span> in annual material scrap costs.
 
 </div>
 
-<div class="experience-entry reveal" style="transition-delay: 0.25s" markdown="1">
+<div class="experience-entry experience-entry--industry reveal" style="transition-delay: 0.25s" markdown="1">
+<img src="/assets/images/logo-bosch.png" alt="Bosch" class="org-logo">
 
 **Battery Management Systems Intern** — Bosch
 <div class="experience-meta">May 2017 – Aug 2017 · Palo Alto, CA</div>
 
 - Evaluated electrode additive stability in lithium-ion batteries by analyzing dissolution under typical electric vehicle usage conditions to identify key degradation mechanisms and improve battery lifetime.
-- Initiated a comprehensive training program on plasma spectroscopy techniques and trained 3 colleagues, enabling the team to study trace lithium content in cycled battery components.
+- Initiated a comprehensive training program on plasma spectroscopy techniques and trained <span class="achievement">3 colleagues</span>, enabling the team to study trace lithium content in cycled battery components.
 
 </div>
 
-<div class="experience-entry reveal" style="transition-delay: 0.3s" markdown="1">
+<div class="experience-entry experience-entry--lab reveal" style="transition-delay: 0.3s" markdown="1">
+<img src="/assets/images/logo-lbnl.png" alt="Lawrence Berkeley National Laboratory" class="org-logo">
 
 **Research Assistant** — Lawrence Berkeley National Laboratory, Nitash Balsara Group
 <div class="experience-meta">Jun 2016 – May 2017 · Berkeley, CA</div>

@@ -19,6 +19,7 @@ I am a **Senior AI/ML Scientist at Merck & Co.**, where I develop generative AI 
 My doctoral work spanned three interconnected themes in soft matter physics and computational chemistry, applying both AI/ML techniques and physics-based methods to study these systems:
 
 <div class="research-card reveal" style="transition-delay: 0.05s" markdown="1">
+<i class="fas fa-brain card-icon"></i>
 
 ### Generative AI, Molecular Design & QSAR Modeling
 
@@ -29,6 +30,7 @@ Designing a drug candidate requires jointly satisfying competing objectives (pot
 </div>
 
 <div class="research-card reveal" style="transition-delay: 0.1s" markdown="1">
+<i class="fas fa-atom card-icon"></i>
 
 ### Polyelectrolyte Simulations & Ion Binding
 
@@ -39,6 +41,7 @@ Polyelectrolytes are widely used to chelate multi-valent ions for water softenin
 </div>
 
 <div class="research-card reveal" style="transition-delay: 0.15s" markdown="1">
+<i class="fas fa-water card-icon"></i>
 
 ### Microhydrodynamics & Active Matter
 
@@ -49,6 +52,7 @@ Active matter systems, including fish schools, bacterial colonies, and swimming 
 </div>
 
 <div class="research-card reveal" style="transition-delay: 0.2s" markdown="1">
+<i class="fas fa-dna card-icon"></i>
 
 ### Lipid Membrane Mechanics
 

@@ -11,6 +11,7 @@ My work sits at the intersection of physics-based simulation, machine learning, 
 ---
 
 <div class="research-card reveal" markdown="1">
+<i class="fas fa-brain card-icon"></i>
 
 ### Generative AI & Molecular Design
 <span class="research-badge research-badge--ai">AI/ML</span><span class="research-badge research-badge--drug">Drug Discovery</span>
@@ -20,28 +21,41 @@ Identifying drug candidates requires jointly satisfying competing objectives acr
 </div>
 
 <div class="research-card reveal" style="transition-delay: 0.05s" markdown="1">
+<i class="fas fa-chart-line card-icon"></i>
 
 ### QSAR Modeling & ADMET Property Prediction
 <span class="research-badge research-badge--ai">AI/ML</span><span class="research-badge research-badge--drug">Cheminformatics</span>
 
-I developed stacked ensemble models combining graph-based molecular representations with cheminformatics feature sets (extended-connectivity fingerprints, physicochemical descriptors) to predict ADMET endpoints. I used curriculum learning to incorporate external public datasets, progressively transferring representation quality to the target distribution, a strategy that proved important for generalizing to structurally diverse chemical space. Hyperparameter optimization via Optuna and repeated cross-validation with both chemical similarity and temporal splits produced estimates of generalization performance robust to distribution shift. I entered the [OpenADMET-ExpansionRx Blind Challenge](https://huggingface.co/spaces/openadmet/OpenADMET-ExpansionRx-Challenge), where the approach was assessed on fully held-out compound libraries, achieving 18th place out of over 400 submissions across 9 ADMET endpoints.
+I developed stacked ensemble models combining graph-based molecular representations with cheminformatics feature sets (extended-connectivity fingerprints, physicochemical descriptors) to predict ADMET endpoints. I used curriculum learning to incorporate external public datasets, progressively transferring representation quality to the target distribution, a strategy that proved important for generalizing to structurally diverse chemical space. Hyperparameter optimization via Optuna and repeated cross-validation with both chemical similarity and temporal splits produced estimates of generalization performance robust to distribution shift. I entered the [OpenADMET-ExpansionRx Blind Challenge](https://huggingface.co/spaces/openadmet/OpenADMET-ExpansionRx-Challenge), where the approach was assessed on fully held-out compound libraries, achieving **18th place out of 400+ submissions** across 9 ADMET endpoints.
 
 **Leaderboard:** [OpenADMET-ExpansionRx Challenge](https://huggingface.co/spaces/openadmet/OpenADMET-ExpansionRx-Challenge) · **Code:** [OpenADMET-ExpansionRx-Blind-Challenge](https://github.com/alec-glisman/OpenADMET-ExpansionRx-Blind-Challenge)
 
 </div>
 
-<div class="research-card reveal" style="transition-delay: 0.1s" markdown="1">
+<div class="research-card reveal" style="transition-delay: 0.1s">
+<i class="fas fa-atom card-icon"></i>
+<div class="pub-card-inner">
+<div class="pub-card-body" markdown="1">
 
 ### Polyelectrolyte Complexation & Ion Binding
 <span class="research-badge research-badge--physics">Physics</span><span class="research-badge research-badge--sim">Simulation</span>
 
-Aqueous polyelectrolytes are widely used to chelate multi-valent cations like Ca²⁺, serving essential roles in water softening, drug delivery, and mineralization control, but the molecular mechanisms driving their complexation remained poorly understood. I calculated adsorption isotherms and free-energy landscapes for Ca²⁺ binding on poly(acrylic acid) using well-tempered metadynamics and Hamiltonian replica exchange, identifying two dominant binding modes distinguished by carboxylate coordination number. Interestingly, I found that increasing Ca²⁺ concentration did drive chain–chain association, but the binding energy was not simply proportional to the number of ion bridges; instead, correlations between chelated ions governed the interaction. I mapped concentration-dependent phase diagrams using all-atom molecular dynamics and unsupervised deep learning, and characterized polyelectrolyte adsorption to mineral (CaCO₃) surfaces, finding that water-mediated hydrogen bonds dominate over direct polymer–surface contacts. I also applied generative diffusion probabilistic models (DDPMs) to generate polymer conformational ensembles consistent with Boltzmann distributions, enabling sequence design with enhanced calcium tolerance. This work was done in collaboration with Dow Chemical on water treatment applications.
+Aqueous polyelectrolytes are widely used to chelate multi-valent cations like Ca²⁺, serving essential roles in water softening, drug delivery, and mineralization control, but the molecular mechanisms driving their complexation remained poorly understood. I calculated adsorption isotherms and free-energy landscapes for Ca²⁺ binding on poly(acrylic acid) using well-tempered metadynamics and Hamiltonian replica exchange, identifying two dominant binding modes distinguished by carboxylate coordination number. I mapped concentration-dependent phase diagrams using all-atom MD and unsupervised deep learning, and found that water-mediated hydrogen bonds dominate over direct polymer–surface contacts on CaCO₃. This work was done in collaboration with Dow Chemical on water treatment applications.
 
 **Key papers:** [Langmuir 2025](/publications/2025-langmuir-binding-modes) · [Macromolecules 2024](/publications/2024-macromolecules-polyelectrolyte) · [Langmuir 2024](/publications/2024-langmuir-adsorption-isotherm)
 
 </div>
+<figure class="pub-card-figure">
+  <img src="/assets/images/2024-langmuir-adsorption-isotherm.jpeg" alt="Ca²⁺ adsorption isotherm and binding free-energy landscape on poly(acrylic acid)">
+  <figcaption>Ca²⁺ binding free energy</figcaption>
+</figure>
+</div>
+</div>
 
-<div class="research-card reveal" style="transition-delay: 0.15s" markdown="1">
+<div class="research-card reveal" style="transition-delay: 0.15s">
+<i class="fas fa-project-diagram card-icon"></i>
+<div class="pub-card-inner">
+<div class="pub-card-body" markdown="1">
 
 ### AI/ML Methods in Soft Matter
 <span class="research-badge research-badge--ai">AI/ML</span><span class="research-badge research-badge--sim">Deep Learning</span>
@@ -51,8 +65,17 @@ The free energy landscapes of polyelectrolyte systems are high-dimensional and c
 **Code:** [DDPM-Enhanced-Sampling](https://github.com/alec-glisman/DDPM-Enhanced-Sampling)
 
 </div>
+<figure class="pub-card-figure">
+  <img src="/assets/images/2024-macromolecules-polyelectrolyte-association.jpeg" alt="Ca²⁺-mediated polyelectrolyte chain association phase diagram">
+  <figcaption>Ion-mediated chain association</figcaption>
+</figure>
+</div>
+</div>
 
-<div class="research-card reveal" style="transition-delay: 0.2s" markdown="1">
+<div class="research-card reveal" style="transition-delay: 0.2s">
+<i class="fas fa-water card-icon"></i>
+<div class="pub-card-inner">
+<div class="pub-card-body" markdown="1">
 
 ### Microhydrodynamics & Active Matter
 <span class="research-badge research-badge--physics">Physics</span><span class="research-badge research-badge--sim">Fluid Dynamics</span>
@@ -62,8 +85,17 @@ Active systems such as schools of fish, flocks of birds, and growing bacterial c
 **Key paper:** [J. Fluid Mechanics 2022](/publications/2022-potential-flow-2)
 
 </div>
+<figure class="pub-card-figure">
+  <img src="/assets/images/2022-jfm-swimmer-schematic.svg" alt="Schematic of N connected spherical particles forming a deformable swimmer body">
+  <figcaption>Deformable body swimmer model</figcaption>
+</figure>
+</div>
+</div>
 
-<div class="research-card reveal" style="transition-delay: 0.25s" markdown="1">
+<div class="research-card reveal" style="transition-delay: 0.25s">
+<i class="fas fa-dna card-icon"></i>
+<div class="pub-card-inner">
+<div class="pub-card-body" markdown="1">
 
 ### Lipid Membrane Mechanics
 <span class="research-badge research-badge--physics">Physics</span><span class="research-badge research-badge--sim">Theory</span>
@@ -72,4 +104,10 @@ Lipid membranes are unusual materials: lipids flow in-plane as a two-dimensional
 
 **Key paper:** [Physical Review E 2020](/publications/2020-scriven-love-1)
 
+</div>
+<figure class="pub-card-figure">
+  <img src="/assets/images/2020-pre-scriven-love-figure-1.png" alt="Surface tension and viscous forces on a perturbed lipid membrane">
+  <figcaption>Membrane force schematics</figcaption>
+</figure>
+</div>
 </div>
