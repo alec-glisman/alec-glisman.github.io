@@ -40,6 +40,7 @@ Polyelectrolytes are widely used to chelate multi-valent ions for water softenin
 
 </div>
 
+<!-- Hidden to shorten main page:
 <div class="research-card reveal" style="transition-delay: 0.15s" markdown="1">
 <i class="fas fa-water card-icon"></i>
 
@@ -61,6 +62,7 @@ Active matter systems, including fish schools, bacterial colonies, and swimming 
 Lipid membranes are not simply static barriers; they flow in-plane as viscous fluids while bending out-of-plane as elastic shells, making them unusual materials whose dynamics are difficult to analyze. I developed a continuum theory coupling in-plane viscous flow to out-of-plane elastic bending, and in doing so introduced the [Scriven-Love number](/publications/2020-scriven-love-1), a dimensionless ratio that quantifies when intramembrane viscous stresses matter relative to elastic bending forces. Calculating non-negligible Scriven-Love numbers across physiologically relevant processes showed that in-plane viscosity cannot generally be ignored in membrane dynamics.
 
 </div>
+-->
 
 <div class="reveal" style="transition-delay: 0.25s" markdown="1">
 
