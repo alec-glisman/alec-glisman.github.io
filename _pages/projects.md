@@ -3,7 +3,7 @@ layout: single
 title: "Projects"
 permalink: /projects/
 author_profile: true
-excerpt: "Open-source software projects by Alec Glisman — ADMET property prediction, diffusion models for polymer design, computational fluid dynamics, and molecular dynamics analysis tools."
+excerpt: "Open-source software projects by Alec Glisman in molecular property prediction, diffusion models for polymer design, computational fluid dynamics, and molecular dynamics analysis."
 ---
 
 Selected software projects. Full list on [GitHub](https://github.com/alec-glisman).
@@ -16,7 +16,7 @@ Selected software projects. Full list on [GitHub](https://github.com/alec-glisma
 
 ### OpenADMET-ExpansionRx
 
-ADMET property prediction for drug candidates. Ensemble machine learning models for absorption, distribution, metabolism, excretion, and toxicity prediction. Blind challenge submission for the OpenADMET benchmark.
+Stacked ensemble models for predicting drug absorption, distribution, metabolism, and toxicity (ADMET). Combines graph neural networks with molecular fingerprints and physicochemical descriptors. Placed 18th of 400+ submissions in the OpenADMET-ExpansionRx blind challenge across 9 endpoints. Uses curriculum learning, automated hyperparameter tuning, and cross-validation designed for distribution shift.
 
 <div class="project-tags">
   <span class="skill-tag">Python</span>
@@ -36,7 +36,7 @@ ADMET property prediction for drug candidates. Ensemble machine learning models 
 
 ### DDPM-Enhanced-Sampling
 
-Denoising diffusion probabilistic models (DDPMs) used to generate polymer conformational ensembles that are consistent with their Boltzmann distributions. Applies score-matching and denoising diffusion to capture thermodynamically accurate polymer configurations.
+Generative framework using denoising diffusion probabilistic models (DDPMs) to sample polymer conformations consistent with Boltzmann statistics. Replaces expensive enhanced-sampling simulations with a learned model that generates physically valid conformations orders of magnitude faster.
 
 <div class="project-tags">
   <span class="skill-tag">Python</span>
@@ -56,7 +56,7 @@ Denoising diffusion probabilistic models (DDPMs) used to generate polymer confor
 
 ### Swimming-in-Potential-Flow
 
-Computational and theoretical study of self-propulsion in potential flow, accompanying the Journal of Fluid Mechanics paper. Implements boundary integral methods and analytical swimming theory to study collective hydrodynamic interactions across Reynolds number regimes.
+Companion code for the *Journal of Fluid Mechanics* paper on self-propulsion in potential flow. Implements boundary integral methods and analytical swimming theory in C++/CUDA for studying collective hydrodynamic interactions, demonstrating that viscous dissipation is not required for self-propulsion.
 
 <div class="project-tags">
   <span class="skill-tag">C++</span>
@@ -76,7 +76,7 @@ Computational and theoretical study of self-propulsion in potential flow, accomp
 
 ### Analysis-Polyelectrolyte-Surface-Adsorption
 
-Data analysis pipeline for polyelectrolyte MD simulation trajectories. Custom multi-threaded MDAnalysis extensions achieving 100× speedup for biased MD tasks. Automated free-energy surface generation for studying polyelectrolyte adsorption to surfaces.
+High-performance analysis pipeline for polyelectrolyte molecular dynamics trajectories. Custom multi-threaded MDAnalysis extensions achieve 100x speedup over serial processing for enhanced-sampling simulations. Automates free-energy surface construction from biased trajectory data.
 
 <div class="project-tags">
   <span class="skill-tag">Python</span>
@@ -96,7 +96,7 @@ Data analysis pipeline for polyelectrolyte MD simulation trajectories. Custom mu
 
 ### Polyelectrolyte-Surface-Adsorption
 
-Molecular dynamics simulations of polyelectrolyte adsorption to mineral surfaces. Studies the binding modes and water-mediated interactions governing polymer adsorption to neutral CaCO₃ surfaces, with applications to water treatment and scale inhibition.
+Production MD simulation workflows for studying polyelectrolyte adsorption to mineral surfaces. Uses GROMACS and metadynamics to compare direct and water-mediated binding modes on CaCO₃, with applications to water treatment and scale inhibition.
 
 <div class="project-tags">
   <span class="skill-tag">Python</span>

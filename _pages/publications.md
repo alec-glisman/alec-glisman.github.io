@@ -17,7 +17,7 @@ Peer-reviewed publications in soft matter physics, molecular simulation, and com
 ### [Binding Modes and Water-Mediation of Polyelectrolyte Adsorption to a Neutral CaCO₃ Surface](https://doi.org/10.1021/acs.langmuir.4c03301)
 <span class="research-badge research-badge--drug">Langmuir · 2025</span>
 
-Atomistic simulation of poly(acrylic acid) adsorption on calcite surfaces. Characterizes direct vs. water-mediated binding modes and their dependence on chain length and Ca²⁺ concentration.
+Atomistic simulation of how a common water-treatment polymer adsorbs onto calcite surfaces. Identifies two distinct binding geometries, one through direct contact and one bridged by water molecules, and maps how each depends on chain length and calcium concentration.
 
 **Authors:** Alec Glisman, Sriteja Mantha, Decai Yu, Eric Wasserman, Scott Backer, Larisa Reyes, Zhen-Gang Wang
 
@@ -38,7 +38,7 @@ Atomistic simulation of poly(acrylic acid) adsorption on calcite surfaces. Chara
 ### [Multi-valent Ion Mediated Polyelectrolyte Association and Structure](https://doi.org/10.1021/acs.macromol.3c02103)
 <span class="research-badge research-badge--drug">Macromolecules · 2024</span>
 
-Multiscale simulation reveals how divalent Ca²⁺ ions drive polyelectrolyte chain association through bridging. Produces a concentration-dependent phase diagram connecting microscopic ion binding to macroscopic precipitation.
+Multiscale simulation of how calcium ions bridge charged polymer chains and drive them to aggregate. Maps a concentration-dependent phase diagram connecting ion-level binding events to bulk precipitation.
 
 **Authors:** Alec Glisman, Sriteja Mantha, Decai Yu, Eric Wasserman, Scott Backer, Zhen-Gang Wang
 
@@ -59,7 +59,7 @@ Multiscale simulation reveals how divalent Ca²⁺ ions drive polyelectrolyte ch
 ### [Adsorption Isotherm and Mechanism of Ca²⁺ Binding to Polyelectrolyte](https://doi.org/10.1021/acs.langmuir.3c03812)
 <span class="research-badge research-badge--drug">Langmuir · 2024</span>
 
-Quantifies Ca²⁺ adsorption isotherms on poly(acrylic acid) using enhanced-sampling molecular dynamics. Reveals binding modes and free-energy landscapes governing polyelectrolyte–ion complexation in water treatment systems.
+Computes calcium binding curves for poly(acrylic acid) using enhanced-sampling molecular dynamics. Identifies the dominant binding geometries and their free-energy barriers, explaining how charged polymers capture calcium in water treatment.
 
 **Authors:** Alec Glisman, Sriteja Mantha, Decai Yu, Eric Wasserman, Scott Backer, Zhen-Gang Wang
 
@@ -80,7 +80,7 @@ Quantifies Ca²⁺ adsorption isotherms on poly(acrylic acid) using enhanced-sam
 ### [Swimming in Potential Flow](https://doi.org/10.1017/jfm.2022.946)
 <span class="research-badge research-badge--physics">JFM Rapids · 2022</span>
 
-A deformable body self-propels in potential flow through time-varying configuration changes that alter added mass — showing that self-propulsion at high Reynolds number is formally identical in structure to Stokes swimming, with added mass replacing the hydrodynamic resistance tensor.
+A deformable body self-propels in potential flow by changing shape in ways that alter its added mass. The high-Reynolds-number propulsion mechanism is structurally identical to swimming at low Reynolds number, with added mass replacing the viscous resistance tensor.
 
 **Authors:** Alec Glisman, John F. Brady
 
@@ -101,7 +101,7 @@ A deformable body self-propels in potential flow through time-varying configurat
 ### [Geometry and Dynamics of Lipid Membranes: The Scriven-Love Number](https://doi.org/10.1103/PhysRevE.101.052401)
 <span class="research-badge research-badge--physics">Physical Review E · 2020</span>
 
-Continuum theory of lipid membrane dynamics across planar, spherical, and cylindrical geometries. Introduces the Scriven-Love number, a dimensionless ratio comparing in-plane viscous stresses to elastic bending forces, and shows it is non-negligible across a wide range of biological processes.
+Continuum theory of lipid membrane dynamics across planar, spherical, and cylindrical geometries. Introduces the Scriven-Love number, a dimensionless ratio of in-plane viscous stress to elastic bending force. This ratio is non-negligible across a broad range of biological membrane processes.
 
 **Authors:** Amaresh Sahu, Alec Glisman, Joël Tchoufag, Kranthi K. Mandadapu
 

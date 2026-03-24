@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "Alec Glisman"
-excerpt: "Senior AI/ML Scientist"
+excerpt: "Senior Machine Learning Scientist"
 author_profile: true
 redirect_from:
   - /about/
@@ -10,22 +10,26 @@ redirect_from:
 
 <div class="reveal hero-intro" markdown="1">
 
-I am a **Senior AI/ML Scientist at Merck & Co.**, where I develop generative AI tools to help design small molecules that are both therapeutically effective and practically synthesizable, shortening the gap between computational design and the lab bench. I completed my PhD in Chemical Engineering at Caltech in 2024 under [Prof. Zhen-Gang Wang](http://zgwlab.che.caltech.edu/), where my research centered on the molecular physics of polyelectrolyte complexation and its applications to water remediation. Earlier, I worked in [Prof. John F. Brady's](https://cheme.caltech.edu/groups/jfb/index.html) group studying self-propulsion in active matter systems. I received my B.S. in Chemical Engineering from UC Berkeley in 2019, where I worked with [Prof. Kranthi K. Mandadapu](https://mandadapu-group.github.io/) on the mechanics of lipid membranes.
+I am a **Senior Machine Learning Scientist at Merck & Co.**, where I apply predictive deep learning and generative AI to accelerate drug discovery. I bridge physics-based simulation and cheminformatics with machine learning to design, predict, and optimize small molecule therapeutics.
+
+My background spans fluid mechanics, polymer physics, and generative chemistry. I completed my PhD in Chemical Engineering at Caltech in 2024 under [Prof. Zhen-Gang Wang](http://zgwlab.che.caltech.edu/). My thesis used molecular simulations of charged polymers and multivalent ions to explain mechanisms of mineralization, adsorption, and polymer-surface interactions. Earlier, I worked with [Prof. John F. Brady](https://cheme.caltech.edu/groups/jfb/index.html) on self-propulsion in active matter and with [Prof. Kranthi K. Mandadapu](https://mandadapu-group.github.io/) at UC Berkeley on the mechanics of lipid membranes.
+
+I welcome collaborations in AI for science, molecular modeling, and generative chemistry.
 
 </div>
 
 ## Research Background
 
-My doctoral work spanned three interconnected themes in soft matter physics and computational chemistry, applying both AI/ML techniques and physics-based methods to study these systems:
+My work spans generative AI for drug discovery and the physics of soft matter.
 
 <div class="research-card reveal" style="transition-delay: 0.05s" markdown="1">
 <i class="fas fa-brain card-icon"></i>
 
-### Generative AI, Molecular Design & QSAR Modeling
+### Generative AI, Molecular Design & Property Prediction
 
 <span class="research-badge research-badge--ai">AI/ML</span><span class="research-badge research-badge--drug">Drug Discovery</span>
 
-Designing a drug candidate requires jointly satisfying competing objectives (potency, selectivity, ADMET properties, and synthesizability), none of which can be ignored. I develop generative models that navigate this multi-parameter optimization landscape, enforcing synthesizability as a hard constraint through reaction template filtering and compatibility screening against commercially available building blocks. I also built ensemble QSAR models combining graph-based representations with cheminformatics fingerprints, which placed 18th out of 400+ submissions in the [OpenADMET-ExpansionRx Blind Challenge](https://huggingface.co/spaces/openadmet/OpenADMET-ExpansionRx-Challenge).
+Drug design requires simultaneous optimization of potency, selectivity, pharmacokinetic and safety properties, and synthesizability. I build generative models that jointly optimize these competing objectives while enforcing synthesizability as a hard constraint, so every proposed molecule can actually be made. I also develop ensemble property-prediction models combining graph neural networks with molecular fingerprints, placing 18th out of 400+ submissions in the [OpenADMET-ExpansionRx Blind Challenge](https://huggingface.co/spaces/openadmet/OpenADMET-ExpansionRx-Challenge).
 
 </div>
 
@@ -36,7 +40,7 @@ Designing a drug candidate requires jointly satisfying competing objectives (pot
 
 <span class="research-badge research-badge--physics">Physics</span><span class="research-badge research-badge--ai">AI/ML</span>
 
-Polyelectrolytes are widely used to chelate multi-valent ions for water softening, but the molecular mechanisms driving their complexation (including the counterintuitive "like-charge attraction") remain poorly understood. I used all-atom molecular dynamics and enhanced sampling to probe these mechanisms, and found that ion correlations, rather than direct ion bridges, are the primary driver of chain–chain association. I applied unsupervised deep learning to elucidate phase diagrams and structure-property relationships, and collaborated with Dow Chemical on water treatment applications.
+Charged polymers (polyelectrolytes) in water bind multivalent ions like calcium, a property exploited in water softening and scale inhibition. Yet the molecular mechanisms of this binding were not well understood. Using all-atom molecular dynamics and enhanced sampling, I showed that indirect ion-ion correlations, not direct bridging between polymer chains, drive chain association. I combined these simulations with unsupervised deep learning to map concentration-dependent phase diagrams and structure-property relationships in collaboration with Dow Chemical.
 
 </div>
 
@@ -48,7 +52,7 @@ Polyelectrolytes are widely used to chelate multi-valent ions for water softenin
 
 <span class="research-badge research-badge--physics">Physics</span><span class="research-badge research-badge--sim">Fluid Dynamics</span>
 
-Active matter systems, including fish schools, bacterial colonies, and swimming microorganisms, display striking collective behaviors, and I set out to understand how much of this emerges from fluid mechanics alone, without any phenomenological interaction rules. I derived a framework for self-propulsion in potential flow and found that a deformable body can achieve net displacement without performing net work on the fluid, a result that was surprising since viscous dissipation had previously been considered necessary for propulsion. I also developed C++/CUDA simulations showing that purely hydrodynamic coupling can produce emergent collective ordering.
+Active matter systems, including fish schools, bacterial colonies, and swimming microorganisms, display striking collective behaviors. I set out to understand how much of this emerges from fluid mechanics alone, without phenomenological interaction rules. I derived a framework for self-propulsion in potential flow and found that a deformable body can achieve net displacement without performing net work on the fluid. Viscous dissipation had previously been considered necessary for propulsion. I also developed C++/CUDA simulations showing that purely hydrodynamic coupling can produce emergent collective ordering.
 
 </div>
 
@@ -59,7 +63,7 @@ Active matter systems, including fish schools, bacterial colonies, and swimming 
 
 <span class="research-badge research-badge--physics">Physics</span><span class="research-badge research-badge--sim">Theory</span>
 
-Lipid membranes are not simply static barriers; they flow in-plane as viscous fluids while bending out-of-plane as elastic shells, making them unusual materials whose dynamics are difficult to analyze. I developed a continuum theory coupling in-plane viscous flow to out-of-plane elastic bending, and in doing so introduced the [Scriven-Love number](/publications/2020-scriven-love-1), a dimensionless ratio that quantifies when intramembrane viscous stresses matter relative to elastic bending forces. Calculating non-negligible Scriven-Love numbers across physiologically relevant processes showed that in-plane viscosity cannot generally be ignored in membrane dynamics.
+Lipid membranes are not simply static barriers. They flow in-plane as viscous fluids while bending out-of-plane as elastic shells, making them unusual materials whose dynamics are difficult to analyze. I developed a continuum theory coupling in-plane viscous flow to out-of-plane elastic bending, introducing the [Scriven-Love number](/publications/2020-scriven-love-1), a dimensionless ratio that quantifies when intramembrane viscous stresses matter relative to elastic bending forces. Computing this number across physiologically relevant processes showed that in-plane viscosity cannot generally be ignored in membrane dynamics.
 
 </div>
 -->

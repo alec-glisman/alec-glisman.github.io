@@ -3,7 +3,7 @@ layout: single
 title: "Teaching"
 permalink: /teaching/
 author_profile: true
-excerpt: "Teaching experience by Alec Glisman — graduate teaching assistant for ChE 151a/b at Caltech."
+excerpt: "Teaching experience by Alec Glisman as graduate teaching assistant for ChE 151a/b at Caltech."
 ---
 
 Graduate teaching assistant experience at Caltech.
@@ -15,7 +15,7 @@ Graduate teaching assistant experience at Caltech.
 ### Teaching Assistant — ChE 151b: Transport Phenomena II
 <span class="research-badge research-badge--sim">Graduate Course · Spring 2021</span>
 
-Advanced fluid mechanics with emphasis on perturbation methods and asymptotic analysis.
+Advanced fluid mechanics covering low-Reynolds-number flow, Brownian motion, and electrophoresis. Emphasis on perturbation methods and asymptotic analysis.
 
 **Institution:** California Institute of Technology, Chemical Engineering · Pasadena, CA
 

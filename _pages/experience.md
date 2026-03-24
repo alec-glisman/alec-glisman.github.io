@@ -3,7 +3,7 @@ layout: single
 title: "Experience"
 permalink: /experience/
 author_profile: true
-excerpt: "Professional timeline of Alec Glisman — Senior AI/ML Scientist at Merck, PhD research at Caltech, and industry internships in battery technology."
+excerpt: "Professional timeline of Alec Glisman: Senior AI/ML Scientist at Merck, PhD research at Caltech."
 ---
 
 <div class="experience-entry experience-entry--industry reveal" markdown="1">
@@ -12,9 +12,9 @@ excerpt: "Professional timeline of Alec Glisman — Senior AI/ML Scientist at Me
 **Senior AI/ML Scientist** — Merck & Co., Inc.
 <div class="experience-meta">Sep 2024 – Present · South San Francisco, CA</div>
 
-- Built and implemented advanced generative AI models, including transformer and recurrent neural network (RNN) architectures with reinforcement learning (RL), to drive the inverse design of novel small molecules with targeted properties for structure-based and ligand-based drug design (SBDD/LBDD).
-- Developed state-of-the-art graph (GNN) and conformer ensemble-based (CNN) ADMET models, integrating uncertainty quantification to deliver predictive estimates and confidence metrics to medicinal chemists and accelerate design-make-test-analyze (DMTA) cycles.
-- Mentored interns and contributed to cross-team initiatives, including platform development and career outreach events.
+- Built generative models (transformers, RNNs) with reinforcement learning to design small-molecule drug candidates with targeted properties. Applied across both structure-based and ligand-based drug design programs.
+- Developed graph neural network and conformer ensemble models to predict drug absorption, distribution, metabolism, and toxicity (ADMET) with calibrated uncertainty. Used by medicinal chemists to prioritize compounds before synthesis.
+- Mentored interns and contributed to shared ML platform infrastructure across drug discovery teams.
 
 </div>
 
@@ -24,9 +24,9 @@ excerpt: "Professional timeline of Alec Glisman — Senior AI/ML Scientist at Me
 **Graduate Researcher** — Caltech, Zhen-Gang Wang Group
 <div class="experience-meta">Jan 2022 – Aug 2024 · Pasadena, CA</div>
 
-- Developed a flexible workflow combining enhanced sampling molecular dynamics with unsupervised deep learning to elucidate phase diagrams for aqueous proteins and polymers; discovered key precipitation mechanisms and calculated quantitative structure-activity relationships.
-- Formulated generative AI diffusion models for polymer design and implemented a high-throughput free energy calculation pipeline to identify promising candidates for interfacial binding affinity.
-- Managed high-performance computing resources using Slurm and Ansible, optimizing resource allocation and increasing computational throughput for the research group by <span class="achievement">10×</span>.
+- Combined enhanced-sampling molecular dynamics with unsupervised deep learning to map phase diagrams for proteins and polymers in solution. Identified precipitation mechanisms and quantified structure-activity relationships.
+- Developed generative diffusion models for polymer design. Built an automated pipeline to compute binding free energies at solid-liquid interfaces.
+- Managed high-performance computing resources using Slurm and Ansible, increasing computational throughput for the research group by <span class="achievement">10x</span>.
 
 </div>
 
@@ -36,8 +36,8 @@ excerpt: "Professional timeline of Alec Glisman — Senior AI/ML Scientist at Me
 **Graduate Researcher** — Caltech, John F. Brady Group
 <div class="experience-meta">Sep 2019 – Dec 2021 · Pasadena, CA</div>
 
-- Programmed CPU and GPU parallelized simulations of suspended bodies using C++, CUDA, and OpenMP, enabling computational fluid dynamics (CFD) study of self-propelled swimmers and collective phenomena.
-- Conducted theoretical modeling of hydrodynamic interactions for self-propelled bodies in Stokes and potential flow theory, unveiling symmetries across Reynolds number regimes and discovering relationships between body articulation and swimming efficiency.
+- Built CPU and GPU parallelized simulations of suspended bodies in C++, CUDA, and OpenMP for computational fluid dynamics study of self-propelled swimmers and collective phenomena.
+- Developed theoretical models of hydrodynamic interactions for self-propelled bodies across viscous and inviscid flow regimes. Found universal symmetries linking body shape changes to swimming efficiency.
 
 </div>
 
@@ -47,8 +47,8 @@ excerpt: "Professional timeline of Alec Glisman — Senior AI/ML Scientist at Me
 **Research Assistant** — UC Berkeley, Kranthi K. Mandadapu Group
 <div class="experience-meta">Aug 2017 – May 2019 · Berkeley, CA</div>
 
-- Invented a dimensionless metric comparing lipid membrane out-of-plane bending with in-plane viscous forces, proving that viscous response can determine membrane stability and dynamics in biological systems.
-- Investigated phospholipid bilayer membrane dynamics using differential geometry and a unique balance law formulation to decipher coupling between surface geometry and in-plane flow behaviors.
+- Introduced the Scriven-Love number, a dimensionless ratio of lipid membrane bending stiffness to in-plane viscous forces. Showed that viscous response can govern membrane stability in biological systems.
+- Modeled phospholipid bilayer dynamics using differential geometry and nonequilibrium thermodynamics. Characterized how membrane curvature couples to viscous flow within the bilayer.
 
 </div>
 
@@ -58,8 +58,8 @@ excerpt: "Professional timeline of Alec Glisman — Senior AI/ML Scientist at Me
 **Battery Cell Quality Assurance Intern** — Nissan (Automotive Energy Supply Corporation)
 <div class="experience-meta">May 2018 – Aug 2018 · Smyrna, TN</div>
 
-- Designed and implemented an automated battery quality control system for daily testing of <span class="achievement">25,000 cells/day</span>, focusing on electrochemical stability, resulting in annual savings of <span class="achievement">$50k</span>.
-- Diagnosed electrode misalignment issues in manufactured battery electrode layers that contributed to cell failures and proposed tolerance revisions that cut <span class="achievement">$55k</span> in annual material scrap costs.
+- Designed an automated battery quality control system for testing <span class="achievement">25,000 cells/day</span> on electrochemical stability, producing annual savings of <span class="achievement">$50k</span>.
+- Diagnosed electrode misalignment issues contributing to cell failures and proposed tolerance revisions that cut <span class="achievement">$55k</span> in annual material scrap costs.
 
 </div>
 
@@ -69,8 +69,8 @@ excerpt: "Professional timeline of Alec Glisman — Senior AI/ML Scientist at Me
 **Battery Management Systems Intern** — Bosch
 <div class="experience-meta">May 2017 – Aug 2017 · Palo Alto, CA</div>
 
-- Evaluated electrode additive stability in lithium-ion batteries by analyzing dissolution under typical electric vehicle usage conditions to identify key degradation mechanisms and improve battery lifetime.
-- Initiated a comprehensive training program on plasma spectroscopy techniques and trained <span class="achievement">3 colleagues</span>, enabling the team to study trace lithium content in cycled battery components.
+- Evaluated electrode additive stability in lithium-ion batteries by analyzing dissolution under electric vehicle usage conditions, identifying key degradation mechanisms to improve battery lifetime.
+- Established a training program on plasma spectroscopy for <span class="achievement">3 colleagues</span> to measure trace lithium content in cycled battery components.
 
 </div>
 
@@ -80,7 +80,7 @@ excerpt: "Professional timeline of Alec Glisman — Senior AI/ML Scientist at Me
 **Research Assistant** — Lawrence Berkeley National Laboratory, Nitash Balsara Group
 <div class="experience-meta">Jun 2016 – May 2017 · Berkeley, CA</div>
 
-- Determined electrochemical properties of solid-state polymer electrolyte batteries by performing electrochemical impedance spectroscopy across temperatures to identify electrode degradation mechanisms.
-- Fabricated lithium metal batteries with polymer electrolytes in a glovebox to study the effects of electrolyte molecular weight and cross-linking density on ionic conductivity to verify theoretical predictions.
+- Characterized electrochemical properties of solid-state polymer electrolyte batteries via impedance spectroscopy across temperatures, identifying electrode degradation mechanisms.
+- Fabricated lithium metal batteries with polymer electrolytes to study the effects of molecular weight and cross-linking density on ionic conductivity, verifying theoretical predictions.
 
 </div>
