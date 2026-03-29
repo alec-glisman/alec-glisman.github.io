@@ -7,5 +7,51 @@
       "Bash(npm run watch:js)",
       "Bash(git *)"
     ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash -c 'FILE=\"$CLAUDE_TOOL_ARG_file_path\"; case \"$FILE\" in */_pages/*|*/_publications/*|*/_talks/*|*/_teaching/*) if [ -f \"$FILE\" ]; then head -1 \"$FILE\" | grep -q \"^---\" || echo \"WARNING: This content file is missing YAML front matter (--- delimiter). Jekyll will not process it correctly.\"; fi ;; esac; exit 0'",
+            "timeout": 5
+          }
+        ]
+      },
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash -c 'FILE=\"$CLAUDE_TOOL_ARG_file_path\"; case \"$FILE\" in */_publications/*) echo \"REMINDER: Publication files require front matter: title, collection, permalink, excerpt, date, venue, paperurl, citation. Run make test-unit in tests/ to validate.\" ;; */_talks/*) echo \"REMINDER: Talk files require front matter: title, collection, type, excerpt, permalink, venue, date, location.\" ;; */_teaching/*) echo \"REMINDER: Teaching files require front matter: title, collection, type, permalink, venue, date, location.\" ;; esac; exit 0'",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash -c 'FILE=\"$CLAUDE_TOOL_ARG_file_path\"; case \"$FILE\" in */_sass/*) echo \"REMINDER: SCSS changed. Run regression tests to verify: cd tests && make test-regression\" ;; */assets/js/_main.js) echo \"REMINDER: _main.js changed. Run npm run build:js to regenerate main.min.js\" ;; */_config.yml) echo \"REMINDER: _config.yml changed. Restart Jekyll server (config is not hot-reloaded).\" ;; esac; exit 0'",
+            "timeout": 5
+          }
+        ]
+      },
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash -c 'FILE=\"$CLAUDE_TOOL_ARG_file_path\"; case \"$FILE\" in */_sass/*) echo \"REMINDER: SCSS changed. Run regression tests: cd tests && make test-regression\" ;; */assets/js/_main.js) echo \"REMINDER: _main.js changed. Run npm run build:js to regenerate main.min.js\" ;; esac; exit 0'",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
   }
 }
