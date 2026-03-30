@@ -55,7 +55,7 @@ excerpt: "Technical skills of Alec Glisman spanning machine learning, drug disco
 <div class="skill-group reveal" style="transition-delay: 0.2s">
 {% include domain-icons.html icon="physics" size="48" class="skill-group__icon" %}
 <h3><i class="fas fa-atom"></i>Computational Chemistry & Physics</h3>
-<p>Foundation from PhD research in polymer simulations, membrane mechanics, and free-energy calculations.</p>
+<p>Foundation from Ph.D. research in polymer simulations, membrane mechanics, and free-energy calculations.</p>
 <span class="skill-tag">GROMACS</span>
 <span class="skill-tag">PLUMED</span>
 <span class="skill-tag">Enhanced Sampling MD</span>

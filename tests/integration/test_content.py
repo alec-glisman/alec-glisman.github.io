@@ -26,11 +26,11 @@ class TestAboutPageContent:
         assert "Merck" in content, "Homepage missing Merck"
 
     def test_homepage_contains_education(self, site_dir):
-        """Test that homepage mentions Caltech PhD."""
+        """Test that homepage mentions Caltech Ph.D."""
         homepage = site_dir / "index.html"
         content = homepage.read_text()
         assert "Caltech" in content, "Homepage missing Caltech"
-        assert "PhD" in content, "Homepage missing PhD"
+        assert "Ph.D." in content, "Homepage missing Ph.D."
 
 
 class TestPublicationsPageContent:

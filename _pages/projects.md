@@ -16,7 +16,7 @@ Selected software projects. Full list on [GitHub](https://github.com/alec-glisma
 
 ### OpenADMET-ExpansionRx
 
-Stacked ensemble models for predicting drug absorption, distribution, metabolism, and toxicity (ADMET). Combines graph neural networks with molecular fingerprints and physicochemical descriptors. Placed 18th of 400+ submissions in the OpenADMET-ExpansionRx blind challenge across 9 endpoints. Uses curriculum learning, automated hyperparameter tuning, and cross-validation designed for distribution shift.
+Multi-architecture benchmarking pipeline for predicting drug absorption, distribution, metabolism, and toxicity (ADMET). Spans gradient-boosted trees, message-passing neural networks, and foundation models. Placed 25th of 100 finalists in the OpenADMET-ExpansionRx blind challenge across 9 endpoints. Uses clustering-based scaffold splits, temporal splits, and statistical hypothesis testing for architecture selection.
 
 <div class="project-tags">
   <span class="skill-tag">Python</span>

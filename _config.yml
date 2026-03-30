@@ -10,7 +10,7 @@ locale: "en"
 title: "Alec Glisman | Senior AI/ML Scientist"
 title_separator: "-"
 name: &name "Alec Glisman"
-description: &description "Senior AI/ML Scientist at Merck & Co. | PhD Chemical Engineering, Caltech 2024"
+description: &description "Senior AI/ML Scientist at Merck & Co. | Ph.D. Chemical Engineering, Caltech 2024"
 url: https://alec-glisman.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: "" # the subpath of your site, e.g. "/blog"
 repository: "alec-glisman/alec-glisman.github.io"
@@ -78,9 +78,9 @@ analytics:
 
 # Site Author
 author:
-  name: "Alec Glisman"
+  name: "Alec Glisman, Ph.D."
   avatar: "profile.png"
-  bio: "Senior AI/ML Scientist at Merck & Co. PhD, Chemical Engineering, Caltech 2024."
+  bio: "Senior AI/ML Scientist at Merck & Co. Ph.D., Chemical Engineering, Caltech 2024."
   location: "South San Francisco, CA"
   employer: "Merck & Co."
   pubmed:

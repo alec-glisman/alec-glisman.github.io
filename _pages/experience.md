@@ -3,7 +3,7 @@ layout: single
 title: "Experience"
 permalink: /experience/
 author_profile: true
-excerpt: "Professional experience of Alec Glisman: Senior AI/ML Scientist at Merck, PhD research at Caltech, and industry internships at Nissan, Bosch, and Lawrence Berkeley National Laboratory."
+excerpt: "Professional experience of Alec Glisman: Senior AI/ML Scientist at Merck, Ph.D. research at Caltech, and industry internships at Nissan, Bosch, and Lawrence Berkeley National Laboratory."
 ---
 
 <div class="experience-entry experience-entry--industry reveal" markdown="1">
@@ -12,8 +12,8 @@ excerpt: "Professional experience of Alec Glisman: Senior AI/ML Scientist at Mer
 **Senior AI/ML Scientist** — Merck & Co., Inc.
 <div class="experience-meta">Sep 2024 – Present · South San Francisco, CA</div>
 
-- Built generative models (transformers, RNNs) with reinforcement learning to design small-molecule drug candidates with targeted properties. Applied across both structure-based and ligand-based drug design programs.
-- Developed graph neural network and conformer ensemble models to predict drug absorption, distribution, metabolism, and toxicity (ADMET) with calibrated uncertainty. Used by medicinal chemists to prioritize compounds before synthesis.
+- Develop generative models for small-molecule drug design, transitioning from SMILES-based RNN approaches to GFlowNet-based architectures that generate molecules over validated reaction templates using commercially available building blocks. Focus on R-group optimization, core-hopping, and knowledge-based design with multi-stage curriculum learning.
+- Built an automated benchmarking and deployment pipeline for ADMET property prediction spanning gradient-boosted trees, message-passing neural networks, and foundation models. Models are deployed directly to medicinal chemists for real-time predictions during design cycles.
 - Mentored interns and contributed to shared ML platform infrastructure across drug discovery teams.
 
 </div>
@@ -47,7 +47,7 @@ excerpt: "Professional experience of Alec Glisman: Senior AI/ML Scientist at Mer
 **Research Assistant** — UC Berkeley, Kranthi K. Mandadapu Group
 <div class="experience-meta">Aug 2017 – May 2019 · Berkeley, CA</div>
 
-- Introduced the Scriven-Love number, a dimensionless ratio of lipid membrane bending stiffness to in-plane viscous forces. Showed that viscous response can govern membrane stability in biological systems.
+- Introduced the Scriven-Love number, a dimensionless ratio comparing out-of-plane forces from intramembrane viscous stresses to elastic bending forces. Showed that viscous response cannot generally be neglected in biological membrane dynamics.
 - Modeled phospholipid bilayer dynamics using differential geometry and nonequilibrium thermodynamics. Characterized how membrane curvature couples to viscous flow within the bilayer.
 
 </div>

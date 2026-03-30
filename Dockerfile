@@ -1,7 +1,7 @@
 # ──────────────────────────────────────────────
 # Stage 1: base — Ruby gems shared by all stages
 # ──────────────────────────────────────────────
-FROM ruby:3.1-slim AS base
+FROM ruby:3.3-slim AS base
 
 # System deps needed to compile native gems (nokogiri, etc.)
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -17,7 +17,15 @@ RUN bundle install --jobs 4 --retry 3 \
     # Add safe-navigation (&.) so the servlet doesn't crash on every GET request.
     # Upstream fix: https://github.com/jekyll/jekyll/issues/9526
     && SERVLET=$(bundle show jekyll)/lib/jekyll/commands/serve/servlet.rb \
-    && sed -i 's/return unless @mime_types_charset\.key?/return unless @mime_types_charset\&.key?/' "$SERVLET"
+    && sed -i 's/return unless @mime_types_charset\.key?/return unless @mime_types_charset\&.key?/' "$SERVLET" \
+    # Ruby 3.2+ removed String#tainted? but Liquid 4.0.3 still calls it.
+    # Monkey-patch the missing method so Jekyll builds succeed.
+    && LIQUID_VAR=$(bundle show liquid)/lib/liquid/variable.rb \
+    && sed -i 's/return unless obj\.tainted?/return unless obj.respond_to?(:tainted?) \&\& obj.tainted?/' "$LIQUID_VAR" \
+    # pathutil 0.16.2 passes keyword args as a positional Hash to File.read/binread/readlines.
+    # Ruby 3.x requires **kwd (double-splat) to forward keyword arguments correctly.
+    && PATHUTIL=$(bundle show pathutil)/lib/pathutil.rb \
+    && sed -i 's/self, \*args, kwd/self, *args, **kwd/g' "$PATHUTIL"
 
 # ──────────────────────────────────────────────
 # Stage 2: dev — local development with live reload
@@ -68,8 +76,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libcairo2 \
     && rm -rf /var/lib/apt/lists/*
 
-# Install bundler for the Ruby layer
-RUN gem install bundler --no-document
+# Upgrade RubyGems so it can resolve Bundler 4.x, then install the locked version
+RUN gem update --system --no-document \
+    && gem install bundler --no-document
 
 WORKDIR /site
 
@@ -82,7 +91,11 @@ RUN bundle install --jobs 4 --retry 3 \
     # Ruby 3.2+ removed String#tainted? but Liquid 4.0.3 still calls it.
     # Monkey-patch the missing method so Jekyll builds succeed.
     && LIQUID_VAR=$(bundle show liquid)/lib/liquid/variable.rb \
-    && sed -i 's/return unless obj\.tainted?/return unless obj.respond_to?(:tainted?) \&\& obj.tainted?/' "$LIQUID_VAR"
+    && sed -i 's/return unless obj\.tainted?/return unless obj.respond_to?(:tainted?) \&\& obj.tainted?/' "$LIQUID_VAR" \
+    # pathutil 0.16.2 passes keyword args as a positional Hash to File.read/binread/readlines.
+    # Ruby 3.x requires **kwd (double-splat) to forward keyword arguments correctly.
+    && PATHUTIL=$(bundle show pathutil)/lib/pathutil.rb \
+    && sed -i 's/self, \*args, kwd/self, *args, **kwd/g' "$PATHUTIL"
 
 # Install Python dependencies and Playwright browser
 COPY tests/requirements.txt tests/requirements.txt
