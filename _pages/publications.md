@@ -15,7 +15,8 @@ Peer-reviewed publications in soft matter physics, molecular simulation, and com
 <div class="pub-card-body" markdown="1">
 
 ### [Binding Modes and Water-Mediation of Polyelectrolyte Adsorption to a Neutral CaCO₃ Surface](https://doi.org/10.1021/acs.langmuir.4c03301)
-<span class="research-badge research-badge--physics">Physics</span><span class="research-badge research-badge--sim">Simulation</span>
+<span class="research-badge research-badge--physics">Langmuir · 2025</span>
+<span class="research-badge research-badge--sim">Simulation</span><span class="research-badge research-badge--drug">Chemistry</span>
 
 Atomistic simulation of how a common water-treatment polymer adsorbs onto calcite surfaces. Identifies two distinct binding geometries, one through direct contact and one bridged by water molecules, and maps how each depends on chain length and calcium concentration.
 
@@ -36,7 +37,8 @@ Atomistic simulation of how a common water-treatment polymer adsorbs onto calcit
 <div class="pub-card-body" markdown="1">
 
 ### [Multi-valent Ion Mediated Polyelectrolyte Association and Structure](https://doi.org/10.1021/acs.macromol.3c02103)
-<span class="research-badge research-badge--physics">Physics</span><span class="research-badge research-badge--sim">Simulation</span>
+<span class="research-badge research-badge--physics">Macromolecules · 2024</span>
+<span class="research-badge research-badge--sim">Simulation</span><span class="research-badge research-badge--ai">AI/ML</span><span class="research-badge research-badge--sim">Deep Learning</span>
 
 Multiscale simulation of how calcium ions bridge charged polymer chains and drive them to aggregate. Maps a concentration-dependent phase diagram connecting ion-level binding events to bulk precipitation.
 
@@ -57,7 +59,8 @@ Multiscale simulation of how calcium ions bridge charged polymer chains and driv
 <div class="pub-card-body" markdown="1">
 
 ### [Adsorption Isotherm and Mechanism of Ca²⁺ Binding to Polyelectrolyte](https://doi.org/10.1021/acs.langmuir.3c03812)
-<span class="research-badge research-badge--physics">Physics</span><span class="research-badge research-badge--sim">Simulation</span>
+<span class="research-badge research-badge--physics">Langmuir · 2024</span>
+<span class="research-badge research-badge--sim">Simulation</span><span class="research-badge research-badge--drug">Chemistry</span>
 
 Computes calcium binding curves for poly(acrylic acid) using enhanced-sampling molecular dynamics. Identifies the dominant binding geometries and their free-energy barriers, explaining how charged polymers capture calcium in water treatment.
 
@@ -79,6 +82,7 @@ Computes calcium binding curves for poly(acrylic acid) using enhanced-sampling m
 
 ### [Swimming in Potential Flow](https://doi.org/10.1017/jfm.2022.946)
 <span class="research-badge research-badge--physics">JFM Rapids · 2022</span>
+<span class="research-badge research-badge--physics">Physics</span><span class="research-badge research-badge--sim">Simulation</span><span class="research-badge research-badge--sim">Fluid Dynamics</span>
 
 A deformable body self-propels in potential flow by changing shape in ways that alter its added mass. The high-Reynolds-number propulsion mechanism is structurally identical to swimming at low Reynolds number, with added mass replacing the viscous resistance tensor.
 
@@ -100,6 +104,7 @@ A deformable body self-propels in potential flow by changing shape in ways that 
 
 ### [Geometry and Dynamics of Lipid Membranes: The Scriven-Love Number](https://doi.org/10.1103/PhysRevE.101.052401)
 <span class="research-badge research-badge--physics">Physical Review E · 2020</span>
+<span class="research-badge research-badge--physics">Physics</span><span class="research-badge research-badge--sim">Theory</span>
 
 Continuum theory of lipid membrane dynamics across planar, spherical, and cylindrical geometries. Introduces the Scriven-Love number, a dimensionless ratio of in-plane viscous stress to elastic bending force. This ratio is non-negligible across a broad range of biological membrane processes.
 
