@@ -142,16 +142,17 @@ class TestPublicationLinkTargets:
         if not pub_index.exists():
             pytest.skip("Publications page not found")
 
-        soup = BeautifulSoup(pub_index.read_text(), "html.parser")
         content = pub_index.read_text().lower()
 
-        expected_publication_slugs = {
-            "2020-scriven-love-1",
-            "2022-potential-flow-2",
-            "2024-langmuir-adsorption-isotherm",
-            "2024-macromolecules-polyelectrolyte",
-            "2025-langmuir-binding-modes",
+        # Check for DOI identifiers — these uniquely identify each publication
+        # and are present as href links on the hand-written publications page.
+        expected_dois = {
+            "10.1103/physreve.101.052401",       # 2020 Scriven-Love
+            "10.1017/jfm.2022.946",              # 2022 Potential Flow
+            "10.1021/acs.langmuir.3c03812",      # 2024 Adsorption Isotherm
+            "10.1021/acs.macromol.3c02103",       # 2024 Macromolecules
+            "10.1021/acs.langmuir.4c03301",      # 2025 Binding Modes
         }
 
-        for slug in expected_publication_slugs:
-            assert slug in content, f"Publication not found on /publications/ page: {slug}"
+        for doi in expected_dois:
+            assert doi in content, f"Publication DOI not found on /publications/ page: {doi}"

@@ -6,7 +6,14 @@ author_profile: true
 excerpt: "Technical skills of Alec Glisman spanning machine learning, drug discovery, computational chemistry, programming, and DevOps infrastructure."
 ---
 
+<div class="section-divider" aria-hidden="true"></div>
+
+<!-- TODO: classify primary skills by changing class="skill-tag" to class="skill-tag skill-tag--primary" -->
+
+<div class="skills-grid">
+
 <div class="skill-group reveal">
+{% include domain-icons.html icon="ai" size="48" class="skill-group__icon" %}
 <h3><i class="fas fa-brain"></i>Machine Learning & AI</h3>
 <p>Core toolkit for molecular generation and property prediction at Merck, spanning architectures from graph neural networks to diffusion models.</p>
 <span class="skill-tag">PyTorch</span>
@@ -26,6 +33,7 @@ excerpt: "Technical skills of Alec Glisman spanning machine learning, drug disco
 </div>
 
 <div class="skill-group reveal" style="transition-delay: 0.1s">
+{% include domain-icons.html icon="drug" size="48" class="skill-group__icon" %}
 <h3><i class="fas fa-pills"></i>Drug Discovery & Molecular Design</h3>
 <p>Applied daily across structure-based and ligand-based design programs, from hit finding through lead optimization.</p>
 <span class="skill-tag">Structure-Based Drug Design (SBDD)</span>
@@ -45,6 +53,7 @@ excerpt: "Technical skills of Alec Glisman spanning machine learning, drug disco
 </div>
 
 <div class="skill-group reveal" style="transition-delay: 0.2s">
+{% include domain-icons.html icon="physics" size="48" class="skill-group__icon" %}
 <h3><i class="fas fa-atom"></i>Computational Chemistry & Physics</h3>
 <p>Foundation from PhD research in polymer simulations, membrane mechanics, and free-energy calculations.</p>
 <span class="skill-tag">GROMACS</span>
@@ -61,6 +70,10 @@ excerpt: "Technical skills of Alec Glisman spanning machine learning, drug disco
 </div>
 
 <div class="skill-group reveal" style="transition-delay: 0.3s">
+<svg class="skill-group__icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#0EA5C9" stroke-width="1.5" aria-hidden="true">
+  <polyline points="4 17 4 7 10 7"/><polyline points="20 17 20 7 14 7"/>
+  <line x1="8" y1="12" x2="16" y2="12"/>
+</svg>
 <h3><i class="fas fa-code"></i>Programming & Computing</h3>
 <p>Languages used across production ML systems, HPC simulation codes, and data analysis pipelines.</p>
 <span class="skill-tag">Python</span>
@@ -74,6 +87,11 @@ excerpt: "Technical skills of Alec Glisman spanning machine learning, drug disco
 </div>
 
 <div class="skill-group reveal" style="transition-delay: 0.4s">
+<svg class="skill-group__icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#0EA5C9" stroke-width="1.5" aria-hidden="true">
+  <rect x="5" y="4" width="14" height="5" rx="1"/><rect x="5" y="11" width="14" height="5" rx="1"/>
+  <line x1="9" y1="19" x2="9" y2="22"/><line x1="15" y1="19" x2="15" y2="22"/>
+  <line x1="7" y1="22" x2="17" y2="22"/>
+</svg>
 <h3><i class="fas fa-server"></i>DevOps & Infrastructure</h3>
 <p>Tools for managing reproducible workflows on HPC clusters and cloud environments.</p>
 <span class="skill-tag">Git / GitHub Actions</span>
@@ -82,4 +100,6 @@ excerpt: "Technical skills of Alec Glisman spanning machine learning, drug disco
 <span class="skill-tag">Ansible</span>
 <span class="skill-tag">PBS</span>
 <span class="skill-tag">CI/CD</span>
+</div>
+
 </div>

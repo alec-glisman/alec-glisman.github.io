@@ -6,18 +6,61 @@ author_profile: true
 excerpt: "Research by Alec Glisman combining physics-based simulation, machine learning, and theoretical mechanics. Generative AI for drug discovery, polyelectrolyte complexation, microhydrodynamics, and lipid membrane mechanics."
 ---
 
+<div class="hex-bg" style="padding: 0.5em 0; margin-bottom: 0.5em;">
+
 My work sits at the intersection of physics-based simulation, machine learning, and molecular design. I came to drug discovery through soft matter physics, first studying how lipid membranes deform, then how charged polymers and multivalent ions interact in aqueous solution. That grounding in molecular-scale physics shapes how I approach generative AI and property prediction for drug candidates. I care about more than predictive accuracy. I want to understand *why* molecules behave as they do and use that understanding to guide design.
 
----
+</div>
 
-<div class="research-card reveal" markdown="1">
+<div class="section-divider" aria-hidden="true"></div>
+
+<div class="research-card reveal" style="transition-delay: 0s">
 <i class="fas fa-brain card-icon"></i>
+<div class="pub-card-inner">
+<div class="pub-card-body" markdown="1">
 
 ### Generative AI & Molecular Design
 <span class="research-badge research-badge--ai">AI/ML</span><span class="research-badge research-badge--drug">Drug Discovery</span>
 
 A drug candidate must be potent, selective, safe, metabolically stable, and possible to synthesize. Optimizing all of these properties at once is the central challenge of molecular design. I develop generative models that navigate this landscape through two complementary modes. *De novo generation* explores broad chemical space to discover novel molecular scaffolds. *Series-constrained generation* modifies specific positions on a known active molecule, exploiting accumulated structure-activity relationships during lead optimization. Synthesizability is enforced as a hard constraint: every generated candidate is filtered against known reaction templates and commercially available building blocks, so compounds are synthetically accessible.
 
+</div>
+<figure class="pub-card-figure">
+  <svg viewBox="0 0 170 130" xmlns="http://www.w3.org/2000/svg" aria-label="Generative molecular design: interconnected molecular graph" role="img">
+    <!-- Molecular graph representing de novo generation -->
+    <!-- Bonds -->
+    <line x1="55" y1="35" x2="85" y2="25" stroke="#0EA5C9" stroke-width="1.5" opacity="0.5"/>
+    <line x1="85" y1="25" x2="115" y2="40" stroke="#0EA5C9" stroke-width="1.5" opacity="0.5"/>
+    <line x1="115" y1="40" x2="120" y2="72" stroke="#0EA5C9" stroke-width="1.5" opacity="0.5"/>
+    <line x1="120" y1="72" x2="95" y2="95" stroke="#0EA5C9" stroke-width="1.5" opacity="0.5"/>
+    <line x1="95" y1="95" x2="60" y2="90" stroke="#0EA5C9" stroke-width="1.5" opacity="0.5"/>
+    <line x1="60" y1="90" x2="45" y2="62" stroke="#0EA5C9" stroke-width="1.5" opacity="0.5"/>
+    <line x1="45" y1="62" x2="55" y2="35" stroke="#0EA5C9" stroke-width="1.5" opacity="0.5"/>
+    <!-- Cross bonds -->
+    <line x1="55" y1="35" x2="120" y2="72" stroke="#0EA5C9" stroke-width="1" opacity="0.2"/>
+    <line x1="85" y1="25" x2="95" y2="95" stroke="#0EA5C9" stroke-width="1" opacity="0.2"/>
+    <!-- Atoms (nodes) -->
+    <circle cx="55" cy="35" r="8" fill="rgba(14,165,201,0.12)" stroke="#0EA5C9" stroke-width="1.5"/>
+    <circle cx="85" cy="25" r="10" fill="rgba(14,165,201,0.15)" stroke="#0EA5C9" stroke-width="1.5"/>
+    <circle cx="115" cy="40" r="7" fill="rgba(14,165,201,0.10)" stroke="#0EA5C9" stroke-width="1.5"/>
+    <circle cx="120" cy="72" r="9" fill="rgba(14,165,201,0.12)" stroke="#0EA5C9" stroke-width="1.5"/>
+    <circle cx="95" cy="95" r="8" fill="rgba(14,165,201,0.12)" stroke="#0EA5C9" stroke-width="1.5"/>
+    <circle cx="60" cy="90" r="6" fill="rgba(14,165,201,0.08)" stroke="#0EA5C9" stroke-width="1.5"/>
+    <circle cx="45" cy="62" r="7" fill="rgba(14,165,201,0.10)" stroke="#0EA5C9" stroke-width="1.5"/>
+    <!-- Generation arrow motif -->
+    <path d="M135 60 L148 60" stroke="#0EA5C9" stroke-width="1.5" opacity="0.4"/>
+    <path d="M144 55 L150 60 L144 65" fill="none" stroke="#0EA5C9" stroke-width="1.5" opacity="0.4"/>
+    <!-- Small generated fragment -->
+    <circle cx="158" cy="55" r="4" fill="rgba(14,165,201,0.15)" stroke="#0EA5C9" stroke-width="1"/>
+    <circle cx="158" cy="65" r="3.5" fill="rgba(14,165,201,0.10)" stroke="#0EA5C9" stroke-width="1"/>
+    <line x1="158" y1="55" x2="158" y2="65" stroke="#0EA5C9" stroke-width="1" opacity="0.4"/>
+    <!-- Side chain stub -->
+    <line x1="55" y1="35" x2="35" y2="22" stroke="#0EA5C9" stroke-width="1" opacity="0.3"/>
+    <circle cx="35" cy="22" r="4" fill="rgba(14,165,201,0.08)" stroke="#0EA5C9" stroke-width="1" opacity="0.5"/>
+  </svg>
+  <figcaption>Generative molecular design</figcaption>
+</figure>
+</div>
 </div>
 
 <div class="research-card reveal" style="transition-delay: 0.05s" markdown="1">

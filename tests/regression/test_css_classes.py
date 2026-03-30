@@ -82,6 +82,56 @@ class TestCustomCSSClasses:
             "Homepage missing .hero-intro class on intro paragraph"
         )
 
+    def test_homepage_has_hero_wrapper(self, site_dir):
+        """Test that homepage has .hero-wrapper element wrapping the hero section."""
+        homepage = site_dir / "index.html"
+        if not homepage.exists():
+            pytest.skip("Homepage not found")
+        content = homepage.read_text()
+        assert "hero-wrapper" in content, (
+            "Homepage missing .hero-wrapper class on hero section"
+        )
+
+    def test_homepage_has_hero_icon_column(self, site_dir):
+        """Test that homepage has .hero-icon-column for domain icon strip."""
+        homepage = site_dir / "index.html"
+        if not homepage.exists():
+            pytest.skip("Homepage not found")
+        content = homepage.read_text()
+        assert "hero-icon-column" in content, (
+            "Homepage missing .hero-icon-column class"
+        )
+
+    def test_hex_bg_class_present(self, site_dir):
+        """Test that .hex-bg class is used on at least one page."""
+        for page_path in ["index.html", "research/index.html", "skills/index.html"]:
+            page_file = site_dir / page_path
+            if page_file.exists():
+                content = page_file.read_text()
+                if "hex-bg" in content:
+                    return
+        pytest.fail("hex-bg class not found on any expected page")
+
+    def test_skills_page_has_skills_grid(self, site_dir):
+        """Test that skills page has .skills-grid wrapper for 2-column layout."""
+        skills_page = site_dir / "skills" / "index.html"
+        if not skills_page.exists():
+            pytest.skip("Skills page not found")
+        content = skills_page.read_text()
+        assert "skills-grid" in content, (
+            "Skills page missing .skills-grid wrapper class"
+        )
+
+    def test_skills_page_has_decorative_icons(self, site_dir):
+        """Test that skills page has .skill-group__icon decorative elements."""
+        skills_page = site_dir / "skills" / "index.html"
+        if not skills_page.exists():
+            pytest.skip("Skills page not found")
+        content = skills_page.read_text()
+        assert "skill-group__icon" in content, (
+            "Skills page missing .skill-group__icon decorative icons"
+        )
+
     def test_research_cards_have_badges(self, site_dir):
         """Test that research cards contain topic badge elements."""
         for page_path in ["index.html", "research/index.html"]:
@@ -122,6 +172,58 @@ class TestCustomCSSClasses:
         content = css_file.read_text()
         assert "anchor-link" in content, (
             "anchor-link CSS class not found — hover anchor links not implemented"
+        )
+
+
+class TestVisualEnhancementCSS:
+    """Test that visual enhancement CSS classes are present in compiled CSS."""
+
+    def test_hex_bg_css_present(self, site_dir):
+        """Test that .hex-bg CSS rules are in main.css."""
+        css_file = site_dir / "assets" / "css" / "main.css"
+        if not css_file.exists():
+            pytest.skip("CSS file not found")
+        content = css_file.read_text()
+        assert ".hex-bg" in content, ".hex-bg CSS rules not found in main.css"
+
+    def test_section_divider_css_present(self, site_dir):
+        """Test that .section-divider CSS rules are in main.css."""
+        css_file = site_dir / "assets" / "css" / "main.css"
+        if not css_file.exists():
+            pytest.skip("CSS file not found")
+        content = css_file.read_text()
+        assert ".section-divider" in content, (
+            ".section-divider CSS rules not found in main.css"
+        )
+
+    def test_hero_wrapper_css_present(self, site_dir):
+        """Test that .hero-wrapper CSS rules are in main.css."""
+        css_file = site_dir / "assets" / "css" / "main.css"
+        if not css_file.exists():
+            pytest.skip("CSS file not found")
+        content = css_file.read_text()
+        assert ".hero-wrapper" in content, (
+            ".hero-wrapper CSS rules not found in main.css"
+        )
+
+    def test_skill_tag_primary_css_present(self, site_dir):
+        """Test that .skill-tag--primary CSS rules are in main.css."""
+        css_file = site_dir / "assets" / "css" / "main.css"
+        if not css_file.exists():
+            pytest.skip("CSS file not found")
+        content = css_file.read_text()
+        assert ".skill-tag--primary" in content, (
+            ".skill-tag--primary CSS rules not found in main.css"
+        )
+
+    def test_pub_card_figure_svg_css_present(self, site_dir):
+        """Test that .pub-card-figure svg CSS rules are in main.css."""
+        css_file = site_dir / "assets" / "css" / "main.css"
+        if not css_file.exists():
+            pytest.skip("CSS file not found")
+        content = css_file.read_text()
+        assert ".pub-card-figure" in content and "svg" in content, (
+            ".pub-card-figure svg CSS rules not found in main.css"
         )
 
 

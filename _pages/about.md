@@ -8,7 +8,44 @@ redirect_from:
   - /about.html
 ---
 
-<div class="reveal hero-intro" markdown="1">
+<div class="reveal hero-wrapper hex-bg">
+  <!-- Decorative background accent icons -->
+  <svg class="hero-bg-icon" style="top: 10px; right: 20px;" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#0EA5C9" stroke-width="1.2" aria-hidden="true">
+    <circle cx="12" cy="5" r="3"/><circle cx="5" cy="18" r="3"/><circle cx="19" cy="18" r="3"/>
+    <line x1="12" y1="8" x2="5" y2="15"/><line x1="12" y1="8" x2="19" y2="15"/>
+  </svg>
+  <svg class="hero-bg-icon" style="bottom: 15px; right: 55px;" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="1.2" aria-hidden="true">
+    <path d="M3 17 C7 13, 11 19, 15 14 S21 11, 21 11"/>
+    <path d="M3 13 C7 9, 11 15, 15 10 S21 7, 21 7" opacity="0.5"/>
+  </svg>
+  <svg class="hero-bg-icon" style="bottom: 20px; left: 85px;" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="1.2" aria-hidden="true">
+    <circle cx="8" cy="12" r="3"/><circle cx="16" cy="8" r="3"/><circle cx="16" cy="16" r="3"/>
+    <line x1="11" y1="12" x2="13" y2="9"/><line x1="11" y1="12" x2="13" y2="15"/>
+  </svg>
+
+  <div class="hero-icon-column">
+    <div class="hero-icon-item">
+      {% include domain-icons.html icon="ai" size="26" label="AI and Machine Learning" %}
+      <span class="hero-icon-label">AI/ML</span>
+    </div>
+    <div class="hero-icon-divider"></div>
+    <div class="hero-icon-item">
+      {% include domain-icons.html icon="physics" size="26" label="Physics" %}
+      <span class="hero-icon-label">Physics</span>
+    </div>
+    <div class="hero-icon-divider"></div>
+    <div class="hero-icon-item">
+      {% include domain-icons.html icon="drug" size="26" label="Drug Design" %}
+      <span class="hero-icon-label">Drug Design</span>
+    </div>
+    <div class="hero-icon-divider"></div>
+    <div class="hero-icon-item">
+      {% include domain-icons.html icon="fluids" size="26" label="Fluid Dynamics" %}
+      <span class="hero-icon-label">Fluids</span>
+    </div>
+  </div>
+
+  <div class="hero-intro" markdown="1">
 
 I am a **Senior AI/ML Scientist at Merck & Co.**, where I apply predictive deep learning and generative AI to accelerate drug discovery. I bridge physics-based simulation and cheminformatics with machine learning to design, predict, and optimize small molecule therapeutics.
 
@@ -16,7 +53,10 @@ My background spans fluid mechanics, polymer physics, and generative chemistry. 
 
 I welcome collaborations in AI for science, molecular modeling, and generative chemistry.
 
+  </div>
 </div>
+
+<div class="section-divider" aria-hidden="true"></div>
 
 ## Research Background
 
@@ -67,6 +107,8 @@ Lipid membranes are not simply static barriers. They flow in-plane as viscous fl
 
 </div>
 -->
+
+<div class="section-divider" aria-hidden="true"></div>
 
 <div class="reveal" style="transition-delay: 0.25s" markdown="1">
 

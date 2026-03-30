@@ -752,3 +752,164 @@ table {
 /* --- SMOOTH SCROLL --- */
 html { scroll-behavior: smooth; }
 
+/* ==========================================================================
+   VISUAL ENHANCEMENT — Shared design system elements
+   ========================================================================== */
+
+/* --- HEX BACKGROUND PATTERN --- */
+.hex-bg {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='46'%3E%3Cpolygon points='20,0 40,11.5 40,34.5 20,46 0,34.5 0,11.5' fill='none' stroke='%231B2A4A' stroke-width='1' transform='rotate(15 20 23)'/%3E%3C/svg%3E");
+    background-size: 40px 46px;
+    opacity: 0.035;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Ensure content sits above the pattern */
+  > * { position: relative; z-index: 1; }
+}
+
+/* --- SECTION DIVIDER --- */
+.section-divider {
+  height: 20px;
+  margin: 1.5rem 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 20'%3E%3Cpath d='M0 10 Q300 0 600 10 T1200 10' fill='none' stroke='%230EA5C9' stroke-width='1' opacity='0.2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+/* --- HERO WRAPPER (About page: icon column + hero text) --- */
+.hero-wrapper {
+  display: flex;
+  align-items: stretch;
+  gap: 1.2rem;
+  margin-bottom: 1.5em;
+}
+
+@media (max-width: 600px) {
+  .hero-wrapper {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
+
+/* --- HERO ICON COLUMN --- */
+.hero-icon-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.8rem 0.9rem;
+  background: rgba(27, 42, 74, 0.03);
+  border-radius: 10px;
+  flex-shrink: 0;
+  min-width: 62px;
+}
+
+.hero-icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+.hero-icon-label {
+  font-size: 0.48rem;
+  font-family: 'Outfit', sans-serif;
+  color: #6B7280;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.hero-icon-divider {
+  width: 18px;
+  height: 1px;
+  background: rgba(14, 165, 201, 0.15);
+}
+
+@media (max-width: 600px) {
+  .hero-icon-column {
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0.6rem 1rem;
+    justify-content: center;
+  }
+
+  .hero-icon-divider {
+    width: 1px;
+    height: 18px;
+  }
+
+  .hero-icon-item svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* --- HERO BACKGROUND ACCENT ICONS (faint decorative) --- */
+.hero-bg-icon {
+  position: absolute;
+  opacity: 0.06;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* --- SKILL TAG PRIMARY VARIANT --- */
+.skill-tag--primary {
+  background: #0EA5C9;
+  color: #FFFFFF;
+  border-color: #0EA5C9;
+
+  &:hover {
+    background: darken(#0EA5C9, 12%);
+    color: #FFFFFF;
+    border-color: darken(#0EA5C9, 12%);
+  }
+}
+
+/* --- SKILL GROUP: decorative icon + position relative --- */
+.skill-group {
+  position: relative;
+}
+
+.skill-group__icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 48px;
+  height: 48px;
+  opacity: 0.07;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.skill-group:hover .skill-group__icon {
+  opacity: 0.12;
+}
+
+/* --- PUB-CARD-FIGURE: SVG support (mirrors img styles) --- */
+.pub-card-figure svg {
+  width: 100%;
+  height: 130px;
+  border-radius: 6px;
+  border: 1px solid rgba(14, 165, 201, 0.15);
+  background: #F8FAFC;
+  padding: 6px;
+  display: block;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pub-card-figure:hover svg {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(27, 42, 74, 0.12);
+}
+

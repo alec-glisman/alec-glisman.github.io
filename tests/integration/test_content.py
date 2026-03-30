@@ -47,7 +47,7 @@ class TestPublicationsPageContent:
         expected_titles = [
             "Scriven-Love",  # 2020-scriven-love-1
             "potential flow",  # 2022-potential-flow-2 title: "Swimming in potential flow"
-            "Adsorption isotherm",  # 2024-langmuir-adsorption-isotherm
+            "Adsorption Isotherm",  # 2024-langmuir-adsorption-isotherm
             "Polyelectrolyte Association",  # 2024-macromolecules
             "Binding Modes",  # 2025-langmuir
         ]

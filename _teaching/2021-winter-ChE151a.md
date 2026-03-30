@@ -2,7 +2,7 @@
 title: "Teaching Assistant for ChE 151a"
 collection: teaching
 type: "Graduate course"
-permalink: /teaching/2021-winter-ChE151a
+permalink: /teaching/2021-winter-ChE151a/
 venue: "California Institute of Technology, Chemical Engineering"
 date: 2021-01-01
 location: "Los Angeles, CA"

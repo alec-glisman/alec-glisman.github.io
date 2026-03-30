@@ -76,8 +76,13 @@ WORKDIR /site
 # Install Ruby gems
 COPY Gemfile* ./
 RUN bundle install --jobs 4 --retry 3 \
+    # Jekyll 3.10.0 bug: @mime_types_charset can be nil for some MIME types.
     && SERVLET=$(bundle show jekyll)/lib/jekyll/commands/serve/servlet.rb \
-    && sed -i 's/return unless @mime_types_charset\.key?/return unless @mime_types_charset\&.key?/' "$SERVLET"
+    && sed -i 's/return unless @mime_types_charset\.key?/return unless @mime_types_charset\&.key?/' "$SERVLET" \
+    # Ruby 3.2+ removed String#tainted? but Liquid 4.0.3 still calls it.
+    # Monkey-patch the missing method so Jekyll builds succeed.
+    && LIQUID_VAR=$(bundle show liquid)/lib/liquid/variable.rb \
+    && sed -i 's/return unless obj\.tainted?/return unless obj.respond_to?(:tainted?) \&\& obj.tainted?/' "$LIQUID_VAR"
 
 # Install Python dependencies and Playwright browser
 COPY tests/requirements.txt tests/requirements.txt
