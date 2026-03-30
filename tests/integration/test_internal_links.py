@@ -152,8 +152,8 @@ class TestPublicationLinkTargets:
         expected_dois = {
             "10.1103/physreve.101.052401",       # 2020 Scriven-Love
             "10.1017/jfm.2022.946",              # 2022 Potential Flow
-            "10.1021/acs.langmuir.3c03812",      # 2024 Adsorption Isotherm
-            "10.1021/acs.macromol.3c02103",       # 2024 Macromolecules
+            "10.1021/acs.langmuir.3c03640",      # 2024 Adsorption Isotherm
+            "10.1021/acs.macromol.3c02437",       # 2024 Macromolecules
             "10.1021/acs.langmuir.4c03301",      # 2025 Binding Modes
         }
 

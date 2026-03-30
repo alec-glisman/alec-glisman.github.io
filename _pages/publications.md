@@ -36,7 +36,7 @@ Atomistic simulation of how a common water-treatment polymer adsorbs onto calcit
 <div class="pub-card-inner">
 <div class="pub-card-body" markdown="1">
 
-### [Multi-valent Ion Mediated Polyelectrolyte Association and Structure](https://doi.org/10.1021/acs.macromol.3c02103)
+### [Multi-valent Ion Mediated Polyelectrolyte Association and Structure](https://doi.org/10.1021/acs.macromol.3c02437)
 <span class="research-badge research-badge--physics">Macromolecules · 2024</span>
 <span class="research-badge research-badge--sim">Simulation</span><span class="research-badge research-badge--ai">AI/ML</span><span class="research-badge research-badge--sim">Deep Learning</span>
 
@@ -44,11 +44,11 @@ Multiscale simulation of how calcium ions bridge charged polymer chains and driv
 
 **Authors:** Alec Glisman, Sriteja Mantha, Decai Yu, Eric Wasserman, Scott Backer, Zhen-Gang Wang
 
-[DOI](https://doi.org/10.1021/acs.macromol.3c02103) · [PDF](/assets/files/2024-macromolecules-polyelectrolyte-association.pdf)
+[DOI](https://doi.org/10.1021/acs.macromol.3c02437) · [PDF](/assets/files/2024-macromolecules-polyelectrolyte-association.pdf)
 
 </div>
 <figure class="pub-card-figure">
-  <a href="https://doi.org/10.1021/acs.macromol.3c02103"><img src="/assets/images/2024-macromolecules-polyelectrolyte-association.jpeg" alt="Ca²⁺ ion bridges between poly(acrylic acid) chains driving chain association and precipitation"></a>
+  <a href="https://doi.org/10.1021/acs.macromol.3c02437"><img src="/assets/images/2024-macromolecules-polyelectrolyte-association.jpeg" alt="Ca²⁺ ion bridges between poly(acrylic acid) chains driving chain association and precipitation"></a>
   <figcaption>Ca²⁺-mediated chain association</figcaption>
 </figure>
 </div>
@@ -58,7 +58,7 @@ Multiscale simulation of how calcium ions bridge charged polymer chains and driv
 <div class="pub-card-inner">
 <div class="pub-card-body" markdown="1">
 
-### [Adsorption Isotherm and Mechanism of Ca²⁺ Binding to Polyelectrolyte](https://doi.org/10.1021/acs.langmuir.3c03812)
+### [Adsorption Isotherm and Mechanism of Ca²⁺ Binding to Polyelectrolyte](https://doi.org/10.1021/acs.langmuir.3c03640)
 <span class="research-badge research-badge--physics">Langmuir · 2024</span>
 <span class="research-badge research-badge--sim">Simulation</span><span class="research-badge research-badge--drug">Chemistry</span>
 
@@ -66,11 +66,11 @@ Computes calcium binding curves for poly(acrylic acid) using enhanced-sampling m
 
 **Authors:** Alec Glisman, Sriteja Mantha, Decai Yu, Eric Wasserman, Scott Backer, Zhen-Gang Wang
 
-[DOI](https://doi.org/10.1021/acs.langmuir.3c03812) · [PDF](/assets/files/2024-langmuir-adsorption-isotherm.pdf)
+[DOI](https://doi.org/10.1021/acs.langmuir.3c03640) · [PDF](/assets/files/2024-langmuir-adsorption-isotherm.pdf)
 
 </div>
 <figure class="pub-card-figure">
-  <a href="https://doi.org/10.1021/acs.langmuir.3c03812"><img src="/assets/images/2024-langmuir-adsorption-isotherm.jpeg" alt="Ca²⁺ adsorption isotherm and binding free-energy landscape on poly(acrylic acid)"></a>
+  <a href="https://doi.org/10.1021/acs.langmuir.3c03640"><img src="/assets/images/2024-langmuir-adsorption-isotherm.jpeg" alt="Ca²⁺ adsorption isotherm and binding free-energy landscape on poly(acrylic acid)"></a>
   <figcaption>Ca²⁺ adsorption isotherm</figcaption>
 </figure>
 </div>
