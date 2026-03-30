@@ -3,7 +3,7 @@ layout: single
 title: "Publications"
 permalink: /publications/
 author_profile: true
-excerpt: "Peer-reviewed publications by Alec Glisman in polymer physics, molecular simulation, and cheminformatics."
+excerpt: "Peer-reviewed publications by Alec Glisman in polymer physics, molecular simulation, fluid mechanics, and membrane biophysics."
 ---
 
 Peer-reviewed publications in soft matter physics, molecular simulation, and computational chemistry.
@@ -15,7 +15,7 @@ Peer-reviewed publications in soft matter physics, molecular simulation, and com
 <div class="pub-card-body" markdown="1">
 
 ### [Binding Modes and Water-Mediation of Polyelectrolyte Adsorption to a Neutral CaCO₃ Surface](https://doi.org/10.1021/acs.langmuir.4c03301)
-<span class="research-badge research-badge--drug">Langmuir · 2025</span>
+<span class="research-badge research-badge--physics">Physics</span><span class="research-badge research-badge--sim">Simulation</span>
 
 Atomistic simulation of how a common water-treatment polymer adsorbs onto calcite surfaces. Identifies two distinct binding geometries, one through direct contact and one bridged by water molecules, and maps how each depends on chain length and calcium concentration.
 
@@ -36,7 +36,7 @@ Atomistic simulation of how a common water-treatment polymer adsorbs onto calcit
 <div class="pub-card-body" markdown="1">
 
 ### [Multi-valent Ion Mediated Polyelectrolyte Association and Structure](https://doi.org/10.1021/acs.macromol.3c02103)
-<span class="research-badge research-badge--drug">Macromolecules · 2024</span>
+<span class="research-badge research-badge--physics">Physics</span><span class="research-badge research-badge--sim">Simulation</span>
 
 Multiscale simulation of how calcium ions bridge charged polymer chains and drive them to aggregate. Maps a concentration-dependent phase diagram connecting ion-level binding events to bulk precipitation.
 
@@ -57,7 +57,7 @@ Multiscale simulation of how calcium ions bridge charged polymer chains and driv
 <div class="pub-card-body" markdown="1">
 
 ### [Adsorption Isotherm and Mechanism of Ca²⁺ Binding to Polyelectrolyte](https://doi.org/10.1021/acs.langmuir.3c03812)
-<span class="research-badge research-badge--drug">Langmuir · 2024</span>
+<span class="research-badge research-badge--physics">Physics</span><span class="research-badge research-badge--sim">Simulation</span>
 
 Computes calcium binding curves for poly(acrylic acid) using enhanced-sampling molecular dynamics. Identifies the dominant binding geometries and their free-energy barriers, explaining how charged polymers capture calcium in water treatment.
 

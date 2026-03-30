@@ -3,7 +3,7 @@ layout: single
 title: "Experience"
 permalink: /experience/
 author_profile: true
-excerpt: "Professional timeline of Alec Glisman: Senior AI/ML Scientist at Merck, PhD research at Caltech."
+excerpt: "Professional experience of Alec Glisman: Senior AI/ML Scientist at Merck, PhD research at Caltech, and industry internships at Nissan, Bosch, and Lawrence Berkeley National Laboratory."
 ---
 
 <div class="experience-entry experience-entry--industry reveal" markdown="1">

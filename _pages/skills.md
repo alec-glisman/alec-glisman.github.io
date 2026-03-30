@@ -3,11 +3,12 @@ layout: single
 title: "Skills"
 permalink: /skills/
 author_profile: true
-excerpt: "Technical skills of Alec Glisman in AI/ML for drug discovery, cheminformatics, molecular simulation, programming languages, and DevOps."
+excerpt: "Technical skills of Alec Glisman spanning machine learning, drug discovery, computational chemistry, programming, and DevOps infrastructure."
 ---
 
 <div class="skill-group reveal">
 <h3><i class="fas fa-brain"></i>Machine Learning & AI</h3>
+<p>Core toolkit for molecular generation and property prediction at Merck, spanning architectures from graph neural networks to diffusion models.</p>
 <span class="skill-tag">PyTorch</span>
 <span class="skill-tag">PyTorch Geometric</span>
 <span class="skill-tag">Graph Neural Networks</span>
@@ -26,6 +27,7 @@ excerpt: "Technical skills of Alec Glisman in AI/ML for drug discovery, cheminfo
 
 <div class="skill-group reveal" style="transition-delay: 0.1s">
 <h3><i class="fas fa-pills"></i>Drug Discovery & Molecular Design</h3>
+<p>Applied daily across structure-based and ligand-based design programs, from hit finding through lead optimization.</p>
 <span class="skill-tag">Structure-Based Drug Design (SBDD)</span>
 <span class="skill-tag">Ligand-Based Drug Design (LBDD)</span>
 <span class="skill-tag">De Novo Generation</span>
@@ -44,6 +46,7 @@ excerpt: "Technical skills of Alec Glisman in AI/ML for drug discovery, cheminfo
 
 <div class="skill-group reveal" style="transition-delay: 0.2s">
 <h3><i class="fas fa-atom"></i>Computational Chemistry & Physics</h3>
+<p>Foundation from PhD research in polymer simulations, membrane mechanics, and free-energy calculations.</p>
 <span class="skill-tag">GROMACS</span>
 <span class="skill-tag">PLUMED</span>
 <span class="skill-tag">Enhanced Sampling MD</span>
@@ -59,6 +62,7 @@ excerpt: "Technical skills of Alec Glisman in AI/ML for drug discovery, cheminfo
 
 <div class="skill-group reveal" style="transition-delay: 0.3s">
 <h3><i class="fas fa-code"></i>Programming & Computing</h3>
+<p>Languages used across production ML systems, HPC simulation codes, and data analysis pipelines.</p>
 <span class="skill-tag">Python</span>
 <span class="skill-tag">C++</span>
 <span class="skill-tag">CUDA</span>
@@ -71,6 +75,7 @@ excerpt: "Technical skills of Alec Glisman in AI/ML for drug discovery, cheminfo
 
 <div class="skill-group reveal" style="transition-delay: 0.4s">
 <h3><i class="fas fa-server"></i>DevOps & Infrastructure</h3>
+<p>Tools for managing reproducible workflows on HPC clusters and cloud environments.</p>
 <span class="skill-tag">Git / GitHub Actions</span>
 <span class="skill-tag">Docker</span>
 <span class="skill-tag">HPC / Slurm</span>

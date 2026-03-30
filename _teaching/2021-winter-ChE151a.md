@@ -8,7 +8,7 @@ date: 2021-01-01
 location: "Los Angeles, CA"
 ---
 
-Term I focused on the application of perturbation theory to the analysis of thermal and concentration boundary layers.
+Term I focused on the application of perturbation theory to the analysis of thermal and concentration boundary layers. Held weekly office hours and tutorials, and conducted ad hoc meetings with individual students to reinforce problem-solving skills and build physical intuition.
 
 Syllabus
 ---

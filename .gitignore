@@ -2,6 +2,7 @@ _site/
 
 # Cache files
 .cache/
+.superpowers/
 __pycache__/
 
 # Jekyll build files

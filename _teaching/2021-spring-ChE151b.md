@@ -8,7 +8,7 @@ date: 2021-04-01
 location: "Los Angeles, CA"
 ---
 
-Term II focused on advanced fluid mechanics topics, such as applications of Stokes flow to Brownian motion, electrophoresis, and boundary layers in two-dimensional domains.
+Term II focused on advanced fluid mechanics topics, such as applications of Stokes flow to Brownian motion, electrophoresis, and boundary layers in two-dimensional domains. Held weekly office hours and tutorials, and conducted ad hoc meetings with individual students to support their development in analytical problem solving.
 
 Syllabus
 ---

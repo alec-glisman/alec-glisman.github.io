@@ -3,7 +3,7 @@ layout: single
 title: "Projects"
 permalink: /projects/
 author_profile: true
-excerpt: "Open-source software projects by Alec Glisman in molecular property prediction, diffusion models for polymer design, computational fluid dynamics, and molecular dynamics analysis."
+excerpt: "Open-source software by Alec Glisman for molecular property prediction, generative diffusion models, computational fluid dynamics, and molecular dynamics analysis."
 ---
 
 Selected software projects. Full list on [GitHub](https://github.com/alec-glisman).

@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "Alec Glisman"
-excerpt: "Senior Machine Learning Scientist"
+excerpt: "Senior AI/ML Scientist at Merck applying generative AI and physics-based simulation to drug discovery. PhD Chemical Engineering, Caltech 2024."
 author_profile: true
 redirect_from:
   - /about/
@@ -10,7 +10,7 @@ redirect_from:
 
 <div class="reveal hero-intro" markdown="1">
 
-I am a **Senior Machine Learning Scientist at Merck & Co.**, where I apply predictive deep learning and generative AI to accelerate drug discovery. I bridge physics-based simulation and cheminformatics with machine learning to design, predict, and optimize small molecule therapeutics.
+I am a **Senior AI/ML Scientist at Merck & Co.**, where I apply predictive deep learning and generative AI to accelerate drug discovery. I bridge physics-based simulation and cheminformatics with machine learning to design, predict, and optimize small molecule therapeutics.
 
 My background spans fluid mechanics, polymer physics, and generative chemistry. I completed my PhD in Chemical Engineering at Caltech in 2024 under [Prof. Zhen-Gang Wang](http://zgwlab.che.caltech.edu/). My thesis used molecular simulations of charged polymers and multivalent ions to explain mechanisms of mineralization, adsorption, and polymer-surface interactions. Earlier, I worked with [Prof. John F. Brady](https://cheme.caltech.edu/groups/jfb/index.html) on self-propulsion in active matter and with [Prof. Kranthi K. Mandadapu](https://mandadapu-group.github.io/) at UC Berkeley on the mechanics of lipid membranes.
 
@@ -40,7 +40,7 @@ Drug design requires simultaneous optimization of potency, selectivity, pharmaco
 
 <span class="research-badge research-badge--physics">Physics</span><span class="research-badge research-badge--ai">AI/ML</span>
 
-Charged polymers (polyelectrolytes) in water bind multivalent ions like calcium, a property exploited in water softening and scale inhibition. Yet the molecular mechanisms of this binding were not well understood. Using all-atom molecular dynamics and enhanced sampling, I showed that indirect ion-ion correlations, not direct bridging between polymer chains, drive chain association. I combined these simulations with unsupervised deep learning to map concentration-dependent phase diagrams and structure-property relationships in collaboration with Dow Chemical.
+Charged polymers (polyelectrolytes) in water bind multivalent ions like calcium, a property exploited in water softening and scale inhibition. Yet the molecular mechanisms of this binding were not well understood. Using all-atom molecular dynamics and enhanced sampling, I showed that calcium bridges between carboxylate groups on neighboring polymer chains drive chain association and precipitation. I combined these simulations with unsupervised deep learning to map concentration-dependent phase diagrams and structure-property relationships in collaboration with Dow Chemical.
 
 </div>
 
