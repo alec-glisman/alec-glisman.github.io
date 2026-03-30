@@ -8,7 +8,7 @@ excerpt: "Research by Alec Glisman combining physics-based simulation, machine l
 
 <div class="hex-bg" style="padding: 0.5em 0; margin-bottom: 0.5em;">
 
-My work sits at the intersection of physics-based simulation, machine learning, and molecular design. I came to drug discovery through soft matter physics, first studying how lipid membranes deform, then how charged polymers and multivalent ions interact in aqueous solution. That grounding in molecular-scale physics shapes how I approach generative AI and property prediction for drug candidates. I care about more than predictive accuracy. I want to understand *why* molecules behave as they do and use that understanding to guide design.
+My work sits at the intersection of physics-based simulation, machine learning, and molecular design. I came to drug discovery through soft matter physics, first studying how lipid membranes deform, then how charged polymers and multivalent ions interact in aqueous solution. That grounding in molecular-scale physics shapes how I approach generative AI and property prediction for drug candidates. I care about more than predictive accuracy. I want to understand <em>why</em> molecules behave as they do and use that understanding to guide design.
 
 </div>
 

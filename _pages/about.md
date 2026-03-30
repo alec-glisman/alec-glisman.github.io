@@ -49,6 +49,8 @@ redirect_from:
 
 I am a **Senior AI/ML Scientist at [Merck & Co.](https://www.merck.com/)**, applying generative AI and deep learning to design and optimize small-molecule therapeutics. I bridge cheminformatics, physics-based simulation, and machine learning to accelerate drug discovery from hit identification through lead optimization.
 
+<br>
+
 Ph.D. in Chemical Engineering from [Caltech](http://zgwlab.che.caltech.edu/) (2024), where I studied charged-polymer physics through molecular simulation.
 
   </div>
