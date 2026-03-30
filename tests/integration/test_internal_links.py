@@ -31,6 +31,9 @@ def resolve_link(html_file: Path, href: str, site_dir: Path) -> Path | None:
     if href.startswith("mailto:"):
         return None
 
+    # Strip fragment identifier before resolving path
+    href = href.split("#")[0]
+
     # Relative to site root
     if href.startswith("/"):
         path = site_dir / href.lstrip("/")

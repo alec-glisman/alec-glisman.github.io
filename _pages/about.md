@@ -71,6 +71,8 @@ My work spans generative AI for drug discovery and the physics of soft matter.
 
 Drug design requires simultaneous optimization of potency, selectivity, pharmacokinetic and safety properties, and synthesizability. I build generative models that jointly optimize these competing objectives while enforcing synthesizability as a hard constraint, so every proposed molecule can actually be made. I also develop ensemble property-prediction models combining graph neural networks with molecular fingerprints, placing 18th out of 400+ submissions in the [OpenADMET-ExpansionRx Blind Challenge](https://huggingface.co/spaces/openadmet/OpenADMET-ExpansionRx-Challenge).
 
+[Read more about my generative AI research →](/research/#generative-ai--molecular-design)
+
 </div>
 
 <div class="research-card reveal" style="transition-delay: 0.1s" markdown="1">
@@ -81,6 +83,8 @@ Drug design requires simultaneous optimization of potency, selectivity, pharmaco
 <span class="research-badge research-badge--physics">Physics</span><span class="research-badge research-badge--ai">AI/ML</span>
 
 Charged polymers (polyelectrolytes) in water bind multivalent ions like calcium, a property exploited in water softening and scale inhibition. Yet the molecular mechanisms of this binding were not well understood. Using all-atom molecular dynamics and enhanced sampling, I showed that calcium bridges between carboxylate groups on neighboring polymer chains drive chain association and precipitation. I combined these simulations with unsupervised deep learning to map concentration-dependent phase diagrams and structure-property relationships in collaboration with Dow Chemical.
+
+**Key papers:** [Langmuir 2025](/publications/2025-langmuir-binding-modes/) · [Macromolecules 2024](/publications/2024-macromolecules-polyelectrolyte/) · [Langmuir 2024](/publications/2024-langmuir-adsorption-isotherm/)
 
 </div>
 
@@ -108,6 +112,12 @@ Lipid membranes are not simply static barriers. They flow in-plane as viscous fl
 </div>
 -->
 
+<div class="reveal" style="transition-delay: 0.2s" markdown="1">
+
+[View all research areas →](/research/) · [Full publication list →](/publications/)
+
+</div>
+
 <div class="section-divider" aria-hidden="true"></div>
 
 <div class="reveal" style="transition-delay: 0.25s" markdown="1">
@@ -124,6 +134,7 @@ Lipid membranes are not simply static barriers. They flow in-plane as viscous fl
 
 <div class="reveal" style="transition-delay: 0.35s" markdown="1">
 
+<a href="/research/" class="btn--primary-cta">Research</a>
 <a href="/publications/" class="btn--primary-cta">Publications</a>
 <a href="/experience/" class="btn--outline-cta">Experience</a>
 <a href="/projects/" class="btn--outline-cta">Projects</a>
